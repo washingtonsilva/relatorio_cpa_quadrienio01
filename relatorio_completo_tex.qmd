@@ -60,17 +60,13 @@ library(kableExtra)         # para criar tabelas
 # importa os arquivos de dados
 
 ## discentes
-path_discentes <- here::here("dados/limpos/dados_discentes_egressos.rds")
+path_discentes <- here::here("dados/limpos/dados_discentes.rds")
 dados_discentes <- readr::read_rds(path_discentes)
 
 ## docentes
 path_docentes <- here::here("dados/limpos/dados_docentes.rds")
 dados_docentes <- readr::read_rds(path_docentes)
 ```
-
-
-
-# Composição da Comissão Própria de Avaliação (CPA)
 
 
 
@@ -81,7 +77,8 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 
 
-# Planejamento Estratégico de Autoavaliação 
+
+# Planejamento da Autoavaliação 
 
 ## Cronograma de Trabalho da CPA
 
@@ -95,14 +92,14 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 ## Instrumentos
 
-## Segmentos da Comunidade Acadêmica 
-
 ## Técnicas Utilizadas para Análise dos Dados 
 
 
 
 
 # Resultados da Autoavaliação 
+
+
 
 ## Corpo Discente
 
@@ -152,7 +149,7 @@ dados_discentes %>%
 
 
 ```{r}
-#| label: fig-5.1
+#| label: fig-4.1
 #| fig-cap: "Proporção de discentes que exercem atividade profissional remunerada."
 #| fig-width: 4
 #| fig-height: 4
@@ -203,7 +200,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q5
 
 
 ```{r}
-#| label: fig-5.2
+#| label: fig-4.2
 #| fig-cap: "Atividades remuneradas exercidas pelos participantes da pesquisa."
 #| fig-width: 8  # Reduzindo a largura do gráfico
 #| fig-height: 5 # Reduzindo a altura do gráfico
@@ -298,12 +295,11 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
 
 
 
-
 ### Avaliação do Programa
 
 
 ```{r}
-#| label: fig-5.3
+#| label: fig-4.3
 #| fig-cap: "Percepção discente sobre a interdisciplinaridade no curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -389,7 +385,7 @@ ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
 
 
 ```{r}
-#| label: fig-5.4
+#| label: fig-4.4
 #| fig-cap: "Percepção discente sobre a internacionalização no curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -475,7 +471,7 @@ ggplot(q8_summary_diverging, aes(x = q8, y = percent_answers, fill = q8)) +
 
 
 ```{r}
-#| label: fig-5.5
+#| label: fig-4.5
 #| fig-cap: "Percepção discente sobre atividades de extensão no curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -561,7 +557,7 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
 
 
 ```{r}
-#| label: fig-5.6
+#| label: fig-4.6
 #| fig-cap: "Percepção discente sobre atividades extraclasse no curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -647,7 +643,7 @@ ggplot(q10_summary_diverging, aes(x = q10, y = percent_answers, fill = q10)) +
 
 
 ```{r}
-#| label: fig-5.7
+#| label: fig-4.7
 #| fig-cap: "Percepção discente sobre o ambiente criado pelo curso para o crescimento intelectual."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -733,7 +729,7 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
 
 
 ```{r}
-#| label: fig-5.8
+#| label: fig-4.8
 #| fig-cap: "Percepção discente sobre a qualidade do curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -817,8 +813,9 @@ ggplot(q12_summary_diverging, aes(x = q12, y = percent_answers, fill = q12)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.9
+#| label: fig-4.9
 #| fig-cap: "Percepção discente sobre a qualificação dos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -902,8 +899,9 @@ ggplot(q13_summary_diverging, aes(x = q13, y = percent_answers, fill = q13)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.10
+#| label: fig-4.10
 #| fig-cap: "Percepção discente sobre a reputação do curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -987,8 +985,9 @@ ggplot(q14_summary_diverging, aes(x = q14, y = percent_answers, fill = q14)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.11
+#| label: fig-4.11
 #| fig-cap: "Percepção discente sobre os objetivos do programa."
 #| fig-width: 4
 #| fig-height: 4
@@ -1036,8 +1035,9 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 ```
 
 
+
 ```{r}
-#| label: fig-5.12
+#| label: fig-4.12
 #| fig-cap: "Percepção discente sobre a distribuição de bolsas."
 #| fig-width: 4
 #| fig-height: 4
@@ -1085,8 +1085,9 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 ```
 
 
+
 ```{r}
-#| label: fig-5.13
+#| label: fig-4.13
 #| fig-cap: "Percepção discente sobre os critérios de manutenção de bolsas."
 #| fig-width: 4
 #| fig-height: 4
@@ -1134,10 +1135,11 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 ```
 
 
+
 ### Avaliação da Coordenação do Programa de Pós-Graduação
 
 ```{r}
-#| label: fig-5.14
+#| label: fig-4.14
 #| fig-cap: "Percepção discente sobre o compromisso da coordenação com a melhoria do curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1221,8 +1223,9 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.15
+#| label: fig-4.15
 #| fig-cap: "Percepção discente sobre a efetividade da coordenação no encaminhamento das solicitações ao colegiado do curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1306,8 +1309,9 @@ ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.16
+#| label: fig-4.16
 #| fig-cap: "Percepção discente sobre a comunicação da coordenação."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1393,7 +1397,7 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
 
 
 ```{r}
-#| label: fig-5.17
+#| label: fig-4.17
 #| fig-cap: "Percepção discente sobre a disponibilidade da coordenação para o atendimento individual."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1477,8 +1481,9 @@ ggplot(q22_summary_diverging, aes(x = q22, y = percent_answers, fill = q22)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.18
+#| label: fig-4.18
 #| fig-cap: "Percepção discente sobre o tratamento dado pela coordenação."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1562,8 +1567,9 @@ ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.19
+#| label: fig-4.19
 #| fig-cap: "Percepção discente sobre a consideracão de suas opiniões pela coordenação para a tomada de decisões."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1647,10 +1653,11 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
 ```
 
 
+
 ### Avaliação da Infraestrutura
 
 ```{r}
-#| label: fig-5.20
+#| label: fig-4.20
 #| fig-cap: "Percepção discente sobre as salas disponíveis aos grupos pesquisa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1734,8 +1741,9 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.21
+#| label: fig-4.21
 #| fig-cap: "Percepção discente sobre as instalações sanitárias."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1819,8 +1827,9 @@ ggplot(q27_summary_diverging, aes(x = q27, y = percent_answers, fill = q27)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.22
+#| label: fig-4.22
 #| fig-cap: "Percepção discente sobre os recursos audiovisuais."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1904,8 +1913,9 @@ ggplot(q28_summary_diverging, aes(x = q28, y = percent_answers, fill = q28)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.23
+#| label: fig-4.23
 #| fig-cap: "Percepção discente sobre as salas de aula."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -1989,8 +1999,9 @@ ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.24
+#| label: fig-4.24
 #| fig-cap: "Percepção discente sobre o anfiteatro para eventos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2074,8 +2085,9 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.25
+#| label: fig-4.25
 #| fig-cap: "Percepção discente sobre o espaço de convivência."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2159,10 +2171,11 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
 ```
 
 
+
 ### Avaliação do Atendimento da Secretaria do Programa
 
 ```{r}
-#| label: fig-5.26
+#| label: fig-4.26
 #| fig-cap: "Percepção discente sobre o tratamento dado pela Secretaria do Progorama."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2246,8 +2259,9 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.27
+#| label: fig-4.27
 #| fig-cap: "Percepção discente sobre a agilidade da Secretaria para emitir documentos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2331,8 +2345,9 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.28
+#| label: fig-4.28
 #| fig-cap: "Percepção discente sobre o horário de funcionamento da Secretaria"
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2416,8 +2431,9 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.29
+#| label: fig-4.29
 #| fig-cap: "Percepção discente sobre a agilidade da Secretaria na resposta às demandas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2502,11 +2518,10 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
 
 
 
-
 ### Avaliação das Disciplinas Obrigatórias
 
 ```{r}
-#| label: fig-5.30
+#| label: fig-4.30
 #| fig-cap: "Percepção discente sobre a contribuição das disciplinas obrigatórias para seu desenvolvimento intelectual."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2586,7 +2601,7 @@ ggplot(q38_summary_diverging, aes(x = q38, y = percent_answers, fill = q38)) +
 
 
 ```{r}
-#| label: fig-5.31
+#| label: fig-4.31
 #| fig-cap: "Percepção discente sobre a contribuição das disciplinas obrigatórias para a apreensão de novos conhecimentos e desenvolvimento de novas habilidades."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2666,7 +2681,7 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
 
 
 ```{r}
-#| label: fig-5.32
+#| label: fig-4.32
 #| fig-cap: "Percepção discente sobre a coerência das disciplinas obrigatórias com as linhas de pesquisa do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2746,7 +2761,7 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
 
 
 ```{r}
-#| label: fig-5.33
+#| label: fig-4.33
 #| fig-cap: "Percepção discente sobre a atualidade da bibliografia das disciplinas obrigatórias."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2826,7 +2841,7 @@ ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
 
 
 ```{r}
-#| label: fig-5.34
+#| label: fig-4.34
 #| fig-cap: "Expectativas em relação às disciplinas obrigatórias."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2909,7 +2924,7 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
 ### Avaliação das Disciplinas Optativas
 
 ```{r}
-#| label: fig-5.35
+#| label: fig-4.35
 #| fig-cap: "Percepção discente sobre a contribuição das disciplinas optativas para seu desenvolvimento intelectual."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -2987,8 +3002,9 @@ ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.36
+#| label: fig-4.36
 #| fig-cap: "Percepção discente sobre a contribuição das disciplinas optativas para a apreensão de novos conhecimentos e desenvolvimento de novas habilidades."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3066,8 +3082,9 @@ ggplot(q45_summary_diverging, aes(x = q45, y = percent_answers, fill = q45)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.37
+#| label: fig-4.37
 #| fig-cap: "Percepção discente sobre a coerência das disciplinas optativas com as linhas de pesquisa do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3145,8 +3162,9 @@ ggplot(q46_summary_diverging, aes(x = q46, y = percent_answers, fill = q46)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.38
+#| label: fig-4.38
 #| fig-cap: "Percepção discente sobre a atualidade da bibliografia das disciplinas optativas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3224,8 +3242,9 @@ ggplot(q47_summary_diverging, aes(x = q47, y = percent_answers, fill = q47)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.39
+#| label: fig-4.39
 #| fig-cap: "Percepção discente sobre a diversidade temas abordados nas disciplinas optativas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3305,7 +3324,7 @@ ggplot(q48_summary_diverging, aes(x = q48, y = percent_answers, fill = q48)) +
 
 
 ```{r}
-#| label: fig-5.40
+#| label: fig-4.40
 #| fig-cap: "Percepção discente sobre as expectativas em relação às disciplinas optativas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3384,11 +3403,10 @@ ggplot(q49_summary_diverging, aes(x = q49, y = percent_answers, fill = q49)) +
 
 
 
-
 ### Autoavaliação em Relação às Disciplinas
 
 ```{r}
-#| label: fig-5.41
+#| label: fig-4.41
 #| fig-cap: "Autoavaliação discente sobre o aprendizado do conteúdo das disciplinas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3472,8 +3490,9 @@ ggplot(q51_summary_diverging, aes(x = q51, y = percent_answers, fill = q51)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.42
+#| label: fig-4.42
 #| fig-cap: "Autoavaliação discente sobre leitura das bibliografias das disciplinas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3559,7 +3578,7 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
 
 
 ```{r}
-#| label: fig-5.43
+#| label: fig-4.43
 #| fig-cap: "Autoavaliação discente sobre leitura das bibliografias das disciplinas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3645,7 +3664,7 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
 
 
 ```{r}
-#| label: fig-5.44
+#| label: fig-4.44
 #| fig-cap: "Autoavaliação discente sobre a frequência às aulas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3731,7 +3750,7 @@ ggplot(q54_summary_diverging, aes(x = q54, y = percent_answers, fill = q54)) +
 
 
 ```{r}
-#| label: fig-5.45
+#| label: fig-4.45
 #| fig-cap: "Autoavaliação discente sobre a participação nas atividades e discussões dentro e fora da sala de aula."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3815,8 +3834,9 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.46
+#| label: fig-4.46
 #| fig-cap: "Autoavaliação discente sobre a postura respeitosa com os colegas e docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3901,11 +3921,10 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
 
 
 
-
 ### Avaliação dos Docentes do Programa
 
 ```{r}
-#| label: fig-5.47
+#| label: fig-4.47
 #| fig-cap: "Percepção discente sobre a atualidade do conhecimento e domínido de conteúdo dos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -3991,7 +4010,7 @@ ggplot(q57_summary_diverging, aes(x = q57, y = percent_answers, fill = q57)) +
 
 
 ```{r}
-#| label: fig-5.48
+#| label: fig-4.48
 #| fig-cap: "Avaliação discente sobre a apresentação do plano de ensino pelos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4075,8 +4094,9 @@ ggplot(q58_summary_diverging, aes(x = q58, y = percent_answers, fill = q58)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.49
+#| label: fig-4.49
 #| fig-cap: "Percepção discente sobre a atualidade e relevância do conteúdo das disciplinas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4160,8 +4180,9 @@ ggplot(q59_summary_diverging, aes(x = q59, y = percent_answers, fill = q59)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.50
+#| label: fig-4.50
 #| fig-cap: "Percepção discente sobre o cumprimento dos planos de ensino pelos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4247,7 +4268,7 @@ ggplot(q60_summary_diverging, aes(x = q60, y = percent_answers, fill = q60)) +
 
 
 ```{r}
-#| label: fig-5.51
+#| label: fig-4.51
 #| fig-cap: "Percepção discente sobre a exposição do conteúdo pelos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4331,8 +4352,9 @@ ggplot(q61_summary_diverging, aes(x = q61, y = percent_answers, fill = q61)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.52
+#| label: fig-4.52
 #| fig-cap: "Percepção discente sobre a adequação das metodologias utilizadas pelos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4418,7 +4440,7 @@ ggplot(q62_summary_diverging, aes(x = q62, y = percent_answers, fill = q62)) +
 
 
 ```{r}
-#| label: fig-5.53
+#| label: fig-4.53
 #| fig-cap: "Percepção discente sobre a manutenção de um ambiente de respeito mútuo pelos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4504,7 +4526,7 @@ ggplot(q63_summary_diverging, aes(x = q63, y = percent_answers, fill = q63)) +
 
 
 ```{r}
-#| label: fig-5.54
+#| label: fig-4.54
 #| fig-cap: "Percepção discente sobre a pontualidade dos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4588,8 +4610,9 @@ ggplot(q63_summary_diverging, aes(x = q63, y = percent_answers, fill = q63)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.55
+#| label: fig-4.55
 #| fig-cap: "Percepção discente sobre a adequação das respostas dos docentes aos questionamentos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4675,7 +4698,7 @@ ggplot(q65_summary_diverging, aes(x = q65, y = percent_answers, fill = q65)) +
 
 
 ```{r}
-#| label: fig-5.56
+#| label: fig-4.56
 #| fig-cap: "Percepção discente sobre a acessibilidade e comunicação dos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4761,7 +4784,7 @@ ggplot(q66_summary_diverging, aes(x = q66, y = percent_answers, fill = q66)) +
 
 
 ```{r}
-#| label: fig-5.57
+#| label: fig-4.57
 #| fig-cap: "Percepção discente sobre a ética dos docentes com a turma."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4847,7 +4870,7 @@ ggplot(q67_summary_diverging, aes(x = q67, y = percent_answers, fill = q67)) +
 
 
 ```{r}
-#| label: fig-5.58
+#| label: fig-4.58
 #| fig-cap: "Percepção discente sobre as avaliações utilizada pelos docentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -4932,12 +4955,10 @@ ggplot(q68_summary_diverging, aes(x = q68, y = percent_answers, fill = q68)) +
 
 
 
-
 ### Avaliação da Orientação
 
-
 ```{r}
-#| label: fig-5.59
+#| label: fig-4.59
 #| fig-cap: "Percepção discente sobre o tratamento dos orientadores aos orientandos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5023,7 +5044,7 @@ ggplot(q70_summary_diverging, aes(x = q70, y = percent_answers, fill = q70)) +
 
 
 ```{r}
-#| label: fig-5.60
+#| label: fig-4.60
 #| fig-cap: "Percepção discente sobre a condução do processo de elaboração da disssertação pelos orientadores."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5109,7 +5130,7 @@ ggplot(q71_summary_diverging, aes(x = q71, y = percent_answers, fill = q71)) +
 
 
 ```{r}
-#| label: fig-5.61
+#| label: fig-4.61
 #| fig-cap: "Percepção discente sobre o comparecimento dos orientadores às reuniões de orientação."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5193,8 +5214,9 @@ ggplot(q72_summary_diverging, aes(x = q72, y = percent_answers, fill = q72)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.62
+#| label: fig-4.62
 #| fig-cap: "Percepção discente sobre o retorno dos orientadores aos textos produzidos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5278,8 +5300,9 @@ ggplot(q73_summary_diverging, aes(x = q73, y = percent_answers, fill = q73)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.63
+#| label: fig-4.63
 #| fig-cap: "Percepção discente sobre o incentivo dos orientadores à produção científica."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5365,7 +5388,7 @@ ggplot(q74_summary_diverging, aes(x = q74, y = percent_answers, fill = q74)) +
 
 
 ```{r}
-#| label: fig-5.64
+#| label: fig-4.64
 #| fig-cap: "Percepção discente sobre a abertura dos orientadores à exposição de novas ideias."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5450,11 +5473,10 @@ ggplot(q75_summary_diverging, aes(x = q75, y = percent_answers, fill = q75)) +
 
 
 
-
 ### Autoavaliação em Relação à Orientação
 
 ```{r}
-#| label: fig-5.65
+#| label: fig-4.65
 #| fig-cap: "Autoavaliação discente do tratamento aos orientadores."
 #| fig-width: 7.5 
 #| fig-height: 4.5
@@ -5540,7 +5562,7 @@ ggplot(q77_summary_diverging, aes(x = q77, y = percent_answers, fill = q77)) +
 
 
 ```{r}
-#| label: fig-5.66
+#| label: fig-4.66
 #| fig-cap: "Autoavaliação discente da disponibilidade às solicitações dos orientadores."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5626,7 +5648,7 @@ ggplot(q78_summary_diverging, aes(x = q78, y = percent_answers, fill = q78)) +
 
 
 ```{r}
-#| label: fig-5.67
+#| label: fig-4.67
 #| fig-cap: "Autoavaliação discente da efetividade no atendimento ao acordado com os orientadores nas reuniões."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5712,7 +5734,7 @@ ggplot(q79_summary_diverging, aes(x = q79, y = percent_answers, fill = q79)) +
 
 
 ```{r}
-#| label: fig-5.68
+#| label: fig-4.68
 #| fig-cap: "Autoavaliação discente sobre o cumprimento dos prazos acordados com os orientadores."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5796,8 +5818,9 @@ ggplot(q80_summary_diverging, aes(x = q80, y = percent_answers, fill = q80)) +
 ```
 
 
+
 ```{r}
-#| label: fig-5.69
+#| label: fig-4.69
 #| fig-cap: "Autoavaliação discente sobre a dedicaçõa exclusiva ao curso."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5883,7 +5906,7 @@ ggplot(q81_summary_diverging, aes(x = q81, y = percent_answers, fill = q81)) +
 
 
 ```{r}
-#| label: fig-5.70
+#| label: fig-4.70
 #| fig-cap: "Autoavaliação discente sobre a abertura ao debate de novas ideias."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -5968,7 +5991,7 @@ ggplot(q82_summary_diverging, aes(x = q82, y = percent_answers, fill = q82)) +
 
 
 
-### Impacto da Pandemia
+### Impacto da Pandemia da COVID-19
 
 As respostas dos mestrandos sobre o impacto da pandemia da COVID-19 no 
 curso foram divergentes:
@@ -5993,13 +6016,11 @@ estratégias para melhorar a interação online e apoiar os estudantes que
 preferem ambientes presenciais, ao mesmo tempo em que promove a autonomia 
 e disciplina necessárias para o sucesso em formatos remotos.
 
-Em resumo, as respostas dos mestrandos sobre o impacto da pandemia da 
-COVID-19 no curso destacam a importância de flexibilidade e suporte aos 
+Por fim, as respostas dos mestrandos sobre o impacto da pandemia da 
+COVID-19 no curso destacaram a importância de flexibilidade e suporte aos 
 estudantes em diferentes contextos. O curso deve continuar a avaliar e 
 adaptar suas estratégias pedagógicas para atender às necessidades dos 
 estudantes em ambientes presenciais e remotos.
-
-
 
 
 
@@ -6009,22 +6030,3131 @@ estudantes em ambientes presenciais e remotos.
 
 ### Avaliação do Programa
 
+```{r}
+#| label: fig-4.71
+#| fig-cap: "Avaliação docente do Regimento do curso."
+#| fig-width: 7.5 
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q3_levels <- c(
+  "Ruim",
+  "Insatisfatório", 
+  "Regular",
+  "Bom",
+  "Excelente"
+)
+
+# Criar a tabela de frequência para a variável q3, incluindo níveis não utilizados
+q3_summary <- dados_docentes %>%
+  count(q3, sort = TRUE) %>%
+  complete(q3 = q3_levels, fill = list(n = 0)) %>%
+  mutate(q3 = factor(q3, levels = q3_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q3_summary_diverging <- q3_summary %>%
+  mutate(percent_answers = if_else(
+    q3 %in% c("Bom", "Excelente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q3_summary_diverging, aes(x = q3, y = percent_answers, fill = q3)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q3_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Ruim" = "#EE6677",
+      "Insatisfatório" = "#CCBB44", 
+      "Regular" = "grey80",
+      "Bom" = "#66CCEE",
+      "Excelente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(), 
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Como você avalia o Regimento do PPGA?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.72
+#| fig-cap: "Avaliação docente do processo de seleção do curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q4_levels <- c(
+  "Ruim",
+  "Insatisfatório", 
+  "Regular",
+  "Bom",
+  "Excelente"
+)
+
+# Criar a tabela de frequência para a variável q4, incluindo níveis não utilizados
+q4_summary <- dados_docentes %>%
+  count(q4, sort = TRUE) %>%
+  complete(q4 = q4_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q4 = factor(q4, levels = q4_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q4_summary_diverging <- q4_summary %>%
+  mutate(percent_answers = if_else(
+    q4 %in% c("Bom", "Excelente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q4_summary_diverging, aes(x = q4, y = percent_answers, fill = q4)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q4_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Ruim" = "#EE6677",
+      "Insatisfatório" = "#CCBB44", 
+      "Regular" = "grey80",
+      "Bom" = "#66CCEE",
+      "Excelente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Como você avalia o processo de seleção (divulgação, edital e realização)?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.73
+#| fig-cap: "Percepção docente sobre a interdisciplinaridade no curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q5_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q5, incluindo níveis não utilizados
+q5_summary <- dados_docentes %>%
+  count(q5, sort = TRUE) %>%
+  complete(q5 = q5_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q5 = factor(q5, levels = q5_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q5_summary_diverging <- q5_summary %>%
+  mutate(percent_answers = if_else(
+    q5 %in% c("Concordo Parcialmente", "Concordo Totalmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q5_summary_diverging, aes(x = q5, y = percent_answers, fill = q5)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q5_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "O curso utiliza ações de promoção da interdisciplinaridade?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.74
+#| fig-cap: "Percepção docente sobre a internacionalização no curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q6_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q6, incluindo níveis não utilizados
+q6_summary <- dados_docentes %>%
+  count(q6, sort = TRUE) %>%
+  complete(q6 = q6_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q6 = factor(q6, levels = q6_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q6_summary_diverging <- q6_summary %>%
+  mutate(percent_answers = if_else(
+    q6 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q6_summary_diverging, aes(x = q6, y = percent_answers, fill = q6)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q6_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "O curso emprega ações de promoção da internacionalização?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.75
+#| fig-cap: "Percepção docente sobre atividades de extensão no curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q7_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q7, incluindo níveis não utilizados
+q7_summary <- dados_docentes %>%
+  count(q7, sort = TRUE) %>%
+  complete(q7 = q7_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q7 = factor(q7, levels = q7_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q7_summary_diverging <- q7_summary %>%
+  mutate(percent_answers = if_else(
+    q7 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q7_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "O curso promove atividades de extensão como cursos, projetos de extensão e\noutras ações e/ou integra-se à atividades extensionistas?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.76
+#| fig-cap: "Percepção docente sobre atividades extraclasse no curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q8_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q8, incluindo níveis não utilizados
+q8_summary <- dados_docentes %>%
+  count(q8, sort = TRUE) %>%
+  complete(q8 = q8_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q8 = factor(q8, levels = q8_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q8_summary_diverging <- q8_summary %>%
+  mutate(percent_answers = if_else(
+    q8 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q8_summary_diverging, aes(x = q8, y = percent_answers, fill = q8)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q8_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "O curso promove atividades extraclasse como seminários, palestras,\ngrupos de estudos, dentre outros?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.77
+#| fig-cap: "Percepção docente sobre o ambiente criado pelo curso para o crescimento intelectual dos discentes."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q9_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q9, incluindo níveis não utilizados
+q9_summary <- dados_docentes %>%
+  count(q9, sort = TRUE) %>%
+  complete(q9 = q9_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q9 = factor(q9, levels = q9_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q9_summary_diverging <- q9_summary %>%
+  mutate(percent_answers = if_else(
+    q9 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q9_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "O curso proporciona um ambiente favorável ao crescimento intelectual dos\nmestrandos?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.78
+#| fig-cap: "Percepção docente sobre a qualidade do curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q10_levels <- c(
+  "Totalmente Insatisfeito",
+  "Parcialmente Insatisfeito",
+  "Nem Satisfeito, Nem Insatisfeito",
+  "Parcialmente Satisfeito",
+  "Totalmente Satisfeito"
+)
+
+# Criar a tabela de frequência para a variável q10, incluindo níveis não utilizados
+q10_summary <- dados_docentes %>%
+  count(q10, sort = TRUE) %>%
+  complete(q10 = q10_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q10 = factor(q10, levels = q10_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q10_summary_diverging <- q10_summary %>%
+  mutate(percent_answers = if_else(
+    q10 %in% c("Totalmente Satisfeito", "Parcialmente Satisfeito"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q10_summary_diverging, aes(x = q10, y = percent_answers, fill = q10)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q10_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Totalmente Insatisfeito" = "#EE6677",
+      "Parcialmente Insatisfeito" = "#CCBB44",
+      "Nem Satisfeito, Nem Insatisfeito" = "grey80",
+      "Parcialmente Satisfeito" = "#66CCEE",
+      "Totalmente Satisfeito" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Qual o seu nível de satisfação com a qualidade do curso?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.79
+#| fig-cap: "Percepção docente sobre a reputação do curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q11_levels <- c(
+  "Abaixo das minhas expectativas",
+  "Um pouco abaixo das minhas expectativas",
+  "De acordo com as minhas expectativas",
+  "Um pouco acima das minhas expectativas",
+  "Acima das minhas expectativas"
+)
+
+# Criar a tabela de frequência para a variável q11, incluindo níveis não utilizados
+q11_summary <- dados_docentes %>%
+  count(q11, sort = TRUE) %>%
+  complete(q11 = q11_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q11 = factor(q11, levels = q11_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q11_summary_diverging <- q11_summary %>%
+  mutate(percent_answers = if_else(
+    q11 %in% c("Acima das minhas expectativas", "Um pouco acima das minhas expectativas"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q11_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Abaixo das minhas expectativas" = "#EE6677",
+      "Um pouco abaixo das minhas expectativas" = "#CCBB44",
+      "De acordo com as minhas expectativas" = "grey80",
+      "Um pouco acima das minhas expectativas" = "#66CCEE",
+      "Acima das minhas expectativas" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Como você avalia a reputação do curso no mercado/academia em\nrelação às suas expectativas?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.80
+#| fig-cap: "Percepção docente sobre os objetivos do programa."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q12) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q12, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q12)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "Você conhece os objetivos do Programa?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.81
+#| fig-cap: "Percepção docente sobre a distribuição de bolsas."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q14) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q14, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q14)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "O Programa tem clareza e transparência para a \n distribuição das bolsas?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.82
+#| fig-cap: "Percepção docente sobre os critérios de manutenção de bolsas."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q15) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q15, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q15)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "Você acha que os critérios de manutenção de bolsa\ndurante o curso são claros?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.83
+#| fig-cap: "Percepção docente sobre o estímula à participaçõa em eventos científicos."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q16) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q16, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q16)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "O Programa estimula a participação em reuniões de\npesquisa, congressos, workshop, etc.?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
+
 ### Avaliação sobre o Incetivo à Pesquisa
+
+
+```{r}
+#| label: fig-4.84
+#| fig-cap: "Percepção docente sobre a distribuição de bolsas."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q14) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q14, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q14)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "O Programa tem clareza e transparência para distribuição \n das bolsas?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.85
+#| fig-cap: "Percepção docente sobre os critérios de manutenção de bolsas."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q15) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q15, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q15)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "Você acha que os critérios de manutenção \n de bolsa durante o curso são claros?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.86
+#| fig-cap: "Percepção docente sobre a participação em reuniõs e eventos científicos."
+#| fig-width: 4
+#| fig-height: 4
+
+# Criar tabela de frequência
+ativ_tab <- dados_docentes %>%
+  count(q16) %>%
+  mutate(
+    fraction = n / sum(n),
+    ymax = cumsum(fraction),
+    ymin = c(0, head(ymax, n = -1)),
+    labelPosition = (ymax + ymin) / 2,
+    label = paste0(q16, "\n", scales::percent(fraction, accuracy = 0.1))
+  )
+
+# Define cores manualmente para cada resposta
+cores <- c(
+  "Sim" = "#E69F00",
+  "Não" = "#999999"
+)
+
+# Criar o gráfico donut
+ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q16)) +
+  geom_rect(color = NA) +
+  geom_label(
+    x = 3,
+    aes(y = labelPosition, label = label),
+    size = 3,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_fill_manual(values = cores) +
+  coord_polar(theta = "y") +
+  xlim(c(2, 4)) +
+  theme_void() +
+  theme(legend.position = "none") +
+  labs(
+    title = "O Programa estimula a participação em reuniões de \n pesquisa, congressos, workshop, etc.?",
+    caption = "Fonte: Comissão Própria de Avaliação"
+  ) +
+  theme(
+    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.caption = element_text(size = 8)
+  )
+```
+
+
 
 ### Avaliação da Coordenação do Programa
 
+```{r}
+#| label: fig-4.87
+#| fig-cap: "Percepção docente sobre o compromisso da coordenação com a melhoria do curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q18_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q18, incluindo níveis não utilizados
+q18_summary <- dados_docentes %>%
+  count(q18, sort = TRUE) %>%
+  complete(q18 = q18_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q18 = factor(q18, levels = q18_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q18_summary_diverging <- q18_summary %>%
+  mutate(percent_answers = if_else(
+    q18 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q18_summary_diverging, aes(x = q18, y = percent_answers, fill = q18)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q18_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A coordenação demonstra compromisso com a melhoria do curso?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.88
+#| fig-cap: "Percepção docente sobre a efetividade da coordenação no encaminhamento das solicitações ao colegiado do curso."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q19_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q19, incluindo níveis não utilizados
+q19_summary <- dados_docentes %>%
+  count(q19, sort = TRUE) %>%
+  complete(q19 = q19_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q19 = factor(q19, levels = q19_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q19_summary_diverging <- q19_summary %>%
+  mutate(percent_answers = if_else(
+    q19 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q19_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A coordenação encaminha adequadamente as solicitações feitas ao Colegiado?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.89
+#| fig-cap: "Percepção doccente sobre a comunicação da coordenação."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q20_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q20, incluindo níveis não utilizados
+q20_summary <- dados_docentes %>%
+  count(q20, sort = TRUE) %>%
+  complete(q20 = q20_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q20 = factor(q20, levels = q20_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q20_summary_diverging <- q20_summary %>%
+  mutate(percent_answers = if_else(
+    q20 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q20_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A coordenação envia avisos e comunicados de forma sistemática?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.90
+#| fig-cap: "Percepção docente sobre a consideracão de suas opiniões pela coordenação para a tomada de decisões."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q21_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q21, incluindo níveis não utilizados
+q21_summary <- dados_docentes %>%
+  count(q21, sort = TRUE) %>%
+  complete(q21 = q21_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q21 = factor(q21, levels = q21_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q21_summary_diverging <- q21_summary %>%
+  mutate(percent_answers = if_else(
+    q21 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q21_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A coordenação considera a opinião dos docentes nas decisões?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
 ### Avaliação da Infraestrutura
+
+```{r}
+#| label: fig-4.91
+#| fig-cap: "Percepção docente sobre as salas disponíveis aos grupos pesquisa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q23_levels <- c(
+  "Totalmente Insatisfeito",
+  "Parcialmente Insatisfeito",
+  "Nem Satisfeito, Nem Insatisfeito",
+  "Parcialmente Satisfeito",
+  "Totalmente Satisfeito"
+)
+
+# Criar a tabela de frequência para a variável q23, incluindo níveis não utilizados
+q23_summary <- dados_docentes %>%
+  count(q23, sort = TRUE) %>%
+  complete(q23 = q23_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q23 = factor(q23, levels = q23_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q23_summary_diverging <- q23_summary %>%
+  mutate(percent_answers = if_else(
+    q23 %in% c("Totalmente Satisfeito", "Parcialmente Satisfeito"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q23_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Totalmente Insatisfeito" = "#EE6677",
+      "Parcialmente Insatisfeito" = "#CCBB44",
+      "Nem Satisfeito, Nem Insatisfeito" = "grey80",
+      "Parcialmente Satisfeito" = "#66CCEE",
+      "Totalmente Satisfeito" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Qual o seu nível de satisfação com as salas dos grupo de pesquisa \n(recursos de informática, mesas, impressoras, etc.)?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.92
+#| fig-cap: "Percepção docente sobre os recursos audiovisuais."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q24_levels <- c(
+  "Totalmente Insatisfeito",
+  "Parcialmente Insatisfeito",
+  "Nem Satisfeito, Nem Insatisfeito",
+  "Parcialmente Satisfeito",
+  "Totalmente Satisfeito"
+)
+
+# Criar a tabela de frequência para a variável q24, incluindo níveis não utilizados
+q24_summary <- dados_docentes %>%
+  count(q24, sort = TRUE) %>%
+  complete(q24 = q24_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q24 = factor(q24, levels = q24_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q24_summary_diverging <- q24_summary %>%
+  mutate(percent_answers = if_else(
+    q24 %in% c("Totalmente Satisfeito", "Parcialmente Satisfeito"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q24_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Totalmente Insatisfeito" = "#EE6677",
+      "Parcialmente Insatisfeito" = "#CCBB44",
+      "Nem Satisfeito, Nem Insatisfeito" = "grey80",
+      "Parcialmente Satisfeito" = "#66CCEE",
+      "Totalmente Satisfeito" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Qual o seu nível de satisfação com os recursos audiovisuais?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.93
+#| fig-cap: "Percepção docente sobre as salas de aula."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q25_levels <- c(
+  "Totalmente Insatisfeito",
+  "Parcialmente Insatisfeito",
+  "Nem Satisfeito, Nem Insatisfeito",
+  "Parcialmente Satisfeito",
+  "Totalmente Satisfeito"
+)
+
+# Criar a tabela de frequência para a variável q25, incluindo níveis não utilizados
+q25_summary <- dados_docentes %>%
+  count(q25, sort = TRUE) %>%
+  complete(q25 = q25_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q25 = factor(q25, levels = q25_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q25_summary_diverging <- q25_summary %>%
+  mutate(percent_answers = if_else(
+    q25 %in% c("Totalmente Satisfeito", "Parcialmente Satisfeito"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q25_summary_diverging, aes(x = q25, y = percent_answers, fill = q25)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q25_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Totalmente Insatisfeito" = "#EE6677",
+      "Parcialmente Insatisfeito" = "#CCBB44",
+      "Nem Satisfeito, Nem Insatisfeito" = "grey80",
+      "Parcialmente Satisfeito" = "#66CCEE",
+      "Totalmente Satisfeito" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Qual o seu nível de satisfação com as salas de aula?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.94
+#| fig-cap: "Percepção docente sobre o anfiteatro para eventos."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q26_levels <- c(
+  "Totalmente Insatisfeito",
+  "Parcialmente Insatisfeito",
+  "Nem Satisfeito, Nem Insatisfeito",
+  "Parcialmente Satisfeito",
+  "Totalmente Satisfeito"
+)
+
+# Criar a tabela de frequência para a variável q26, incluindo níveis não utilizados
+q26_summary <- dados_docentes %>%
+  count(q26, sort = TRUE) %>%
+  complete(q26 = q26_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q26 = factor(q26, levels = q26_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q26_summary_diverging <- q26_summary %>%
+  mutate(percent_answers = if_else(
+    q26 %in% c("Totalmente Satisfeito", "Parcialmente Satisfeito"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q26_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Totalmente Insatisfeito" = "#EE6677",
+      "Parcialmente Insatisfeito" = "#CCBB44",
+      "Nem Satisfeito, Nem Insatisfeito" = "grey80",
+      "Parcialmente Satisfeito" = "#66CCEE",
+      "Totalmente Satisfeito" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Qual o seu nível de satisfação com o anfiteatro para eventos?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
 
 ### Avaliação do Atendimento da Secretaria
 
+```{r}
+#| label: fig-4.95
+#| fig-cap: "Percepção docente sobre o tratamento dado pela Secretaria do Progorama"
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q33_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q33, incluindo níveis não utilizados
+q33_summary <- dados_docentes %>%
+  count(q33, sort = TRUE) %>%
+  complete(q33 = q33_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q33 = factor(q33, levels = q33_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q33_summary_diverging <- q33_summary %>%
+  mutate(percent_answers = if_else(
+    q33 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q33_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A Secretaria trata os discentes de maneira respeitosa e igualitária?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.96
+#| fig-cap: "Percepção docente sobre a agilidade da Secretaria para emitir documentos."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q29_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q29, incluindo níveis não utilizados
+q29_summary <- dados_docentes %>%
+  count(q29, sort = TRUE) %>%
+  complete(q29 = q29_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q29 = factor(q29, levels = q29_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q29_summary_diverging <- q29_summary %>%
+  mutate(percent_answers = if_else(
+    q29 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q29_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A Secretaria emite declarações/documentos em tempo hábil?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.97
+#| fig-cap: "Percepção docente sobre o horário de funcionamento da Secretaria do Programa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q30_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q30, incluindo níveis não utilizados
+q30_summary <- dados_docentes %>%
+  count(q30, sort = TRUE) %>%
+  complete(q30 = q30_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q30 = factor(q30, levels = q30_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q30_summary_diverging <- q30_summary %>%
+  mutate(percent_answers = if_else(
+    q30 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q30_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "O horário de funcionamento da Secretaria atende às minhas necessidades?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.98
+#| fig-cap: "Percepção docente sobre a agilidade da Secretaria na resposta às demandas."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q31_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q31, incluindo níveis não utilizados
+q31_summary <- dados_docentes %>%
+  count(q31, sort = TRUE) %>%
+  complete(q31 = q31_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q31 = factor(q31, levels = q31_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q31_summary_diverging <- q31_summary %>%
+  mutate(percent_answers = if_else(
+    q31 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q31_summary_diverging, aes(x = q31, y = percent_answers, fill = q31)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q31_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos discentes?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
 ### Avaliação das Disciplinas Obrigatórias
+
+
+```{r}
+#| label: fig-4.99
+#| fig-cap: "Percepção docente sobre a contribuição das disciplinas obrigatórias para a apreensão de novos conhecimentos e desenvolvimento de novas habilidades dos discentes."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q33_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q33, incluindo níveis não utilizados
+q33_summary <- dados_docentes %>%
+  count(q33, sort = TRUE) %>%
+  complete(q33 = q33_levels, fill = list(n = 0)) %>%
+  mutate(q33 = factor(q33, levels = q33_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q33_summary_diverging <- q33_summary %>%
+  mutate(percent_answers = if_else(
+    q33 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q33_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas obrigatórias contribuem para apreensão de novos conhecimentos e\ndesenvolvimento de novas habilidades?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.100
+#| fig-cap: "Percepção docente sobre se os créditos exigidos em disciplinas obrigatórias são compatíveis com o objetivo do programa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q34_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q34, incluindo níveis não utilizados
+q34_summary <- dados_docentes %>%
+  count(q34, sort = TRUE) %>%
+  complete(q34 = q34_levels, fill = list(n = 0)) %>%
+  mutate(q34 = factor(q34, levels = q34_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q34_summary_diverging <- q34_summary %>%
+  mutate(percent_answers = if_else(
+    q34 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q34_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Os créditos exigidos em disciplinas obrigatórias são compatíveis com o\nobjetivo do programa?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+
+```{r}
+#| label: fig-4.101
+#| fig-cap: "Percepção docente se as disciplinas obrigatórias são coerentes com as linhas de pesquisa do Programa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q35_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q35, incluindo níveis não utilizados
+q35_summary <- dados_docentes %>%
+  count(q35, sort = TRUE) %>%
+  complete(q35 = q35_levels, fill = list(n = 0)) %>%
+  mutate(q35 = factor(q35, levels = q35_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q35_summary_diverging <- q35_summary %>%
+  mutate(percent_answers = if_else(
+    q35 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q35_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas obrigatórias são coerentes com as linhas de pesquisa do\nPrograma?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.102
+#| fig-cap: "Percepção docente se as disciplinas obrigatórias possuem aplicabilidade para a pesquisa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q36_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q36, incluindo níveis não utilizados
+q36_summary <- dados_docentes %>%
+  count(q36, sort = TRUE) %>%
+  complete(q36 = q36_levels, fill = list(n = 0)) %>%
+  mutate(q36 = factor(q36, levels = q36_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q36_summary_diverging <- q36_summary %>%
+  mutate(percent_answers = if_else(
+    q36 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q36_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas obrigatórias possuem aplicabilidade para a pesquisa?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.103
+#| fig-cap: "Percepção docente sobre a atualidade da bibliografia das disciplinas obrigatórias."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q37_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q37, incluindo níveis não utilizados
+q37_summary <- dados_docentes %>%
+  count(q37, sort = TRUE) %>%
+  complete(q37 = q37_levels, fill = list(n = 0)) %>%
+  mutate(q37 = factor(q37, levels = q37_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q37_summary_diverging <- q37_summary %>%
+  mutate(percent_answers = if_else(
+    q37 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q37_summary_diverging, aes(x = q37, y = percent_answers, fill = q37)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q37_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas obrigatórias contam com bibliografia atualizada?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+
 
 ### Avaliação das Disciplinas Optativas
 
-### Impacto da Pandemia
+
+```{r}
+#| label: fig-4.104
+#| fig-cap: "Percepção docente sobre a contribuição das disciplinas optativas para a apreensão de novos conhecimentos e desenvolvimento de novas habilidades dos discentes."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q39_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q39, incluindo níveis não utilizados
+q39_summary <- dados_docentes %>%
+  count(q39, sort = TRUE) %>%
+  complete(q39 = q39_levels, fill = list(n = 0)) %>%
+  mutate(q39 = factor(q39, levels = q39_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q39_summary_diverging <- q39_summary %>%
+  mutate(percent_answers = if_else(
+    q39 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q39_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas optativas contribuem para apreensão de novos conhecimentos e\ndesenvolvimento de novas habilidades?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.105
+#| fig-cap: "Percepção docente sobre se os créditos exigidos em disciplinas optativas são compatíveis com o objetivo do programa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q40_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q40, incluindo níveis não utilizados
+q40_summary <- dados_docentes %>%
+  count(q40, sort = TRUE) %>%
+  complete(q40 = q40_levels, fill = list(n = 0)) %>%
+  mutate(q40 = factor(q40, levels = q40_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q40_summary_diverging <- q40_summary %>%
+  mutate(percent_answers = if_else(
+    q40 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q40_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "Os créditos exigidos em disciplinas optativas são compatíveis com o objetivo do\nprograma?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.106
+#| fig-cap: "Percepção docente se as disciplinas optativas são coerentes com as linhas de pesquisa do Programa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q41_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q41, incluindo níveis não utilizados
+q41_summary <- dados_docentes %>%
+  count(q41, sort = TRUE) %>%
+  complete(q41 = q41_levels, fill = list(n = 0)) %>%
+  mutate(q41 = factor(q41, levels = q41_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q41_summary_diverging <- q41_summary %>%
+  mutate(percent_answers = if_else(
+    q41 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q41_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas optativas são coerentes com as linhas de pesquisa do\nPrograma?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-107
+#| fig-cap: "Percepção docente se as disciplinas optativas possuem aplicabilidade para a pesquisa."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q42_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q42, incluindo níveis não utilizados
+q42_summary <- dados_docentes %>%
+  count(q42, sort = TRUE) %>%
+  complete(q42 = q42_levels, fill = list(n = 0)) %>%
+  mutate(q42 = factor(q42, levels = q42_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q42_summary_diverging <- q42_summary %>%
+  mutate(percent_answers = if_else(
+    q42 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q42_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas optativas possuem aplicabilidade para a pesquisa?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-4.108
+#| fig-cap: "Percepção docente sobre a atualidade da bibliografia das disciplinas optativas."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q43_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q43, incluindo níveis não utilizados
+q43_summary <- dados_docentes %>%
+  count(q43, sort = TRUE) %>%
+  complete(q43 = q43_levels, fill = list(n = 0)) %>%
+  mutate(q43 = factor(q43, levels = q43_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q43_summary_diverging <- q43_summary %>%
+  mutate(percent_answers = if_else(
+    q43 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q43_summary_diverging, aes(x = q43, y = percent_answers, fill = q43)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q43_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas optativas contam com bibliografia atualizada?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+```{r}
+#| label: fig-doc36
+#| fig-cap: "Percepção docente sobre a diversidade de temas contemplados pelas disciplinas optativas."
+#| fig-width: 7.5
+#| fig-height: 4.5
+
+# Definir todos os níveis possíveis da escala Likert
+q44_levels <- c(
+  "Discordo Totalmente",
+  "Discordo Parcialmente",
+  "Não Concordo, Nem Discordo",
+  "Concordo Parcialmente",
+  "Concordo Totalmente"
+)
+
+# Criar a tabela de frequência para a variável q44, incluindo níveis não utilizados
+q44_summary <- dados_docentes %>%
+  count(q44, sort = TRUE) %>%
+  complete(q44 = q44_levels, fill = list(n = 0)) %>%
+  mutate(q44 = factor(q44, levels = q44_levels)) %>%
+  mutate(
+    percent_answers = n / sum(n),
+    percent_answers_label = percent(percent_answers, accuracy = 1)
+  )
+
+# Criar dados para o gráfico de barras divergentes
+q44_summary_diverging <- q44_summary %>%
+  mutate(percent_answers = if_else(
+    q44 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    percent_answers,
+    -percent_answers
+  )) %>%
+  mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
+
+# Criar o gráfico de barras divergentes
+ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
+  geom_col() +
+  geom_text(
+    aes(
+      label = percent_answers_label,
+      hjust = if_else(percent_answers == 0, -0.2, 0.5)
+    ),
+    position = position_stack(vjust = 0.5),
+    color = if_else(q44_summary_diverging$percent_answers == 0, "black", "white"),
+    fontface = "bold",
+    size = 3.5
+  ) +
+  coord_flip() +
+  scale_x_discrete() +
+  scale_fill_manual(
+    values = c(
+      "Discordo Totalmente" = "#EE6677",
+      "Discordo Parcialmente" = "#CCBB44",
+      "Não Concordo, Nem Discordo" = "grey80",
+      "Concordo Parcialmente" = "#66CCEE",
+      "Concordo Totalmente" = "#4477AA"
+    )
+  ) +
+  theme_minimal() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    axis.text.x = element_blank(),
+    axis.title.x = element_blank(),
+    axis.text.y = element_text(size = 9, face = "bold"),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    ),
+    plot.caption = element_text(size = 9)
+  ) +
+  labs(
+    title = "As disciplinas optativas contemplam temas variados?",
+    caption = "Fonte: Comissão Própria de Avaliação",
+    x = NULL,
+    fill = NULL
+  )
+```
+
+
+
+### Impacto da Pandemia da COVID-19
 
 Os docentes do curso responderam à pergunta sobre como a pandemia alterou 
-a dinâmica e o processo de ensino-aprendizagem no Mestrado da seguinte forma:
+a dinâmica e o processo de ensino-aprendizagem no Mestrado da 
+seguinte forma:
 
 - **Minimização do impacto**: Alguns docentes destacaram que o impacto 
 negativo foi minimizado com a adoção de disciplinas remotas ministradas 
@@ -6067,14 +9197,13 @@ necessidades de todos os envolvidos em ambientes presenciais ou remotos.
 
 
 
-
-
-## Egressos
-
-
-
-
 # Ações Demandadas a Partir da Autoavaliação
+
+
+
+
+# Meta-Avaliação
+
 
 
 
@@ -6090,8 +9219,5 @@ necessidades de todos os envolvidos em ambientes presenciais ou remotos.
 :::
 
 
-
-
-# Apêndice A {.unnumbered}
 
 
