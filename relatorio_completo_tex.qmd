@@ -58,7 +58,8 @@ library(scales)     # para anotações em gráficos
 library(patchwork)  # para organizar graficos ggplot2
 library(ggdist)     # para grafico stat_halfeye
 library(ggthemes)   # para temas com ggplot2
-library(kableExtra)         # para criar tabelas
+library(kableExtra) # para criar tabelas
+library(gt)         # para criar tabelas
 
 # importa os arquivos de dados
 
@@ -101,15 +102,56 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 # Resultados da Autoavaliação 
 
-
-
 ## Corpo Discente
+
+
+### Taxas de Resposta
+
+```{r}
+#| label: tab-01
+#| tbl-cap: "Taxas de Respostas da Autoavaliação por Ano/Turma de Ingresso e Total."
+
+dados_taxa <- tibble(
+  Turma = c("2021", "2022", "2023", "2024", "Total"),
+  Respondentes = c(2, 2, 5, 3, 12),
+  Total_Alunos = c(9, 4, 5, 7, 25),
+  Taxa_Resposta = c(0.22, 0.50, 1.00, 0.43, 0.48)
+)
+
+dados_taxa |>
+  mutate(Taxa_Resposta = paste0(round(Taxa_Resposta * 100, 0), "\\%")) |>
+  kbl(
+    col.names = c(
+      "\\textbf{Ano de Ingresso}", 
+      "\\textbf{Respondentes}", 
+      "\\textbf{Total de Mestrandos}", 
+      "\\textbf{Taxa de Resposta}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE,
+    align = c('l', 'c', 'c', 'r')
+  ) |>
+  kable_styling(
+    latex_options = c("striped"),
+    stripe_color = "gray!20"
+  ) |>
+  row_spec(5, background = "lightblue") |>
+  footnote(
+    general = "Fonte: Comissão Própria de Avaliação",
+    general_title = "",
+    threeparttable = TRUE
+  )
+```
+
+\pagebreak
+
 
 ### Características dos Discentes
 
 
 ```{r}
-#| label: tab-dis01
+#| label: tab-02
 #| tbl-cap: "Estatísticas das idades (em anos) dos participantes da pesquisa."
 
 # Criar tabela de estatísticas descritivas
@@ -126,14 +168,20 @@ dados_discentes %>%
   t() %>%
   as.data.frame() %>%
   kbl(
-    col.names = c("Estatística", "Estimativa"),
+    col.names = c(
+      "\\textbf{Estatística}", 
+      "\\textbf{Estimativa}"
+      ),
     digits = 1,
+    format = "latex",
     booktabs = TRUE,
+    escape = FALSE,
     linesep = "",
     align = c("l", "c")
   ) %>%
   kable_styling(
     latex_options = c("striped", "hold_position"),
+     stripe_color = "gray!20",
     full_width = FALSE,
     position = "center",
     bootstrap_options = "striped"
