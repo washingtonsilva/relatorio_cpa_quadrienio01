@@ -1,35 +1,137 @@
+% Tons de cores utilizados
+\definecolor{mpgreen}{RGB}{0,120,80} % Tom de verde institucional
+\definecolor{mpgreen2}{RGB}{0,90,60} % Tom de verde mais escuro para o gradiente
+\definecolor{darkgray}{RGB}{51,51,51} % Cinza escuro para textos
 
 \thispagestyle{empty}
 
+% Início do desenho da capa
+\begin{tikzpicture}[remember picture,overlay]
+    % Barra vertical decorativa com gradiente
+    \shade[left color=mpgreen,right color=white,opacity=0.2] 
+        (current page.north west) rectangle ([xshift=8cm]current page.south west);
+    
+    % Elementos decorativos
+    \draw[mpgreen,opacity=0.2,line width=1pt] ([xshift=8.2cm,yshift=-2cm]current page.north west) -- ([xshift=\paperwidth-2cm,yshift=-2cm]current page.north east);
+    \draw[mpgreen,opacity=0.2,line width=1pt] ([xshift=8.2cm,yshift=-2.3cm]current page.north west) -- ([xshift=\paperwidth-2cm,yshift=-2.3cm]current page.north east);
+\end{tikzpicture}
+
 \begin{center}
+    \color{darkgray}
     \small
-    \sc Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais \\ 
-    \sc Campus Formiga \\
-    \sc Mestrado Profissional em Administração \\
-    \sc Comissão Própria de Avaliação
+    \textsc{Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais} \\[0.2cm] 
+    \textsc{Campus Formiga} \\[0.2cm]
+    \textsc{Programa de Pós-Graduação em Administração} \\[0.2cm]
+    \textsc{Mestrado Profissional em Administração}
     
+    \vspace{5cm}
     
-    \vspace{6cm}
-    \LARGE \textbf{Relatório Integral da Comissão Própria de Avaliação} \\
-    \Large Quadriênio 2021 - 2024
-    
+    \begin{minipage}{0.8\textwidth}
+        \centering
+        {\LARGE \textbf{Relatório Integral da\\[0.3cm] Comissão Própria de Avaliação}} \\[0.8cm]
+        {\Large Quadriênio 2021 - 2024}
+    \end{minipage}
     
     \vfill
+    
+    \begin{tikzpicture}[remember picture,overlay]
+        % Elemento decorativo inferior
+        \draw[mpgreen,opacity=0.2,line width=1pt] ([xshift=2cm,yshift=3cm]current page.south west) -- ([xshift=\paperwidth-2cm,yshift=3cm]current page.south east);
+    \end{tikzpicture}
+    
     \large
-    Formiga, Minas Gerais \\
+    Formiga, Minas Gerais\\[0.3cm]
     2025
 \end{center}
 
 
-% formatação do título de cada seção
+
+% tons de cores
+\definecolor{mpgreen}{RGB}{0,90,60} % Mantendo o mesmo tom de verde da capa
+\definecolor{darkgray}{RGB}{51,51,51} % Mantendo o mesmo cinza escuro
+
+% formatação do título de cada capítulo
 \makeatletter
 \def\@makechapterhead#1{%
   \vspace*{50\p@}%
-  {\parindent \z@ \raggedright \normalfont
+  {\parindent \z@ \normalfont
+    % Elemento decorativo superior
+    \begin{tikzpicture}
+      \draw[mpgreen!60!black,opacity=0.3,line width=4pt] 
+        (0,0) -- (4,0);
+    \end{tikzpicture}
+    
+    \vspace{1em}%
+    {\color{darkgray}%
     \ifnum \c@secnumdepth >\m@ne
       \huge\bfseries \thechapter\space
     \fi
-    \huge \bfseries #1\par\nobreak
+    \huge \bfseries #1\par\nobreak}
+    
+    \vspace{0.5em}%
+    % Elemento decorativo inferior
+    \begin{tikzpicture}
+      \draw[mpgreen!60!black,opacity=0.3,line width=2pt] 
+        (0,0) -- (2,0);
+    \end{tikzpicture}
     \vskip 40\p@
   }}
 \makeatother
+
+
+
+
+\pagebreak
+
+\thispagestyle{empty}
+
+\begin{center}
+    \vspace*{2cm}
+    {\Large\textbf{Comissão Própria de Avaliação}}\\
+    \vspace{0.3cm}
+    {\Large\textbf{Programa de Pós-Graduação em
+Administração do IFMG - Campus Formiga}}
+    
+    \vspace{0.5cm}
+    {\small Instituída pela Portaria Nº 164 de 15 de Outubro de 2024}
+    
+    \vspace{2cm}
+    
+    \begin{minipage}{0.8\textwidth}
+        \centering
+        \textbf{Washington Santos da Silva}\\
+        Presidente - Representante Docente
+        
+        \vspace{1cm}
+        
+        \textbf{Elaine Belo Veloso da Silva}\\
+        Representante Técnico-Administrativo
+        
+        \vspace{1cm}
+        
+        \textbf{Lelis Pedro de Andrade}\\
+        Representante Docente
+        
+        \vspace{1cm}
+        
+        \textbf{Igor Neves Nunes}\\
+        Representante Discente
+        
+        \vspace{1cm}
+        
+        \textbf{Suelem Correia Garcia}\\
+        Representante Egressos
+        
+        \vspace{1cm}
+        
+        \textbf{Carolina Greco}\\
+        Representante da Comunidade Externa
+    \end{minipage}
+\end{center}
+
+
+% Reinicia a numeração de páginas e define o estilo arábico
+\clearpage
+\pagenumbering{arabic}
+
+

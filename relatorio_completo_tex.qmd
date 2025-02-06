@@ -10,6 +10,8 @@ format:
           \usepackage{microtype}
           \usepackage{caption}
           \captionsetup[figure]{justification=raggedright, singlelinecheck=false}
+          \usepackage{xcolor}
+          \usepackage{tikz}
     documentclass: report
     papersize: a4
     geometry:
@@ -83,19 +85,117 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 # Planejamento da Autoavaliação 
 
-## Cronograma de Trabalho da CPA
 
 
 
+# Metodologia
+
+A metodologia aplicada na autoavaliação do Mestrado Profissional em 
+Administração do IFMG - Campus Formiga foi desenvolvida em conformidade 
+com a Política de Autoavaliação do Programa, formalizada pela 
+Portaria IFMG nº 1706/2024 [@portaria1706ifmg]. Este capítulo descreve 
+os procedimentos adotados para a coleta e análise dos dados, os instrumentos 
+utilizados e as técnicas empregadas no processo autoavaliativo.
 
 
-# Metodologia 
+## Metodologia Aplicada ao Processo de Autoavaliação
 
-## Metodologia Aplicada ao Processo de Autoavaliação 
+O processo de autoavaliação foi estruturado com o objetivo de contribuir 
+para uma reflexão crítica que objetive a melhoria contínua do programa. Para 
+isso, foram seguidas etapas que buscaram o alinhamento às diretrizes da CAPES 
+e à Política de Autoavaliação do Programa. As principais etapas incluiram:
+
+1. **Planejamento**: Revisão das diretrizes normativas da CAPES e da 
+política institucional, seguido pela definição dos critérios avaliativos, 
+abrangendo ensino, pesquisa, extensão e gestão acadêmica.
+
+2. **Engajamento da Comunidade Acadêmica**: Incentivo à participação ativa 
+de discentes e docentes por meio de campanhas informativas.
+
+3. **Execução da Autoavaliação**: Condução anual do processo pela 
+Comissão Própria de Autoavaliação (CPA), composta por representantes 
+dos diferentes segmentos da comunidade acadêmica do Programa.
+
+4. **Meta-avaliação**: Revisão crítica dos métodos aplicados para aprimorar 
+continuamente o processo.
+
+A metodologia adotada priorizou a transparência e a inclusão, assegurando 
+que todos os envolvidos no programa pudessem contribuir com percepções e 
+sugestões para o aperfeiçoamento contínuo do programa.
+
 
 ## Instrumentos
 
-## Técnicas Utilizadas para Análise dos Dados 
+Os instrumentos utilizados para a coleta de dados foram elaborados com 
+base em boas práticas avaliativas e adaptados ao estágio de maturidade 
+e às especificidades do programa. Os principais instrumentos foram 
+questionários estruturados, aplicados tanto aos discentes quanto aos 
+docentes. Esses questionários abordaram dimensões essenciais para a análise 
+do curso, tais como:
+
+- Qualidade do ensino ofertado;
+- Percepções sobre a coordenação do curso;
+- Infraestrutura disponível;
+- Disciplinas obrigatórias e optativas;
+- Atendimento administrativo;
+- Interdisciplinaridade e internacionalização;
+- Sugestões de melhorias.
+
+As questões foram organizadas em dois formatos principais:
+
+1. **Quantitativo**: Utilização de escalas (por exemplo, Likert) para medir 
+percepções sobre diferentes aspectos.
+
+2. **Qualitativo**: Respostas abertas que permitiram aos participantes 
+expressar opiniões detalhadas.
+
+
+
+## Técnicas Utilizadas para Análise dos Dados
+
+A análise dos dados coletados foi realizada utilizando uma abordagem mista, 
+combinando métodos quantitativos e qualitativos:
+
+1. **Análise Estatística Descritiva**:
+
+- Os dados quantitativos foram sintetizados por meio de métricas como 
+médias, frequências relativas e percentuais.
+
+- Essa abordagem permitiu identificar padrões significativos nos dados coletados.
+
+2. **Análise de Conteúdo**:
+
+- As respostas qualitativas foram examinadas com base em técnicas de 
+categorização temática.
+
+- Essa análise possibilitou compreender adequadamente as percepções 
+e sugestõesdos participantes e identificar áreas prioritárias que podem ser 
+aperfeiçoadas.
+
+3. **Consolidação dos Resultados**:
+
+- Os achados foram consolidados neste relatório que destaca os 
+pontos fortes, as oportunidades de melhoria e as recomendações para 
+ações futuras.
+
+- Esse relatório foi apresentados à comunidade acadêmica em um
+workshop, que fo um importante espaço para a reflexão coletiva 
+para evolução do programa.
+
+4. **Meta-avaliação**:
+
+- Consistiu na avaliação crítica dos instrumentos utilizados (questionários) 
+e das metodologias aplicadas.
+
+- O objetivo foi garantir que os métodos empregados fossem válidos, 
+confiáveis e úteis para o aprimoramento contínuo do programa.
+
+Os resultados obtidos ao longo do quadriênio 2021/2024 foram amplamente 
+discutidos pela CPA em reuniões internas e apresentados à comunidade 
+acadêmica em reuniões e no workshop final. Essas discussões 
+viabilizaram o planejamento conjunto das ações futuras voltadas 
+à evolução do programa.
+
 
 
 
@@ -130,7 +230,7 @@ dados_taxa |>
     format = "latex",
     booktabs = TRUE,
     escape = FALSE,
-    align = c('l', 'c', 'c', 'r')
+    align = c('c', 'c', 'c', 'c')
   ) |>
   kable_styling(
     latex_options = c("striped"),
@@ -138,7 +238,7 @@ dados_taxa |>
   ) |>
   row_spec(5, background = "lightblue") |>
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação",
+    general = "Fonte: Comissão Própria de Avaliação.",
     general_title = "",
     threeparttable = TRUE
   )
@@ -6178,6 +6278,10 @@ progresso das pesquisas.
 
 
 ## Corpo Docente 
+
+
+### Taxa de Resposta
+
 
 ### Avaliação do Programa
 
