@@ -94,18 +94,19 @@ Desde sua concepção, o Mestrado Profissional em Administração demonstrou
 um compromisso sólido com a melhoria contínua. Reconhecendo 
 os desafios inerentes à estruturação de um programa recém-criado, a 
 Comissão Própria de Avaliação empreendeu esforços significativos 
-para desenvolver um planejamento robusto de autoavaliação. Este 
+para desenvolver um planejamento correto de autoavaliação. Este 
 planejamento visou estabelecer uma política alinhada ao estágio 
 inicial de maturidade do programa e às diretrizes da CAPES, objetivando 
-a produção de resultados concretos para seu aprimoramento.
+a produção de resultados concretos para o aprimoramento do programa.
 
 A Política de Autoavaliação do Programa foi elaborada ao longo do 
 quadriênio 2021-2024 e formalizada pela Portaria Nº 1706/IFMG, de 29 de 
-novembro de 2024 [@portaria1706ifmg]. Apesar disso, versões preliminares 
-dessa política já orientavam as ações desde os primeiros anos, servindo 
-como base para o planejamento das atividades avaliativas.
+novembro de 2024 [@portaria1706ifmg]. Deve-se destacar que versões 
+preliminares dessa política já orientavam as ações desde os 
+primeiros anos, servindo como base para o planejamento das 
+atividades avaliativas.
 
-O planejamento da autoavaliação foi estruturado em etapas que incluíram:
+O planejamento da autoavaliação foi estruturado conforme as seguintes etapas:
 
 - **Definição de objetivos claros:** Estabelecer metas alinhadas à 
 missão do programa e às expectativas dos seus diversos públicos.
@@ -194,8 +195,8 @@ tabela_planejamento |>
     longtable = FALSE
   ) |>
   kable_styling(
-    latex_options = c("HOLD_position", "hover", "repeat_header"),
-    stripe_color = "gray!20",
+    latex_options = c("HOLD_position", "striped", "repeat_header"),
+    stripe_color = "gray!10",
     font_size = 9
   ) |>
   column_spec(2, width = "5cm") |>
@@ -6313,7 +6314,7 @@ mestrandos participantes da pesquisa sobre os aspectos que podem ser
 aprimorados.
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **I. Sugestões de Melhorias Gerais**
 
 - **Direcionamento de Disciplinas Optativas**: Sugere-se que as disciplinas 
@@ -6336,7 +6337,7 @@ no programa, promovendo uma aprendizagem mais integral.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **II. Sugestões de Melhorias para a Coordenação**
 
 - **Aperfeiçoamento da Publicidade das Decisões**: Recomenda-se ampliar a publicidade dss decisões do colegiado e da coordenação do mestrado para 
@@ -6352,7 +6353,7 @@ divulgando os procedimentos com a maior antecedência possível.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **III. Sugestões de Melhorias para a Infraestrutura**
 
 - **Melhoria do Espaço de Convivência**: Sugere-se melhorar o espaço 
@@ -6364,7 +6365,7 @@ Campus Formiga, destacando os recursos disponíveis.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **IV. Sugestões de Melhorias para as Disciplinas Obrigatórias**
 
 - **Revisão e Atualização de Conteúdos**: Sugere-se revisar periodicamente 
@@ -6373,7 +6374,7 @@ relevância para o programa.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **V. Sugestões de Melhorias para as Disciplinas Optativas**
 
 - **Alinhamento com Objetivos de Pesquisa**: Sugere-se que as disciplinas 
@@ -6386,7 +6387,7 @@ diferenciadas para atendê-las quando possível.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **VI. Sugestões de Melhorias para os Orientadores**
 
 - **Carga de Trabalho dos Orientadores**: Propõe-se avaliar a carga de 
@@ -9476,7 +9477,7 @@ necessidades acadêmicas e profissionais emergentes, sob a perspectiva
 do corpo docente do programa.
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **I. Sugestões de Melhorias Gerais para o Programa**
 
 - **Revisão e Atualização do Currículo**: Sugere-se reavaliar a sequência 
@@ -9493,7 +9494,7 @@ minicursos e palestras para enriquecer a experiência acadêmica.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **II. Sugestões de Melhorias para Incentivos à Pesquisa**
 
 - **Captação de Recursos para Bolsas**: Recomenda-se buscar captação de 
@@ -9505,7 +9506,7 @@ de alto impacto.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **III. Sugestões de Melhorias para a Coordenação**
 
 - **Participação e Envolvimento dos Docentes**: Sugere-se a adoção de 
@@ -9518,7 +9519,7 @@ novas parcerias e oportunidades para a pesquisa.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **IV. Sugestões de Melhorias para a Infraestrutura**
 
 - **Ambientes para Aulas Híbridas**: Propõe-se aperfeiçoar os ambientes 
@@ -9534,7 +9535,7 @@ para apoiar as atividades de pesquisa.
 :::
 
 
-::: {.callout-note icon=false}
+::: {.callout-tip icon=false}
 ## **V. Sugestões de Melhorias para as Disciplinas Obrigatórias**
 
 - **Reavaliação das Disciplinas Obrigatórias**: Sugere-se reavaliar as 
@@ -9548,8 +9549,8 @@ seus projetos.
 :::
 
 
-::: {.callout-note icon=false}
-## **VI. Sugestões de Melhorias para as Disciplinas Optativa**s
+::: {.callout-tip icon=false}
+## **VI. Sugestões de Melhorias para as Disciplinas Optativas**
 
 - **Revisão e Expansão das Disciplinas Optativas**: Recomenda-se reavaliar 
 as disciplinas optativas para alinhar-se com as tendências de
@@ -9560,6 +9561,127 @@ pesquisa dos professores e alunos.
 
 
 # Ações Demandadas a Partir da Autoavaliação
+
+
+
+::: {.landscape}
+
+```{r}
+#| tbl-cap: "Ações Demandadas a Partir da Autoavaliação."
+
+tabela_acoes_demandadas <- data.frame(
+  Demanda = c(
+    "Reavaliar a sequência das disciplinas obrigatórias e optativas, visando maior alinhamento às linhas de pesquisa do mestrado.",
+    "Desenvolver um plano estratégico para futura aprovação de um programa de doutorado, ajustando o currículo e o processo seletivo conforme necessário.",
+    "Ampliar a oferta de atividades de extensão, como cursos, projetos e seminários, além de minicursos e palestras para enriquecer a experiência acadêmica.",
+    "Buscar captação de recursos para oferecer mais bolsas de estudos.",
+    "Criar melhores condições e incentivar o aumento da publicação em periódicos de alto impacto.",
+    "Adotar medidas ou incentivos para um maior engajamento do corpo docente na construção e evolução do curso.",
+    "Ampliar a prospecção e a interação com empresas da região para fortalecer e criar novas parcerias e oportunidades para a pesquisa.",
+    "Aperfeiçoar os ambientes para aulas remotas ou híbridas.",
+    "Construir um anfiteatro maior para eventos acadêmicos, melhorando a capacidade de realização de seminários e congressos.",
+    "Ampliar o acesso a recursos computacionais, softwares e literatura especializada para apoiar as atividades de pesquisa.",
+    "Reavaliar as disciplinas obrigatórias para garantir consistência com as linhas de pesquisa e a formação pretendida.",
+    "Incluir disciplinas que abordem métodos específicos de pesquisa quantitativa, alinhando-se com as necessidades dos alunos durante o desenvolvimento de seus projetos.",
+    "Reavaliar as disciplinas optativas para alinhar-se com as tendências de pesquisa dos professores e alunos.",
+    "Alinhar as disciplinas optativas com os objetivos das dissertações dos mestrandos, garantindo uma integração mais eficaz entre os conteúdos acadêmicos e as pesquisas individuais.",
+    "Expandir as oportunidades de internacionalização, extensões e atividades extracurriculares para enriquecer a experiência acadêmica dos alunos.",
+    "Aumentar o número de bolsas de estudos disponíveis para apoiar financeiramente os alunos.",
+    "Criar mais atividades extracurriculares que complementem os conteúdos abordados no programa, promovendo uma aprendizagem mais integral.",
+    "Ampliar a publicidade das decisões do colegiado e da coordenação do mestrado para melhorar a comunicação com os mestrandos.",
+    "Realizar uma breve apresentação do programa no início das disciplinas que contam com alunos especiais para facilitar a integração desses estudantes.",
+    "Aperfeiçoar a comunicação sobre o processo de bolsas, ampliando-se os prazos e divulgando os procedimentos com a maior antecedência possível.",
+    "Melhorar o espaço de convivência, tornando-o mais atraente e funcional para os alunos.",
+    "Realizar, na recepção dos mestrandos, uma apresentação detalhada da estrutura do IFMG - Campus Formiga, destacando os recursos disponíveis.",
+    "Revisar periodicamente os conteúdos das disciplinas, garantindo sua atualização contínua e relevância para o programa.",
+    "Avaliar a carga de trabalho dos orientadores para evitar sobrecarga e viabilizar condições de trabalho mais adequadas.",
+    "Desenvolver ferramentas que melhorem a comunicação entre orientadores e orientados, potencializando o progresso das pesquisas."
+  ),
+  Representacao = c(
+    "Colegiado do curso",
+    "Colegiado do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Colegiado do curso",
+    "Colegiado do curso",
+    "Colegiado do curso",
+    "Colegiado do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Colegiado do curso",
+    "Coordenação do curso",
+    "Coordenação do curso"
+  ),
+  Dimensao = c(
+    "Matriz curricular do Programa",
+    "Planejamento estratégico do Programa",
+    "Atividades de extensão e extraclasse",
+    "Incentivos à pesquisa",
+    "Incentivos à pesquisa",
+    "Coordenação do Programa",
+    "Coordenação do Programa",
+    "Infraestrutura",
+    "Infraestrutura",
+    "Infraestrutura",
+    "Matriz curricular do Programa",
+    "Matriz curricular do Programa",
+    "Matriz curricular do Programa",
+    "Matriz curricular do Programa",
+    "Atividades de extensão e extraclasse",
+    "Incentivos à pesquisa",
+    "Atividades de extensão e extraclasse",
+    "Coordenação do Programa",
+    "Coordenação do Programa",
+    "Coordenação do Programa",
+    "Infraestrutura",
+    "Infraestrutura",
+    "Matriz curricular do Programa",
+    "Coordenação do Programa",
+    "Coordenação do Programa"
+  )
+)
+
+
+tabela_acoes_demandadas |>
+  kbl(
+    col.names = c(
+      "\\textbf{Demanda}",
+      "\\textbf{Representação}",
+      "\\textbf{Dimensão}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE,
+    align = c('l', 'c', 'l'),
+    longtable = TRUE
+  ) |>
+  kable_styling(
+    latex_options = c("HOLD_position", "striped", "repeat_header"),
+    stripe_color = "gray!10",
+    font_size = 9.5
+  ) |>
+  column_spec(1, width = "12cm") |>
+  column_spec(2, width = "4.5cm") |>
+  column_spec(3, width = "6cm") |>
+  footnote(
+    general = "Fonte: Comissão Própria de Avaliação.",
+    general_title = "",
+    threeparttable = TRUE
+  )
+```
+:::
 
 
 
