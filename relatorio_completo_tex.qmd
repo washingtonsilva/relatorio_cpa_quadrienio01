@@ -8,6 +8,7 @@ format:
       - text: |
           \usepackage{indentfirst}
           \usepackage{microtype}
+          \usepackage{float}
           \usepackage{caption}
           \captionsetup[figure]{justification=raggedright, singlelinecheck=false}
           \usepackage{xcolor}
@@ -27,10 +28,10 @@ format:
     toc-depth: 3
     number-sections: true
     fig-cap-location: bottom
-    tbl-cap-location: top
     fig-dpi: 300
     fig-pos: "H"
     fig-align: "center"
+    tbl-cap-location: top
     tbl-pos: "H" 
     tbl-align: "center" 
     lof: true
@@ -55,13 +56,11 @@ editor: source
 
 # pacotes necessarios
 library(here)       # para usar caminhos relativos 
-library(tidyverse)  # para usar funções do dplyr, readr...
+library(tidyverse)  # para usar readr, dplyr, ggplot2...
 library(scales)     # para anotações em gráficos
-library(patchwork)  # para organizar graficos ggplot2
-library(ggdist)     # para grafico stat_halfeye
-library(ggthemes)   # para temas com ggplot2
+library(ggthemes)   # temas para ggplot2
 library(kableExtra) # para criar tabelas
-library(gt)         # para criar tabelas
+library(gt)
 
 # importa os arquivos de dados
 
@@ -83,7 +82,138 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 
 
-# Planejamento da Autoavaliação 
+# Planejamento da Autoavaliação
+
+O Programa de Pós-Graduação em Administração do IFMG - Campus Formiga 
+iniciou suas atividades em 2021, durante um período crítico marcado pela 
+pandemia da COVID-19. Esse contexto desafiador exigiu adaptações rápidas 
+e estratégicas para assegurar a qualidade acadêmica e administrativa 
+desde os primeiros passos do programa.
+
+Desde sua concepção, o Mestrado Profissional em Administração demonstrou 
+um compromisso sólido com a melhoria contínua. Reconhecendo 
+os desafios inerentes à estruturação de um programa recém-criado, a 
+Comissão Própria de Avaliação empreendeu esforços significativos 
+para desenvolver um planejamento robusto de autoavaliação. Este 
+planejamento visou estabelecer uma política alinhada ao estágio 
+inicial de maturidade do programa e às diretrizes da CAPES, objetivando 
+a produção de resultados concretos para seu aprimoramento.
+
+A Política de Autoavaliação do Programa foi elaborada ao longo do 
+quadriênio 2021-2024 e formalizada pela Portaria Nº 1706/IFMG, de 29 de 
+novembro de 2024 [@portaria1706ifmg]. Apesar disso, versões preliminares 
+dessa política já orientavam as ações desde os primeiros anos, servindo 
+como base para o planejamento das atividades avaliativas.
+
+O planejamento da autoavaliação foi estruturado em etapas que incluíram:
+
+- **Definição de objetivos claros:** Estabelecer metas alinhadas à 
+missão do programa e às expectativas dos seus diversos públicos.
+
+- **Benchmarking:** Realizar pesquisas sobre políticas e instrumentos 
+utilizados por programas de referência.
+
+- **Desenvolvimento metodológico:** Criar instrumentos avaliativos 
+adequados ao contexto do programa.
+
+- **Sensibilização da comunidade acadêmica:** Promover o engajamento 
+ativo dos diferentes segmentos no processo avaliativo.
+
+- **Cronograma detalhado:** Planejar as ações avaliativas com prazos 
+definidos para cada etapa.
+
+O cronograma exibido na Tab. 2.1 sintetiza as principais ações planejadas e 
+executadas pela Comissão Própria de Avaliação (CPA) ao longo do quadriênio:
+
+```{r}
+#| tbl-cap: "Cronograma de Ações para a Autoavaliação"
+
+tabela_planejamento <- data.frame(
+  Periodo = c(
+    "2021/2022",
+    "2021/2022",
+    "2021/2022",
+    "2021/2022",
+    "2021/2022",
+    "2023/2024",
+    "2024",
+    "2024/2025",
+    "2025",
+    "2025"
+  ),
+  Acao = c(
+    "Pesquisas para a construção da política de autoavaliação",
+    "Elaboração das primeiras versões da política de autoavaliação",
+    "Pesquisas sobre instrumentos utilizados por cursos de referência",
+    "Construção, revisão e aplicação das primeiras versões dos instrumentos de pesquisa",
+    "Início do trabalho de sensibilização dos segmentos acadêmicos",
+    "Aplicação dos instrumentos, organização e análise dos dados",
+    "Formalização da política de autoavaliação do programa",
+    "Compilação, organização, análise e construção do relatório integral com os resultados obtidos ao longo do quadriênio",
+    "Workshop para discussão e recebimento de sugestões para o relatório integral de autoavaliação",
+    "Meta-Avaliação"
+  ),
+  Responsavel = c(
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA"
+  ),
+  Objetivo = c(
+    "Estabelecer benchmarks e definir diretrizes iniciais para a política de autoavaliação.",
+    "Definir os objetivos e a estrutura da política de autoavaliação.",
+    "Identificar boas práticas por meio de benchmarks para instrumentos avaliativos.",
+    "Coletar dados iniciais que subsidiem a construção da política de autoavaliação.",
+    "Engajar docentes, discentes e técnicos administrativos no processo avaliativo.",
+    "Avaliar a qualidade do ensino, pesquisa e extensão, consolidando dados para melhorias.",
+    "Consolidar formalmente a política de autoavaliação do programa.",
+    "Documentar os resultados obtidos ao longo do quadriênio e propor recomendações.",
+    "Discutir e coletar sugestões dos segmentos acadêmicos para o relatório integral e para a meta-avaliação.",
+    "Refletir criticamente sobre o processo realizado no quadriênio, identificando melhorias."
+  )
+)
+
+tabela_planejamento |>
+  kbl(
+    col.names = c(
+      "\\textbf{Período}",
+      "\\textbf{Ação}",
+      "\\textbf{Responsável}",
+      "\\textbf{Objetivo}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE,
+    align = c('c', 'l', 'c', 'l'),
+    longtable = FALSE
+  ) |>
+  kable_styling(
+    latex_options = c("HOLD_position", "hover", "repeat_header"),
+    stripe_color = "gray!20",
+    font_size = 9
+  ) |>
+  column_spec(2, width = "5cm") |>
+  column_spec(4, width = "5cm") |>
+  footnote(
+    general = "Fonte: Comissão Própria de Avaliação.",
+    general_title = "",
+    threeparttable = TRUE
+  )
+```
+
+A Política de Autoavaliação consolidou-se como um instrumento essencial 
+para garantir a qualidade acadêmica e administrativa do programa. Além 
+disso, fomentou uma cultura institucional voltada à reflexão crítica e 
+ao aperfeiçoamento contínuo. Este compromisso é evidenciado pelos 
+resultados obtidos ao longo dos anos e pelo engajamento crescente 
+da comunidade acadêmica.
+
 
 
 
@@ -208,8 +338,7 @@ viabilizaram o planejamento conjunto das ações futuras voltadas
 ### Taxas de Resposta
 
 ```{r}
-#| label: tab-01
-#| tbl-cap: "Taxas de Respostas da Autoavaliação por Ano/Turma de Ingresso e Total."
+#| tbl-cap: "Taxas de Resposta dos Discentes por Ano/Turma de Ingresso e Total."
 
 dados_taxa <- tibble(
   Turma = c("2021", "2022", "2023", "2024", "Total"),
@@ -224,7 +353,7 @@ dados_taxa |>
     col.names = c(
       "\\textbf{Ano de Ingresso}", 
       "\\textbf{Respondentes}", 
-      "\\textbf{Total de Mestrandos}", 
+      "\\textbf{Total}", 
       "\\textbf{Taxa de Resposta}"
     ),
     format = "latex",
@@ -233,8 +362,8 @@ dados_taxa |>
     align = c('c', 'c', 'c', 'c')
   ) |>
   kable_styling(
-    latex_options = c("striped"),
-    stripe_color = "gray!20"
+    latex_options = c("HOLD_position", "striped"),
+    stripe_color = "white!20"
   ) |>
   row_spec(5, background = "lightblue") |>
   footnote(
@@ -244,14 +373,12 @@ dados_taxa |>
   )
 ```
 
-\pagebreak
 
 
 ### Características dos Discentes
 
 
 ```{r}
-#| label: tab-02
 #| tbl-cap: "Estatísticas das idades (em anos) dos participantes da pesquisa."
 
 # Criar tabela de estatísticas descritivas
@@ -268,10 +395,7 @@ dados_discentes %>%
   t() %>%
   as.data.frame() %>%
   kbl(
-    col.names = c(
-      "\\textbf{Estatística}", 
-      "\\textbf{Estimativa}"
-      ),
+    col.names = c("\\textbf{Estatística}", "\\textbf{Estimativa}"),
     digits = 1,
     format = "latex",
     booktabs = TRUE,
@@ -280,8 +404,8 @@ dados_discentes %>%
     align = c("l", "c")
   ) %>%
   kable_styling(
-    latex_options = c("striped", "hold_position"),
-     stripe_color = "gray!20",
+    latex_options = c("hover", "hold_position"),
+    stripe_color = "gray!20",
     full_width = FALSE,
     position = "center",
     bootstrap_options = "striped"
@@ -6174,7 +6298,7 @@ estudantes em ambientes presenciais e remotos.
 
 
 
-### Sugestões de Melhoria para o Programa
+### Sugestões de Melhorias
 
 A política de autoavaliação do Programa de Pós-Graduação em Administração 
 do IFMG - Campus Formiga, formalizada pela Portaria № 1706/IFMG, de 29 de 
@@ -6277,10 +6401,49 @@ progresso das pesquisas.
 
 
 
+
 ## Corpo Docente 
 
 
 ### Taxa de Resposta
+
+
+```{r}
+#| tbl-cap: "Taxa de Resposta Docente."
+
+dados_taxa_docentes <- tibble(
+  Categoria = "Docentes",
+  Respondentes = 8,
+  Total_Docentes = 10,
+  Taxa_Resposta = 0.80
+)
+
+dados_taxa_docentes |>
+  mutate(Taxa_Resposta = paste0(round(Taxa_Resposta * 100, 0), "\\%")) |>
+  kbl(
+    col.names = c(
+      "\\textbf{Categoria}", 
+      "\\textbf{Respondentes}", 
+      "\\textbf{Total}", 
+      "\\textbf{Taxa de Resposta}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE,
+    align = c('c', 'c', 'c', 'c')
+  ) |>
+  kable_styling(
+    latex_options = c("HOLD_position", "striped"),
+    stripe_color = "white!20"
+  ) |>
+  row_spec(1, background = "lightblue") |>
+  footnote(
+    general = "Fonte: Comissão Própria de Avaliação.",
+    general_title = "",
+    threeparttable = TRUE
+  )
+```
+
 
 
 ### Avaliação do Programa
@@ -7109,161 +7272,11 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 
 
 
+### Avaliação do Incetivo à Pesquisa
+
+
 ```{r}
 #| label: fig-4.81
-#| fig-cap: "Avaliação docente do processo de distribuição de bolsas."
-#| fig-width: 4
-#| fig-height: 4
-
-# Criar tabela de frequência
-ativ_tab <- dados_docentes %>%
-  count(q14) %>%
-  mutate(
-    fraction = n / sum(n),
-    ymax = cumsum(fraction),
-    ymin = c(0, head(ymax, n = -1)),
-    labelPosition = (ymax + ymin) / 2,
-    label = paste0(q14, "\n", scales::percent(fraction, accuracy = 0.1))
-  )
-
-# Define cores manualmente para cada resposta
-cores <- c(
-  "Sim" = "#E69F00",
-  "Não" = "#999999"
-)
-
-# Criar o gráfico donut
-ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q14)) +
-  geom_rect(color = NA) +
-  geom_label(
-    x = 3,
-    aes(y = labelPosition, label = label),
-    size = 3,
-    fontface = "bold",
-    color = "black"
-  ) +
-  scale_fill_manual(values = cores) +
-  coord_polar(theta = "y") +
-  xlim(c(2, 4)) +
-  theme_void() +
-  theme(legend.position = "none") +
-  labs(
-    title = "O Programa tem clareza e transparência para a \n distribuição das bolsas?",
-    caption = "Fonte: Comissão Própria de Avaliação"
-  ) +
-  theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
-    plot.caption = element_text(size = 8)
-  )
-```
-
-
-
-```{r}
-#| label: fig-4.82
-#| fig-cap: "Avaliação docente dos critérios de manutenção de bolsas."
-#| fig-width: 4
-#| fig-height: 4
-
-# Criar tabela de frequência
-ativ_tab <- dados_docentes %>%
-  count(q15) %>%
-  mutate(
-    fraction = n / sum(n),
-    ymax = cumsum(fraction),
-    ymin = c(0, head(ymax, n = -1)),
-    labelPosition = (ymax + ymin) / 2,
-    label = paste0(q15, "\n", scales::percent(fraction, accuracy = 0.1))
-  )
-
-# Define cores manualmente para cada resposta
-cores <- c(
-  "Sim" = "#E69F00",
-  "Não" = "#999999"
-)
-
-# Criar o gráfico donut
-ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q15)) +
-  geom_rect(color = NA) +
-  geom_label(
-    x = 3,
-    aes(y = labelPosition, label = label),
-    size = 3,
-    fontface = "bold",
-    color = "black"
-  ) +
-  scale_fill_manual(values = cores) +
-  coord_polar(theta = "y") +
-  xlim(c(2, 4)) +
-  theme_void() +
-  theme(legend.position = "none") +
-  labs(
-    title = "Você acha que os critérios de manutenção de bolsa\ndurante o curso são claros?",
-    caption = "Fonte: Comissão Própria de Avaliação"
-  ) +
-  theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
-    plot.caption = element_text(size = 8)
-  )
-```
-
-
-
-```{r}
-#| label: fig-4.83
-#| fig-cap: "Avaliação docente do estímula à participaçõa em eventos científicos."
-#| fig-width: 4
-#| fig-height: 4
-
-# Criar tabela de frequência
-ativ_tab <- dados_docentes %>%
-  count(q16) %>%
-  mutate(
-    fraction = n / sum(n),
-    ymax = cumsum(fraction),
-    ymin = c(0, head(ymax, n = -1)),
-    labelPosition = (ymax + ymin) / 2,
-    label = paste0(q16, "\n", scales::percent(fraction, accuracy = 0.1))
-  )
-
-# Define cores manualmente para cada resposta
-cores <- c(
-  "Sim" = "#E69F00",
-  "Não" = "#999999"
-)
-
-# Criar o gráfico donut
-ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q16)) +
-  geom_rect(color = NA) +
-  geom_label(
-    x = 3,
-    aes(y = labelPosition, label = label),
-    size = 3,
-    fontface = "bold",
-    color = "black"
-  ) +
-  scale_fill_manual(values = cores) +
-  coord_polar(theta = "y") +
-  xlim(c(2, 4)) +
-  theme_void() +
-  theme(legend.position = "none") +
-  labs(
-    title = "O Programa estimula a participação em reuniões de\npesquisa, congressos, workshop, etc.?",
-    caption = "Fonte: Comissão Própria de Avaliação"
-  ) +
-  theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
-    plot.caption = element_text(size = 8)
-  )
-```
-
-
-
-### Avaliação sobre o Incetivo à Pesquisa
-
-
-```{r}
-#| label: fig-4.84
 #| fig-cap: "Avaliação docente da distribuição de bolsas."
 #| fig-width: 4
 #| fig-height: 4
@@ -7313,7 +7326,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 
 
 ```{r}
-#| label: fig-4.85
+#| label: fig-4.82
 #| fig-cap: "Avaliação docente dos critérios de manutenção de bolsas."
 #| fig-width: 4
 #| fig-height: 4
@@ -7363,7 +7376,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 
 
 ```{r}
-#| label: fig-4.86
+#| label: fig-4.83
 #| fig-cap: "Avaliação docente do estímulo à participação em reuniões e eventos científicos."
 #| fig-width: 4
 #| fig-height: 4
@@ -7415,7 +7428,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 ### Avaliação da Coordenação do Programa
 
 ```{r}
-#| label: fig-4.87
+#| label: fig-4.84
 #| fig-cap: "Percepção docente sobre o compromisso da coordenação com a melhoria do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -7501,7 +7514,7 @@ ggplot(q18_summary_diverging, aes(x = q18, y = percent_answers, fill = q18)) +
 
 
 ```{r}
-#| label: fig-4.88
+#| label: fig-4.85
 #| fig-cap: "Avaliação docente da efetividade da coordenação no encaminhamento das solicitações ao colegiado."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -7587,7 +7600,7 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
 
 
 ```{r}
-#| label: fig-4.89
+#| label: fig-4.86
 #| fig-cap: "Avaliação doccente da comunicação da coordenação."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -7673,7 +7686,7 @@ ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
 
 
 ```{r}
-#| label: fig-4.90
+#| label: fig-4.87
 #| fig-cap: "Percepção docente sobre a consideracão de suas opiniões pela coordenação para a tomada de decisões."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -7761,7 +7774,7 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
 ### Avaliação da Infraestrutura
 
 ```{r}
-#| label: fig-4.91
+#| label: fig-4.88
 #| fig-cap: "Avaliação docente das salas disponíveis aos grupos pesquisa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -7847,7 +7860,7 @@ ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
 
 
 ```{r}
-#| label: fig-4.92
+#| label: fig-4.89
 #| fig-cap: "Avaliação docente dos recursos audiovisuais."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -7933,7 +7946,7 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
 
 
 ```{r}
-#| label: fig-4.93
+#| label: fig-4.90
 #| fig-cap: "Avaliação docente das salas de aula."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8019,7 +8032,7 @@ ggplot(q25_summary_diverging, aes(x = q25, y = percent_answers, fill = q25)) +
 
 
 ```{r}
-#| label: fig-4.94
+#| label: fig-4.91
 #| fig-cap: "Avaliação docente do anfiteatro para eventos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8107,7 +8120,7 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
 ### Avaliação do Atendimento da Secretaria
 
 ```{r}
-#| label: fig-4.95
+#| label: fig-4.92
 #| fig-cap: "Avaliação docente do tratamento dado pela Secretaria do Progorama."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8193,7 +8206,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
 
 
 ```{r}
-#| label: fig-4.96
+#| label: fig-4.93
 #| fig-cap: "Avaliação docente da agilidade da Secretaria para emitir documentos."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8279,7 +8292,7 @@ ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
 
 
 ```{r}
-#| label: fig-4.97
+#| label: fig-4.94
 #| fig-cap: "Avaliação docente do horário de funcionamento da Secretaria do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8365,7 +8378,7 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
 
 
 ```{r}
-#| label: fig-4.98
+#| label: fig-4.95
 #| fig-cap: "Avaliação docente da agilidade da Secretaria na resposta às demandas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8454,7 +8467,7 @@ ggplot(q31_summary_diverging, aes(x = q31, y = percent_answers, fill = q31)) +
 
 
 ```{r}
-#| label: fig-4.99
+#| label: fig-4.96
 #| fig-cap: "Avaliação docente da contribuição das disciplinas obrigatórias para a apreensão de novos conhecimentos e desenvolvimento de novas habilidades dos discentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8540,7 +8553,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
 
 
 ```{r}
-#| label: fig-4.100
+#| label: fig-4.97
 #| fig-cap: "Avaliação docente da compatibilidade dos créditos exigidos em disciplinas obrigatórias com o objetivo do programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8627,7 +8640,7 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
 
 
 ```{r}
-#| label: fig-4.101
+#| label: fig-4.98
 #| fig-cap: "Avaliação docente da coerência das disciplinas obrigatórias com as linhas de pesquisa do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8713,7 +8726,7 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
 
 
 ```{r}
-#| label: fig-4.102
+#| label: fig-4.99
 #| fig-cap: "Avaliação docente da aplicabilidade das disciplinas obrigatórias para a pesquisa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8799,7 +8812,7 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
 
 
 ```{r}
-#| label: fig-4.103
+#| label: fig-4.100
 #| fig-cap: "Avaliação docente da atualidade da bibliografia das disciplinas obrigatórias."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8890,7 +8903,7 @@ ggplot(q37_summary_diverging, aes(x = q37, y = percent_answers, fill = q37)) +
 
 
 ```{r}
-#| label: fig-4.104
+#| label: fig-4.101
 #| fig-cap: "Avaliação docente da contribuição das disciplinas optativas para a apreensão de novos conhecimentos e desenvolvimento de novas habilidades dos discentes."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -8976,7 +8989,7 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
 
 
 ```{r}
-#| label: fig-4.105
+#| label: fig-4.102
 #| fig-cap: "Avaliação docente da compatibilidade dos créditos exigidos em disciplinas optativas com o objetivo do programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -9062,7 +9075,7 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
 
 
 ```{r}
-#| label: fig-4.106
+#| label: fig-4.103
 #| fig-cap: "Avaliação docente da coerência das disciplinas optativas com as linhas de pesquisa do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -9148,7 +9161,7 @@ ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
 
 
 ```{r}
-#| label: fig-107
+#| label: fig-104
 #| fig-cap: "Avaliação docente da aplicabilidade das disciplinas optativas para a pesquisa."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -9234,7 +9247,7 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
 
 
 ```{r}
-#| label: fig-4.108
+#| label: fig-4.105
 #| fig-cap: "Avaliação docente da atualidade da bibliografia das disciplinas optativas."
 #| fig-width: 7.5
 #| fig-height: 4.5
@@ -9320,7 +9333,7 @@ ggplot(q43_summary_diverging, aes(x = q43, y = percent_answers, fill = q43)) +
 
 
 ```{r}
-#| label: fig-doc36
+#| label: fig-d106
 #| fig-cap: "Avaliação docente da diversidade de temas contemplados pelas disciplinas optativas."
 #| fig-width: 7.5
 #| fig-height: 4.5
