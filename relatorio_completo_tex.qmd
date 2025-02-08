@@ -82,7 +82,7 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 
 
-# Planejamento da Autoavaliação
+# Planejamento da Autoavaliação {#sec-planejamento}
 
 O Programa de Pós-Graduação em Administração do IFMG - Campus Formiga 
 iniciou suas atividades em 2021, durante um período crítico marcado pela 
@@ -219,7 +219,7 @@ da comunidade acadêmica.
 
 
 
-# Metodologia
+# Metodologia {#sec-metodologia}
 
 A metodologia aplicada na autoavaliação do Mestrado Profissional em 
 Administração do IFMG - Campus Formiga foi desenvolvida em conformidade 
@@ -331,12 +331,58 @@ viabilizaram o planejamento conjunto das ações futuras voltadas
 
 
 
-# Resultados da Autoavaliação 
+# Resultados da Autoavaliação {#sec-resultados}
 
-## Corpo Discente
+Este capítulo apresenta os resultados da pesquisa de autoavaliação 
+conduzida no Mestrado Profissional em Administração do IFMG - Campus Formiga, 
+conforme estabelecido pela Portaria N. 1706/IFMG, de 29 de novembro de 2024. 
+Essa política orienta o processo avaliativo como um instrumento 
+essencial para a melhoria contínua do programa, em alinhamento 
+com as diretrizes da CAPES e as demandas institucionais.
+
+A pesquisa foi estruturada com base na aplicação de questionários 
+direcionados aos discentes e docentes, abrangendo aspectos como 
+qualidade do ensino, infraestrutura, coordenação do programa e 
+impacto da pandemia da COVID-19. Os dados coletados foram analisados 
+de maneira quantitativa e qualitativa, permitindo identificar 
+pontos fortes, desafios e oportunidades de melhoria. Este capítulo 
+detalha os principais achados e reflexões resultantes desse processo.
 
 
-### Taxas de Resposta
+
+## Corpo Discente {#sec-discentes}
+
+Nesta subseção, são apresentados os resultados da autoavaliação realizada 
+junto ao corpo discente do Mestrado Profissional em Administração. 
+Os questionários aplicados abordaram dimensões como:
+
+- Avaliação Geral do programa (@sec-avaprogdiscentes);
+- Avaliação da coordenação do programa (@sec-avacoorddiscentes);
+- Avaliação da infraestrutura disponível (@sec-avainfradiscentes);
+- Avaliação da Secretaria do programa (@sec-avasecdiscentes);
+- Avaliação das disciplinas obrigatórias (@sec-avadobrigdiscentes) e optativas (@sec-avadoptdiscentes); 
+- Autoavaliação em Relação ao seu compromentimento nas disciplinas 
+(@sec-autodiscdiscentes);
+- Avaliação dos Docentes do Programa (@sec-avadocentesdiscentes);
+- Avaliação da Orientação (@sec-avaorientdiscentes);
+- Autoavaliação em Relação à Orientação(@sec-autoorientdiscentes);
+
+Além disso, foi investigado o impacto da pandemia (@sec-pandemiadiscentes) 
+da COVID-19 nos mestrandos que ingressaram no curso em 2021, ano de início da 
+oferta do curso eu um período crítico para todos. E, por fim, foram 
+compiladas as sugestões de melhorias para diversas dimensões do programa 
+relatadas pelos discentes (@sec-sugestdiscentes).
+
+A análise dos resultados busca fornecer uma visão abrangente das percepções 
+dos discentes sobre a qualidade do ensino, pesquisa e extensão oferecidos 
+pelo programa. Indicadores como taxas de resposta e características 
+demográficas dos participantes são destacados para reforçar a 
+transparência e representatividade do processo avaliativo. Esses 
+resultados são fundamentais para orientar ações que promovam o 
+aprimoramento contínuo do curso.
+
+
+### Taxas de Resposta {#sec-taxadiscentes}
 
 ```{r}
 #| tbl-cap: "Taxas de Resposta dos Discentes por Ano/Turma de Ingresso e Total."
@@ -376,7 +422,7 @@ dados_taxa |>
 
 
 
-### Características dos Discentes
+### Características dos Discentes {#sec-caractdiscentes}
 
 
 ```{r}
@@ -570,7 +616,7 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
 
 
 
-### Avaliação do Programa
+### Avaliação do Programa {#sec-avaprogdiscentes}
 
 
 ```{r}
@@ -1411,7 +1457,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 
 
 
-### Avaliação da Coordenação do Programa de Pós-Graduação
+### Avaliação da Coordenação do Programa de Pós-Graduação  {#sec-avacoorddiscentes}
 
 ```{r}
 #| label: fig-4.14
@@ -1929,7 +1975,7 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
 
 
 
-### Avaliação da Infraestrutura
+### Avaliação da Infraestrutura  {#sec-avainfradiscentes}
 
 ```{r}
 #| label: fig-4.20
@@ -2447,7 +2493,7 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
 
 
 
-### Avaliação do Atendimento da Secretaria do Programa
+### Avaliação do Atendimento da Secretaria do Programa  {#sec-avasecdiscentes}
 
 ```{r}
 #| label: fig-4.26
@@ -2793,7 +2839,7 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
 
 
 
-### Avaliação das Disciplinas Obrigatórias
+### Avaliação das Disciplinas Obrigatórias  {#sec-avadobrigdiscentes}
 
 ```{r}
 #| label: fig-4.30
@@ -3196,7 +3242,7 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
 
 
 
-### Avaliação das Disciplinas Optativas
+### Avaliação das Disciplinas Optativas  {#sec-avadoptdiscentes}
 
 ```{r}
 #| label: fig-4.35
@@ -3678,7 +3724,7 @@ ggplot(q49_summary_diverging, aes(x = q49, y = percent_answers, fill = q49)) +
 
 
 
-### Autoavaliação em Relação às Disciplinas
+### Autoavaliação em Relação às Disciplinas  {#sec-autodiscdiscentes}
 
 ```{r}
 #| label: fig-4.41
@@ -4196,7 +4242,7 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
 
 
 
-### Avaliação dos Docentes do Programa
+### Avaliação dos Docentes do Programa  {#sec-avadocentesdiscentes}
 
 ```{r}
 #| label: fig-4.47
@@ -5230,7 +5276,7 @@ ggplot(q68_summary_diverging, aes(x = q68, y = percent_answers, fill = q68)) +
 
 
 
-### Avaliação da Orientação
+### Avaliação da Orientação  {#sec-avaorientdiscentes}
 
 ```{r}
 #| label: fig-4.59
@@ -5748,7 +5794,7 @@ ggplot(q75_summary_diverging, aes(x = q75, y = percent_answers, fill = q75)) +
 
 
 
-### Autoavaliação em Relação à Orientação
+### Autoavaliação em Relação à Orientação  {#sec-autoorientdiscentes}
 
 ```{r}
 #| label: fig-4.65
@@ -6266,7 +6312,7 @@ ggplot(q82_summary_diverging, aes(x = q82, y = percent_answers, fill = q82)) +
 
 
 
-### Impacto da Pandemia da COVID-19
+### Impacto da Pandemia da COVID-19  {#sec-pandemiadiscentes}
 
 As respostas dos mestrandos sobre o impacto da pandemia da COVID-19 no 
 curso foram divergentes:
@@ -6299,7 +6345,7 @@ estudantes em ambientes presenciais e remotos.
 
 
 
-### Sugestões de Melhorias
+### Sugestões de Melhorias  {#sec-sugestdiscentes}
 
 A política de autoavaliação do Programa de Pós-Graduação em Administração 
 do IFMG - Campus Formiga, formalizada pela Portaria № 1706/IFMG, de 29 de 
@@ -6315,7 +6361,7 @@ aprimorados.
 
 
 ::: {.callout-tip icon=false}
-## **I. Sugestões de Melhorias Gerais**
+## **Sugestões de Melhorias Gerais**
 
 - **Direcionamento de Disciplinas Optativas**: Sugere-se que as disciplinas 
 optativas sejam alinhadas com os objetivos das dissertações dos mestrandos, 
@@ -6338,7 +6384,7 @@ no programa, promovendo uma aprendizagem mais integral.
 
 
 ::: {.callout-tip icon=false}
-## **II. Sugestões de Melhorias para a Coordenação**
+## **Sugestões de Melhorias para a Coordenação**
 
 - **Aperfeiçoamento da Publicidade das Decisões**: Recomenda-se ampliar a publicidade dss decisões do colegiado e da coordenação do mestrado para 
 melhorar a comunicação com os mestrandos.
@@ -6354,7 +6400,7 @@ divulgando os procedimentos com a maior antecedência possível.
 
 
 ::: {.callout-tip icon=false}
-## **III. Sugestões de Melhorias para a Infraestrutura**
+## **Sugestões de Melhorias para a Infraestrutura**
 
 - **Melhoria do Espaço de Convivência**: Sugere-se melhorar o espaço 
 de convivência, tornando-o mais atraente e funcional para os alunos.
@@ -6366,7 +6412,7 @@ Campus Formiga, destacando os recursos disponíveis.
 
 
 ::: {.callout-tip icon=false}
-## **IV. Sugestões de Melhorias para as Disciplinas Obrigatórias**
+## **Sugestões de Melhorias para as Disciplinas Obrigatórias**
 
 - **Revisão e Atualização de Conteúdos**: Sugere-se revisar periodicamente 
 os conteúdos das disciplinas, garantindo sua atualização contínua e 
@@ -6375,7 +6421,7 @@ relevância para o programa.
 
 
 ::: {.callout-tip icon=false}
-## **V. Sugestões de Melhorias para as Disciplinas Optativas**
+## **Sugestões de Melhorias para as Disciplinas Optativas**
 
 - **Alinhamento com Objetivos de Pesquisa**: Sugere-se que as disciplinas 
 optativas sejam direcionadas de acordo com os objetivos e temas das pesquisas 
@@ -6388,7 +6434,7 @@ diferenciadas para atendê-las quando possível.
 
 
 ::: {.callout-tip icon=false}
-## **VI. Sugestões de Melhorias para os Orientadores**
+## **Sugestões de Melhorias para os Orientadores**
 
 - **Carga de Trabalho dos Orientadores**: Propõe-se avaliar a carga de 
 trabalho dos orientadores para evitar sobrecarga e viabilizar condições 
@@ -6403,11 +6449,30 @@ progresso das pesquisas.
 
 
 
-## Corpo Docente 
+## Corpo Docente {#sec-docentes}
+
+Esta subseção apresenta os resultados da autoavaliação realizada pelo 
+corpo docente do Mestrado Profissional em Administração. Os questionários 
+aplicados permitiram avaliar:
+
+- A percepção sobre a qualidade geral do programa;
+- Incentivos à pesquisa;
+- Atuação da coordenação;
+- Infraestrutura disponível;
+- Atendimento administrativo.
+
+Também foram analisadas as percepções dos docentes sobre as disciplinas 
+obrigatórias e optativas, além das implicações da pandemia da COVID-19 
+no desenvolvimento das atividades acadêmicas.
+
+Os dados coletados oferecem uma perspectiva crítica sobre o 
+papel dos docentes no desenvolvimento do programa e destacam 
+áreas prioritárias para melhorias. As informações obtidas são 
+essenciais para embasar decisões estratégicas que fortaleçam o 
+curso e promovam um ambiente acadêmico mais dinâmico e colaborativo.
 
 
-### Taxa de Resposta
-
+### Taxa de Resposta  {#sec-docentestaxa}
 
 ```{r}
 #| tbl-cap: "Taxa de Resposta Docente."
@@ -6447,7 +6512,7 @@ dados_taxa_docentes |>
 
 
 
-### Avaliação do Programa
+### Avaliação do Programa  {#sec-avaprogdocentes}
 
 ```{r}
 #| label: fig-4.71
@@ -7273,7 +7338,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 
 
 
-### Avaliação do Incetivo à Pesquisa
+### Avaliação do Incetivo à Pesquisa {#sec-avaincentivosp}
 
 
 ```{r}
@@ -7426,7 +7491,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
 
 
 
-### Avaliação da Coordenação do Programa
+### Avaliação da Coordenação do Programa {#sec-avacoorddocentes}
 
 ```{r}
 #| label: fig-4.84
@@ -7772,7 +7837,7 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
 
 
 
-### Avaliação da Infraestrutura
+### Avaliação da Infraestrutura {#sec-avainfradocentes}
 
 ```{r}
 #| label: fig-4.88
@@ -8118,7 +8183,7 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
 
 
 
-### Avaliação do Atendimento da Secretaria
+### Avaliação do Atendimento da Secretaria {#sec-avasecdocentes}
 
 ```{r}
 #| label: fig-4.92
@@ -8464,7 +8529,7 @@ ggplot(q31_summary_diverging, aes(x = q31, y = percent_answers, fill = q31)) +
 
 
 
-### Avaliação das Disciplinas Obrigatórias
+### Avaliação das Disciplinas Obrigatórias {#sec-avadobrigdocentes}
 
 
 ```{r}
@@ -8900,7 +8965,7 @@ ggplot(q37_summary_diverging, aes(x = q37, y = percent_answers, fill = q37)) +
 
 
 
-### Avaliação das Disciplinas Optativas
+### Avaliação das Disciplinas Optativas {#sec-avadoptadocentes}
 
 
 ```{r}
@@ -9419,7 +9484,7 @@ ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
 
 
 
-### Impacto da Pandemia da COVID-19
+### Impacto da Pandemia da COVID-19 {#sec-pandemiadocentes}
 
 Os docentes do curso responderam à pergunta sobre como a pandemia alterou 
 a dinâmica e o processo de ensino-aprendizagem no Mestrado da 
@@ -9463,7 +9528,7 @@ a avaliar e adaptar suas estratégias pedagógicas para atender às
 necessidades de todos os envolvidos em ambientes presenciais ou remotos.
 
 
-### Sugestões de Melhorias
+### Sugestões de Melhorias {#sec-sugestdocentes}
 
 A política de autoavaliação do Programa de Pós-Graduação em Administração 
 do IFMG - Campus Formiga enfatiza a importância da participação ativa dos 
@@ -9478,7 +9543,7 @@ do corpo docente do programa.
 
 
 ::: {.callout-tip icon=false}
-## **I. Sugestões de Melhorias Gerais para o Programa**
+## **Sugestões de Melhorias Gerais para o Programa**
 
 - **Revisão e Atualização do Currículo**: Sugere-se reavaliar a sequência 
 das disciplinas e o rol de disciplinas optativas para garantir uma formação 
@@ -9495,7 +9560,7 @@ minicursos e palestras para enriquecer a experiência acadêmica.
 
 
 ::: {.callout-tip icon=false}
-## **II. Sugestões de Melhorias para Incentivos à Pesquisa**
+## **Sugestões de Melhorias para Incentivos à Pesquisa**
 
 - **Captação de Recursos para Bolsas**: Recomenda-se buscar captação de 
 recursos para oferecer mais bolsas de estudos.
@@ -9507,7 +9572,7 @@ de alto impacto.
 
 
 ::: {.callout-tip icon=false}
-## **III. Sugestões de Melhorias para a Coordenação**
+## **Sugestões de Melhorias para a Coordenação**
 
 - **Participação e Envolvimento dos Docentes**: Sugere-se a adoção de 
 medidas ou incentivos para um maior engajamento do corpo docente 
@@ -9520,7 +9585,7 @@ novas parcerias e oportunidades para a pesquisa.
 
 
 ::: {.callout-tip icon=false}
-## **IV. Sugestões de Melhorias para a Infraestrutura**
+## **Sugestões de Melhorias para a Infraestrutura**
 
 - **Ambientes para Aulas Híbridas**: Propõe-se aperfeiçoar os ambientes 
 para aulas remotas ou híbridas.
@@ -9536,7 +9601,7 @@ para apoiar as atividades de pesquisa.
 
 
 ::: {.callout-tip icon=false}
-## **V. Sugestões de Melhorias para as Disciplinas Obrigatórias**
+## **Sugestões de Melhorias para as Disciplinas Obrigatórias**
 
 - **Reavaliação das Disciplinas Obrigatórias**: Sugere-se reavaliar as 
 disciplinas obrigatórias para garantir consistência com as linhas de pesquisa 
@@ -9550,7 +9615,7 @@ seus projetos.
 
 
 ::: {.callout-tip icon=false}
-## **VI. Sugestões de Melhorias para as Disciplinas Optativas**
+## **Sugestões de Melhorias para as Disciplinas Optativas**
 
 - **Revisão e Expansão das Disciplinas Optativas**: Recomenda-se reavaliar 
 as disciplinas optativas para alinhar-se com as tendências de
@@ -9560,99 +9625,70 @@ pesquisa dos professores e alunos.
 
 
 
-# Ações Demandadas a Partir da Autoavaliação
+# Ações Demandadas a Partir da Autoavaliação {#sec-acoesdemanda}
 
 
 
 ::: {.landscape}
 
 ```{r}
-#| tbl-cap: "Ações Demandadas a Partir da Autoavaliação."
+#| tbl-cap: "Ações Demandadas a Partir do Processo de Autoavaliação."
 
 tabela_acoes_demandadas <- data.frame(
   Demanda = c(
-    "Reavaliar a sequência das disciplinas obrigatórias e optativas, visando maior alinhamento às linhas de pesquisa do mestrado.",
-    "Desenvolver um plano estratégico para futura aprovação de um programa de doutorado, ajustando o currículo e o processo seletivo conforme necessário.",
-    "Ampliar a oferta de atividades de extensão, como cursos, projetos e seminários, além de minicursos e palestras para enriquecer a experiência acadêmica.",
+    "Reavaliar as disciplinas obrigatórias e optativas, bem como sua sequência, para alinhá-las melhor às linhas de pesquisa do mestrado e aprimorar o desenvolvimento das competências necessárias aos mestrandos para a formulação e execução de projetos de pesquisa de alto impacto, com base nos resultados obtidos no quadriênio.",
+    "Solicitar às instâncias competentes do IFMG a ampliação do acesso à bases de dados especializadas, recursos computacionais, softwares e literatura especializada para apoiar as atividades de pesquisa do programa.",
+    "Expandir as oportunidades de atividades extracurriculares, de extensão e 
+    de internacionalização para enriquecer a experiência acadêmica dos mestrandos.",
+    "Ampliar a prospecção e a interação com empresas da região para fortalecer 
+    as parcerias atuais e criar novas parcerias e oportunidades de pesquisa.",
     "Buscar captação de recursos para oferecer mais bolsas de estudos.",
-    "Criar melhores condições e incentivar o aumento da publicação em periódicos de alto impacto.",
-    "Adotar medidas ou incentivos para um maior engajamento do corpo docente na construção e evolução do curso.",
-    "Ampliar a prospecção e a interação com empresas da região para fortalecer e criar novas parcerias e oportunidades para a pesquisa.",
-    "Aperfeiçoar os ambientes para aulas remotas ou híbridas.",
-    "Construir um anfiteatro maior para eventos acadêmicos, melhorando a capacidade de realização de seminários e congressos.",
-    "Ampliar o acesso a recursos computacionais, softwares e literatura especializada para apoiar as atividades de pesquisa.",
-    "Reavaliar as disciplinas obrigatórias para garantir consistência com as linhas de pesquisa e a formação pretendida.",
-    "Incluir disciplinas que abordem métodos específicos de pesquisa quantitativa, alinhando-se com as necessidades dos alunos durante o desenvolvimento de seus projetos.",
-    "Reavaliar as disciplinas optativas para alinhar-se com as tendências de pesquisa dos professores e alunos.",
-    "Alinhar as disciplinas optativas com os objetivos das dissertações dos mestrandos, garantindo uma integração mais eficaz entre os conteúdos acadêmicos e as pesquisas individuais.",
-    "Expandir as oportunidades de internacionalização, extensões e atividades extracurriculares para enriquecer a experiência acadêmica dos alunos.",
-    "Aumentar o número de bolsas de estudos disponíveis para apoiar financeiramente os alunos.",
-    "Criar mais atividades extracurriculares que complementem os conteúdos abordados no programa, promovendo uma aprendizagem mais integral.",
-    "Ampliar a publicidade das decisões do colegiado e da coordenação do mestrado para melhorar a comunicação com os mestrandos.",
-    "Realizar uma breve apresentação do programa no início das disciplinas que contam com alunos especiais para facilitar a integração desses estudantes.",
-    "Aperfeiçoar a comunicação sobre o processo de bolsas, ampliando-se os prazos e divulgando os procedimentos com a maior antecedência possível.",
-    "Melhorar o espaço de convivência, tornando-o mais atraente e funcional para os alunos.",
-    "Realizar, na recepção dos mestrandos, uma apresentação detalhada da estrutura do IFMG - Campus Formiga, destacando os recursos disponíveis.",
-    "Revisar periodicamente os conteúdos das disciplinas, garantindo sua atualização contínua e relevância para o programa.",
+    "Encaminhar às instâncias competentes do IFMG a demanda pelo aperfeiçoamento dos recursos para aulas remotas ou híbridas.",
     "Avaliar a carga de trabalho dos orientadores para evitar sobrecarga e viabilizar condições de trabalho mais adequadas.",
-    "Desenvolver ferramentas que melhorem a comunicação entre orientadores e orientados, potencializando o progresso das pesquisas."
+    "Adotar medidas ou incentivos para um maior engajamento do corpo docente na construção e evolução do curso.",
+    "Desenvolver um nova plano estratégico para a consolidação do mestrado e para uma futura aprovação de um programa de doutorado.",
+    "Ampliar a publicidade das decisões do colegiado e da coordenação do mestrado para aperfeiçoar a comunicação com os mestrandos.",
+    "Realizar uma breve apresentação do programa no início das disciplinas que contam com alunos especiais para facilitar a integração desses estudantes.",
+    "Realizar, na recepção dos mestrandos, uma apresentação detalhada da estrutura do IFMG - Campus Formiga, destacando os recursos disponíveis.",
+    "Encaminhar às instâncias competentes do IFMG a demanda por melhoria do espaço de convivência, tornando-o mais atraente e funcional para os mestrandos.",
+    "Aperfeiçoar a comunicação sobre o processo de bolsas, ampliando-se os prazos e divulgando os procedimentos com a maior antecedência possível.",
+    "Encaminhar às instâncias competentes do IFMG a demanda por um anfiteatro maior para eventos acadêmicos, para aumentar a capacidade de realização de seminários e congressos."
   ),
   Representacao = c(
     "Colegiado do curso",
-    "Colegiado do curso",
     "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Colegiado do curso",
-    "Colegiado do curso",
-    "Colegiado do curso",
-    "Colegiado do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
-    "Coordenação do curso",
+    "Coordenação e Colegiado do curso",
     "Coordenação do curso",
     "Coordenação do curso",
     "Coordenação do curso",
     "Coordenação do curso",
     "Coordenação do curso",
     "Colegiado do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
+    "Coordenação do curso",
     "Coordenação do curso",
     "Coordenação do curso"
   ),
   Dimensao = c(
-    "Matriz curricular do Programa",
+    "Matriz curricular",
+    "Infraestrutura",
+    "Atividades extracurriculares, de extensão e internacionalização",
+    "Coordenação do Programa",
+    "Incentivos à pesquisa",
+    "Infraestrutura",
+    "Coordenação do Programa",
+    "Coordenação do Programa",
     "Planejamento estratégico do Programa",
-    "Atividades de extensão e extraclasse",
-    "Incentivos à pesquisa",
-    "Incentivos à pesquisa",
     "Coordenação do Programa",
     "Coordenação do Programa",
     "Infraestrutura",
     "Infraestrutura",
-    "Infraestrutura",
-    "Matriz curricular do Programa",
-    "Matriz curricular do Programa",
-    "Matriz curricular do Programa",
-    "Matriz curricular do Programa",
-    "Atividades de extensão e extraclasse",
-    "Incentivos à pesquisa",
-    "Atividades de extensão e extraclasse",
     "Coordenação do Programa",
-    "Coordenação do Programa",
-    "Coordenação do Programa",
-    "Infraestrutura",
-    "Infraestrutura",
-    "Matriz curricular do Programa",
-    "Coordenação do Programa",
-    "Coordenação do Programa"
+    "Infraestrutura"
   )
 )
-
 
 tabela_acoes_demandadas |>
   kbl(
@@ -9670,7 +9706,7 @@ tabela_acoes_demandadas |>
   kable_styling(
     latex_options = c("HOLD_position", "striped", "repeat_header"),
     stripe_color = "gray!10",
-    font_size = 9.5
+    font_size = 11
   ) |>
   column_spec(1, width = "12cm") |>
   column_spec(2, width = "4.5cm") |>
@@ -9681,18 +9717,19 @@ tabela_acoes_demandadas |>
     threeparttable = TRUE
   )
 ```
+
 :::
 
 
 
 
-# Meta-Avaliação
+# Meta-Avaliação {#sec-metaavaliacao}
 
 
 
 
 
-# Considerações Finais
+# Considerações Finais {#sec-consideracoesfinais}
 
 
 
