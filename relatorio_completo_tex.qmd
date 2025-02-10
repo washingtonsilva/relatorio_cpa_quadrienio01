@@ -78,6 +78,43 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 # Introdução 
 
+O Relatório Integral da Comissão Própria de Avaliação (CPA) do Programa de 
+Pós-Graduação em Administração do IFMG - Campus Formiga, referente ao 
+quadriênio 2021-2024, apresenta uma análise abrangente e reflexiva sobre 
+o desempenho do programa e seu compromisso com a melhoria contínua. Este 
+documento foi elaborado em conformidade com a Política de Autoavaliação, 
+formalizada pela Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg], que 
+estabelece diretrizes para um processo avaliativo estruturado e permanente.
+
+O Programa de Pós-Graduação em Administração iniciou suas atividades em 2021, 
+em um contexto desafiador marcado pela pandemia da COVID-19. Desde o início, 
+o programa demonstrou resiliência e dedicação à construção de uma base sólida 
+para o ensino, pesquisa e extensão. A autoavaliação desempenhou um papel 
+central nesse processo, permitindo identificar pontos fortes, áreas de 
+melhoria e orientar ações estratégicas para a consolidação do curso.
+
+Este relatório está organizado em seções que descrevem as principais 
+etapas do processo avaliativo: planejamento da autoavaliação 
+(@sec-planejamento), metodologia aplicada (@sec-metodologia), 
+resultados obtidos (@sec-resultados), ações demandadas (@sec-acoesdemanda) e 
+meta-avaliação (@sec-metaavaliacao). Cada seção reflete o esforço coletivo 
+da CPA e da comunidade acadêmica para promover um ambiente de reflexão 
+crítica e engajamento.
+
+Ao longo do quadriênio, foram aplicados instrumentos avaliativos 
+diversificados que captaram percepções de discentes, docentes e 
+técnicos administrativos. Os dados coletados foram analisados com rigor 
+metodológico e apresentados em workshops voltados à discussão dos resultados. 
+Esse processo assegurou transparência, inclusão e a construção de uma cultura 
+voltada ao aperfeiçoamento contínuo.
+
+Por fim, este relatório não apenas documenta os avanços alcançados pelo 
+programa ao longo de seus quatro anos iniciais, mas também aponta caminhos 
+para sua evolução futura. A implementação das ações propostas será 
+monitorada pela CPA em ciclos avaliativos subsequentes, reafirmando 
+o compromisso do programa com a formação de profissionais qualificados 
+para atender às demandas sociais e do mercado.
+
 
 
 
@@ -85,49 +122,41 @@ dados_docentes <- readr::read_rds(path_docentes)
 # Planejamento da Autoavaliação {#sec-planejamento}
 
 O Programa de Pós-Graduação em Administração do IFMG - Campus Formiga 
-iniciou suas atividades em 2021, durante um período crítico marcado pela 
-pandemia da COVID-19. Esse contexto desafiador exigiu adaptações rápidas 
-e estratégicas para assegurar a qualidade acadêmica e administrativa 
-desde os primeiros passos do programa.
+iniciou suas atividades em 2021, em um contexto desafiador marcado pela 
+pandemia da COVID-19. Desde sua concepção, o programa demonstrou um 
+compromisso sólido com a melhoria contínua, o que resultou na criação de 
+uma Política de Autoavaliação alinhada às diretrizes da CAPES e às 
+necessidades específicas do programa. Essa política foi formalizada 
+pela Portaria Nº 1706/IFMG, de 29 de novembro de 2024 [@portaria1706ifmg], 
+após um processo estruturado de construção ao longo do quadriênio 2021-2024.
 
-Desde sua concepção, o Mestrado Profissional em Administração demonstrou 
-um compromisso sólido com a melhoria contínua. Reconhecendo 
-os desafios inerentes à estruturação de um programa recém-criado, a 
-Comissão Própria de Avaliação empreendeu esforços significativos 
-para desenvolver um planejamento correto de autoavaliação. Este 
-planejamento visou estabelecer uma política alinhada ao estágio 
-inicial de maturidade do programa e às diretrizes da CAPES, objetivando 
-a produção de resultados concretos para o aprimoramento do programa.
+O planejamento da autoavaliação foi organizado em cinco etapas principais:
 
-A Política de Autoavaliação do Programa foi elaborada ao longo do 
-quadriênio 2021-2024 e formalizada pela Portaria Nº 1706/IFMG, de 29 de 
-novembro de 2024 [@portaria1706ifmg]. Deve-se destacar que versões 
-preliminares dessa política já orientavam as ações desde os 
-primeiros anos, servindo como base para o planejamento das 
-atividades avaliativas.
+- **Definição de objetivos:** Estabelecimento de metas alinhadas à missão 
+do programa e às expectativas dos seus públicos.
 
-O planejamento da autoavaliação foi estruturado conforme as seguintes etapas:
+- **Benchmarking:** Pesquisa sobre políticas e instrumentos utilizados 
+por programas de referência.
 
-- **Definição de objetivos claros:** Estabelecer metas alinhadas à 
-missão do programa e às expectativas dos seus diversos públicos.
-
-- **Benchmarking:** Realizar pesquisas sobre políticas e instrumentos 
-utilizados por programas de referência.
-
-- **Desenvolvimento metodológico:** Criar instrumentos avaliativos 
+- **Desenvolvimento metodológico:** Criação de instrumentos avaliativos 
 adequados ao contexto do programa.
 
-- **Sensibilização da comunidade acadêmica:** Promover o engajamento 
-ativo dos diferentes segmentos no processo avaliativo.
+- **Sensibilização:** Engajamento ativo dos diferentes segmentos 
+acadêmicos no processo avaliativo.
 
-- **Cronograma detalhado:** Planejar as ações avaliativas com prazos 
-definidos para cada etapa.
+- **Cronograma detalhado:** Planejamento das ações avaliativas com 
+prazos definidos para cada etapa.
 
-O cronograma exibido na Tab. 2.1 sintetiza as principais ações planejadas e 
-executadas pela Comissão Própria de Avaliação (CPA) ao longo do quadriênio:
+O cronograma sintetizado na Tab. 2.1 apresenta as ações realizadas pela 
+Comissão Própria de Avaliação (CPA) durante o quadriênio, incluindo 
+a construção da política, aplicação dos instrumentos avaliativos, 
+análise dos resultados e a meta-avaliação final. Essas etapas 
+foram fundamentais para estruturar um processo avaliativo robusto 
+e promover uma cultura institucional voltada à reflexão crítica e 
+ao aperfeiçoamento contínuo.
 
 ```{r}
-#| tbl-cap: "Cronograma de Ações para a Autoavaliação"
+#| tbl-cap: "Cronograma de Ações do Processo de Autoavaliação."
 
 tabela_planejamento <- data.frame(
   Periodo = c(
@@ -197,7 +226,7 @@ tabela_planejamento |>
   kable_styling(
     latex_options = c("HOLD_position", "striped", "repeat_header"),
     stripe_color = "gray!10",
-    font_size = 9
+    font_size = 10.5
   ) |>
   column_spec(2, width = "5cm") |>
   column_spec(4, width = "5cm") |>
@@ -207,13 +236,6 @@ tabela_planejamento |>
     threeparttable = TRUE
   )
 ```
-
-A Política de Autoavaliação consolidou-se como um instrumento essencial 
-para garantir a qualidade acadêmica e administrativa do programa. Além 
-disso, fomentou uma cultura institucional voltada à reflexão crítica e 
-ao aperfeiçoamento contínuo. Este compromisso é evidenciado pelos 
-resultados obtidos ao longo dos anos e pelo engajamento crescente 
-da comunidade acadêmica.
 
 
 
@@ -231,101 +253,46 @@ utilizados e as técnicas empregadas no processo autoavaliativo.
 
 ## Metodologia Aplicada ao Processo de Autoavaliação
 
-O processo de autoavaliação foi estruturado com o objetivo de contribuir 
-para uma reflexão crítica que objetive a melhoria contínua do programa. Para 
-isso, foram seguidas etapas que buscaram o alinhamento às diretrizes da CAPES 
-e à Política de Autoavaliação do Programa. As principais etapas incluiram:
+A metodologia aplicada na autoavaliação foi desenvolvida com base na 
+Política de Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024. 
+O objetivo principal foi promover uma reflexão crítica que orientasse 
+ações para a melhoria contínua do programa. 
 
-1. **Planejamento**: Revisão das diretrizes normativas da CAPES e da 
-política institucional, seguido pela definição dos critérios avaliativos, 
-abrangendo ensino, pesquisa, extensão e gestão acadêmica.
+O processo metodológico seguiu quatro etapas integradas:
 
-2. **Engajamento da Comunidade Acadêmica**: Incentivo à participação ativa 
-de discentes e docentes por meio de campanhas informativas.
+1. **Planejamento:** Revisão das diretrizes normativas da CAPES e definição 
+dos critérios avaliativos, abrangendo ensino, pesquisa, extensão e gestão 
+acadêmica.
 
-3. **Execução da Autoavaliação**: Condução anual do processo pela 
-Comissão Própria de Autoavaliação (CPA), composta por representantes 
-dos diferentes segmentos da comunidade acadêmica do Programa.
+2. **Engajamento:** Promoção da participação ativa de discentes e 
+docentes por meio de campanhas informativas.
 
-4. **Meta-avaliação**: Revisão crítica dos métodos aplicados para aprimorar 
+3. **Execução:** Aplicação anual dos instrumentos avaliativos pela CPA, 
+composta por representantes dos segmentos acadêmicos do programa.
+
+4. **Meta-avaliação:** Revisão crítica dos métodos aplicados para aprimorar 
 continuamente o processo.
 
-A metodologia adotada priorizou a transparência e a inclusão, assegurando 
-que todos os envolvidos no programa pudessem contribuir com percepções e 
-sugestões para o aperfeiçoamento contínuo do programa.
+Os instrumentos utilizados incluíram questionários estruturados com 
+questões quantitativas (escalas Likert) e qualitativas (respostas abertas), 
+abordando dimensões como qualidade do ensino, infraestrutura, disciplinas 
+e coordenação do curso. A análise dos dados seguiu uma abordagem mista:
 
+- Dados quantitativos foram analisados por técnicas estatísticas 
+descritivas (médias, percentuais e gráficos).
 
-## Instrumentos
-
-Os instrumentos utilizados para a coleta de dados foram elaborados com 
-base em boas práticas avaliativas e adaptados ao estágio de maturidade 
-e às especificidades do programa. Os principais instrumentos foram 
-questionários estruturados, aplicados tanto aos discentes quanto aos 
-docentes. Esses questionários abordaram dimensões essenciais para a análise 
-do curso, tais como:
-
-- Qualidade do ensino ofertado;
-- Percepções sobre a coordenação do curso;
-- Infraestrutura disponível;
-- Disciplinas obrigatórias e optativas;
-- Atendimento administrativo;
-- Interdisciplinaridade e internacionalização;
-- Sugestões de melhorias.
-
-As questões foram organizadas em dois formatos principais:
-
-1. **Quantitativo**: Utilização de escalas (por exemplo, Likert) para medir 
-percepções sobre diferentes aspectos.
-
-2. **Qualitativo**: Respostas abertas que permitiram aos participantes 
-expressar opiniões detalhadas.
-
-
-
-## Técnicas Utilizadas para Análise dos Dados
-
-A análise dos dados coletados foi realizada utilizando uma abordagem mista, 
-combinando métodos quantitativos e qualitativos:
-
-1. **Análise Estatística Descritiva**:
-
-- Os dados quantitativos foram sintetizados por meio de métricas como 
-médias, frequências relativas e percentuais.
-
-- Essa abordagem permitiu identificar padrões significativos nos dados coletados.
-
-2. **Análise de Conteúdo**:
-
-- As respostas qualitativas foram examinadas com base em técnicas de 
+- Dados qualitativos foram examinados por análise de conteúdo com 
 categorização temática.
 
-- Essa análise possibilitou compreender adequadamente as percepções 
-e sugestõesdos participantes e identificar áreas prioritárias que podem ser 
-aperfeiçoadas.
+Os resultados obtidos foram consolidados em relatórios apresentados à 
+comunidade acadêmica em workshops dedicados à reflexão coletiva. Essa 
+abordagem assegurou transparência e inclusão no processo avaliativo, 
+permitindo identificar pontos fortes, desafios e oportunidades de melhoria.
 
-3. **Consolidação dos Resultados**:
-
-- Os achados foram consolidados neste relatório que destaca os 
-pontos fortes, as oportunidades de melhoria e as recomendações para 
-ações futuras.
-
-- Esse relatório foi apresentados à comunidade acadêmica em um
-workshop, que fo um importante espaço para a reflexão coletiva 
-para evolução do programa.
-
-4. **Meta-avaliação**:
-
-- Consistiu na avaliação crítica dos instrumentos utilizados (questionários) 
-e das metodologias aplicadas.
-
-- O objetivo foi garantir que os métodos empregados fossem válidos, 
-confiáveis e úteis para o aprimoramento contínuo do programa.
-
-Os resultados obtidos ao longo do quadriênio 2021/2024 foram amplamente 
-discutidos pela CPA em reuniões internas e apresentados à comunidade 
-acadêmica em reuniões e no workshop final. Essas discussões 
-viabilizaram o planejamento conjunto das ações futuras voltadas 
-à evolução do programa.
+Por fim, a meta-avaliação revisou criticamente os instrumentos e 
+métodos aplicados ao longo do ciclo avaliativo, garantindo a validade e 
+confiabilidade dos resultados obtidos. Essa etapa final reforçou o 
+compromisso do programa com a excelência acadêmica e administrativa.
 
 
 
@@ -354,32 +321,36 @@ detalha os principais achados e reflexões resultantes desse processo.
 
 Nesta subseção, são apresentados os resultados da autoavaliação realizada 
 junto ao corpo discente do Mestrado Profissional em Administração. 
-Os questionários aplicados abordaram dimensões como:
+Os questionários aplicados buscaram a avaliação de dimensões como:
 
-- Avaliação Geral do programa (@sec-avaprogdiscentes);
-- Avaliação da coordenação do programa (@sec-avacoorddiscentes);
-- Avaliação da infraestrutura disponível (@sec-avainfradiscentes);
-- Avaliação da Secretaria do programa (@sec-avasecdiscentes);
-- Avaliação das disciplinas obrigatórias (@sec-avadobrigdiscentes) e optativas (@sec-avadoptdiscentes); 
-- Autoavaliação em Relação ao seu compromentimento nas disciplinas 
-(@sec-autodiscdiscentes);
-- Avaliação dos Docentes do Programa (@sec-avadocentesdiscentes);
-- Avaliação da Orientação (@sec-avaorientdiscentes);
-- Autoavaliação em Relação à Orientação(@sec-autoorientdiscentes);
+- Qualidade geral do programa (@sec-avaprogdiscentes) e atuação da coordenação (@sec-avacoorddiscentes);
+
+- Infraestrutura disponível (@sec-avainfradiscentes) e atendimeento 
+admnistrativo (@sec-avasecdiscentes);
+
+- Disciplinas obrigatórias (@sec-avadobrigdiscentes) e optativas 
+(@sec-avadoptdiscentes); 
+
+- Autoavaliação em relação às disciplinas (@sec-autodiscdiscentes) e 
+em relação à orientação (@sec-autoorientdiscentes);
+
+- Atuação dos docentes (@sec-avadocentesdiscentes) e da orientação 
+acadêmica (@sec-avaorientdiscentes).
+
 
 Além disso, foi investigado o impacto da pandemia (@sec-pandemiadiscentes) 
-da COVID-19 nos mestrandos que ingressaram no curso em 2021, ano de início da 
-oferta do curso eu um período crítico para todos. E, por fim, foram 
-compiladas as sugestões de melhorias para diversas dimensões do programa 
-relatadas pelos discentes (@sec-sugestdiscentes).
+da COVID-19 sobre os mestrandos que ingressaram no curso em 2021, 
+ano de início da oferta do curso e um período crítico para todos. E, 
+por fim, foram compiladas as sugestões de melhorias para diversas 
+dimensões do programa relatadas pelos discentes (@sec-sugestdiscentes).
 
-A análise dos resultados busca fornecer uma visão abrangente das percepções 
-dos discentes sobre a qualidade do ensino, pesquisa e extensão oferecidos 
-pelo programa. Indicadores como taxas de resposta e características 
-demográficas dos participantes são destacados para reforçar a 
-transparência e representatividade do processo avaliativo. Esses 
-resultados são fundamentais para orientar ações que promovam o 
-aprimoramento contínuo do curso.
+Os resultados apresentados buscam fornecer uma visão abrangente 
+das percepções dos discentes sobre a qualidade do ensino, pesquisa 
+e extensão oferecidos pelo programa. Indicadores como taxas de 
+resposta e características demográficas dos participantes são 
+destacados para reforçar a transparência e representatividade 
+do processo avaliativo. Esses resultados são fundamentais para 
+orientar ações que promovam o aprimoramento contínuo do curso.
 
 
 ### Taxas de Resposta {#sec-taxadiscentes}
@@ -451,8 +422,8 @@ dados_discentes %>%
     align = c("l", "c")
   ) %>%
   kable_styling(
-    latex_options = c("hover", "hold_position"),
-    stripe_color = "gray!20",
+    latex_options = c("HOLD_position", "striped"),
+    stripe_color = "white!20",
     full_width = FALSE,
     position = "center",
     bootstrap_options = "striped"
@@ -6455,21 +6426,22 @@ Esta subseção apresenta os resultados da autoavaliação realizada pelo
 corpo docente do Mestrado Profissional em Administração. Os questionários 
 aplicados permitiram avaliar:
 
-- A percepção sobre a qualidade geral do programa;
-- Incentivos à pesquisa;
-- Atuação da coordenação;
-- Infraestrutura disponível;
-- Atendimento administrativo.
+- A percepção sobre a qualidade geral do programa (@sec-avaprogdocentes);
+- Incentivos à pesquisa (@sec-avaincentivosp);
+- Atuação da coordenação (@sec-avacoorddocentes);
+- Infraestrutura disponível (@sec-avainfradocentes);
+- Atendimento administrativo (@sec-avasecdocentes).
 
 Também foram analisadas as percepções dos docentes sobre as disciplinas 
-obrigatórias e optativas, além das implicações da pandemia da COVID-19 
-no desenvolvimento das atividades acadêmicas.
+obrigatórias (@sec-avadobrigdocentes) e optativas (@sec-avadoptadocentes), 
+além das implicações da pandemia da COVID-19 no desenvolvimento das 
+atividades acadêmicas (@sec-pandemiadocentes).
 
-Os dados coletados oferecem uma perspectiva crítica sobre o 
+Os resultados oferecem uma perspectiva crítica sobre o 
 papel dos docentes no desenvolvimento do programa e destacam 
 áreas prioritárias para melhorias. As informações obtidas são 
-essenciais para embasar decisões estratégicas que fortaleçam o 
-curso e promovam um ambiente acadêmico mais dinâmico e colaborativo.
+fundamentais para embasar decisões estratégicas que visem a 
+consolidação do programa e do curso.
 
 
 ### Taxa de Resposta  {#sec-docentestaxa}
@@ -9627,6 +9599,35 @@ pesquisa dos professores e alunos.
 
 # Ações Demandadas a Partir da Autoavaliação {#sec-acoesdemanda}
 
+Com base no processo de autoavaliação realizado ao longo do quadriênio 
+2021-2024, a Comissão Própria de Avaliação (CPA) propôs um conjunto de 
+ações prioritárias para o aprimoramento contínuo do Programa de Pós-Graduação 
+em Administração do IFMG - Campus Formiga. Essas ações foram fundamentadas 
+em uma análise crítica dos dados coletados, utilizando a técnica de 
+análise de conteúdo descrita no capítulo sobre metodologia. Essa abordagem 
+permitiu identificar temas recorrentes e sintetizar sugestões apresentadas 
+pelos diferentes segmentos acadêmicos.
+
+Além disso, a CPA considerou informações complementares obtidas ao longo 
+do quadriênio, como discussões realizadas, reuniões e 
+feedbacks informais da comunidade acadêmica. Esse esforço resultou em 
+uma síntese que equilibra as demandas da comunidade acadêmica com a visão 
+estratégica da comissão, assegurando que as ações propostas sejam viáveis 
+e alinhadas ao objetivo estratégico de melhoria contínua do programa.
+
+As ações demandadas estão organizadas na Tab. 5.1, que apresenta as 
+propostas detalhadas por dimensões estratégicas, responsáveis pela 
+implementação e áreas prioritárias. Entre os principais aspectos abordados 
+estão: revisão curricular, melhorias na infraestrutura, ampliação das 
+atividades extracurriculares, fortalecimento do engajamento 
+acadêmico e desenvolvimento de um planejamento estratégico para consolidar 
+o programa com vistas a um futuro doutorado.
+
+A CPA buscou garantir que essas ações fossem representativas das necessidades 
+identificadas pelos diferentes segmentos acadêmicos — discentes, docentes, 
+técnicos administrativos e representantes externos. A implementação dessas 
+ações será monitorada em ciclos avaliativos futuros, assegurando que os 
+resultados contribuam efetivamente para o aprimoramento contínuo do programa.
 
 
 ::: {.landscape}
@@ -9706,7 +9707,7 @@ tabela_acoes_demandadas |>
   kable_styling(
     latex_options = c("HOLD_position", "striped", "repeat_header"),
     stripe_color = "gray!10",
-    font_size = 11
+    font_size = 12
   ) |>
   column_spec(1, width = "12cm") |>
   column_spec(2, width = "4.5cm") |>
@@ -9725,11 +9726,201 @@ tabela_acoes_demandadas |>
 
 # Meta-Avaliação {#sec-metaavaliacao}
 
+A meta-avaliação do processo de autoavaliação foi conduzida como etapa final 
+do ciclo avaliativo referente ao quadriênio 2021-2024. Essa etapa, prevista 
+na Política de Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024, 
+teve como propósito principal revisar criticamente os instrumentos, métodos 
+e processos utilizados ao longo do período.
 
+
+## Objetivos da Meta-Avaliação
+
+A meta-avaliação foi orientada pelos seguintes objetivos:
+
+- **Aprimorar os Instrumentos Avaliativos**: Revisar questionários e 
+indicadores utilizados para garantir que sejam adequados às necessidades 
+do programa.
+
+- **Avaliar a Efetividade Metodológica**: Examinar se os métodos aplicados 
+foram eficazes para captar as informações necessárias à tomada de decisão.
+
+- **Identificar Oportunidades de Melhoria**: Detectar fragilidades no 
+processo avaliativo e propor ajustes para aprimorar futuras autoavaliações.
+
+- **Fortalecer a Transparência e o Diálogo**: Promover a participação da 
+comunidade acadêmica na análise dos resultados e no planejamento das melhorias.
+
+
+## Metodologia
+
+A meta-avaliação seguiu uma abordagem sistemática, dividida em cinco 
+etapas principais:
+
+1. **Revisão dos Instrumentos**: Análise detalhada dos questionários aplicados 
+aos segmentos acadêmicos (discentes, docentes, técnicos administrativos e 
+egressos), com foco na clareza das perguntas e na abrangência das dimensões 
+avaliadas.
+
+2. **Análise Crítica dos Resultados**: Verificação da consistência dos dados 
+coletados ao longo do quadriênio, utilizando técnicas estatísticas 
+descritivas para os dados quantitativos e análise de conteúdo para as 
+respostas qualitativas.
+
+3. **Consulta à Comunidade Acadêmica**: Realização de workshops e reuniões 
+para discutir os resultados da autoavaliação e coletar feedbacks sobre o 
+processo avaliativo.
+
+4. **Elaboração do Relatório Final**: Consolidação das análises realizadas 
+em um documento que destaca pontos fortes, fragilidades e recomendações para 
+aprimoramento.
+
+5. **Planejamento das Melhorias**: Proposição de ajustes nos instrumentos 
+avaliativos, metodologias e estratégias de engajamento para futuros ciclos.
+
+
+## Resultados da Meta-Avaliação
+
+Os resultados da meta-avaliação indicaram avanços significativos no processo 
+avaliativo do programa, mas também apontaram aspectos que podem ser 
+aprimorados:
+
+
+::: {.callout-note icon=false}
+## **Pontos Fortes**
+
+- Os instrumentos utilizados foram considerados abrangentes por captarem 
+percepções relevantes sobre ensino, pesquisa, extensão e gestão.
+
+- A análise de conteúdo aplicada às respostas qualitativas revelou insights 
+importants sobre as expectativas e demandas da comunidade acadêmica.
+
+- A participação dos segmentos acadêmicos garantiu uma representatividade 
+adequada das respostas.
+:::
+
+
+::: {.callout-tip icon=false}
+## **Áreas de Melhoria**:
+
+- Necessidade de maior clareza em algumas questões abertas dos questionários 
+para facilitar a categorização das respostas durante a análise qualitativa.
+
+- Inclusão de indicadores mais específicos para monitorar o impacto das 
+ações implementadas com base nos resultados da autoavaliação.
+
+- Estratégias adicionais para aumentar a taxa de resposta em determinados 
+grupos (por exemplo, discentes ingressantes).
+:::
+
+
+##  **Recomendações**
+
+Com base nos principais resultados da meta-avaliação, foram propostas as 
+ações exibidas na Tab. 6.1.
+
+```{r}
+#| tbl-cap: "Meta-Avaliação: Recomendações"
+
+tabela_recomendacoes <- data.frame(
+  Recomendacao = c(
+    "Revisar os instrumentos avaliativos para garantir maior alinhamento às necessidades específicas do programa.",
+    "Ampliar a comunicação sobre o processo avaliativo, promovendo maior engajamento dos segmentos acadêmicos.",
+    "Desenvolver indicadores mais detalhados para avaliar o impacto das ações implementadas.",
+    "Implementar treinamentos ou orientações prévias aos respondentes para aumentar a qualidade das respostas fornecidas."
+  ),
+  Responsavel = c(
+    "CPA",
+    "CPA",
+    "CPA",
+    "CPA"
+  )
+)
+
+tabela_recomendacoes |>
+  kbl(
+    col.names = c(
+      "\\textbf{Recomendação}",
+      "\\textbf{Responsável}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE,
+    align = c('l', 'c'),
+    longtable = FALSE
+  ) |>
+  kable_styling(
+    latex_options = c("HOLD_position", "striped", "repeat_header"),
+    stripe_color = "gray!10",
+    font_size = 12
+  ) |>
+  column_spec(1, width = "8cm") |>
+  column_spec(2, width = "4cm") |>
+  footnote(
+    general = "Fonte: Comissão Própria de Avaliação.",
+    general_title = "",
+    threeparttable = TRUE
+  )
+```
+
+A meta-avaliação representou uma etapa de grande aprendizagem para a CPA 
+neste primeiro ciclo avaliativo do Programa de Pós-Graduação em Administração 
+do IFMG - Campus Formiga. Ao refletir criticamente sobre os métodos 
+utilizados, a CPA empenhou-se em promover melhorias contínuas no processo 
+avaliativo, com o objetivo de que ele contribua de forma efetiva para 
+a evolução do programa.
 
 
 
 # Considerações Finais {#sec-consideracoesfinais}
+
+O Relatório Integral da Comissão Própria de Avaliação (CPA) do Programa 
+de Pós-Graduação em Administração do IFMG - Campus Formiga, referente ao 
+quadriênio 2021-2024, evidencia o compromisso institucional com a 
+melhoria contínua do programa, baseada em evidências. Iniciado em 2021, 
+em um período crítico marcado pela pandemia da COVID-19, o programa 
+enfrentou desafios significativos logo em seus primeiros anos. Ainda 
+assim, o processo de autoavaliação demonstrou a resiliência e o 
+comprometimento do curso com sua evolução e consolidação.
+
+A autoavaliação foi conduzida de forma estruturada, alinhada à Política de 
+Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg]. 
+Este processo permitiu uma análise abrangente das dimensões avaliadas — 
+ensino, pesquisa, extensão, infraestrutura e gestão — destacando tanto os 
+pontos fortes quanto as áreas que demandam aprimoramento. 
+
+**Entre as dimensõs bem avaliadas identificadas estão a qualidade 
+do corpo docente, diversos aspectos das disciplinas e da 
+infraestrutura disponível, o atendimento da secretaria do programa,
+entre outros. Por outro lado, foram apontadas oportunidades de melhoria 
+relacionadas à infraestrutura, à ampliação de atividades extracurriculares 
+e à comunicação institucional.**
+
+A meta-avaliação, realizada como etapa final do ciclo avaliativo, 
+desempenhou um papel essencial ao revisar criticamente os instrumentos e 
+métodos aplicados. Essa etapa validou a eficácia do processo avaliativo e 
+gerou recomendações importantes para ajustes futuros. Entre as principais 
+recomendações estão a revisão dos instrumentos avaliativos para maior 
+clareza e especificidade, o desenvolvimento de indicadores mais detalhados 
+e a ampliação das estratégias de engajamento dos segmentos acadêmicos.
+
+As ações demandadas a partir da autoavaliação foram organizadas em dimensões 
+estratégicas e detalhadas na Tab. 5.1 deste relatório. Essas ações visam 
+consolidar os avanços alcançados e superar os desafios identificados, 
+promovendo melhorias na matriz curricular, na infraestrutura e no planejamento 
+estratégico do programa. Além disso, reforçam o compromisso com a construção 
+de um ambiente acadêmico inclusivo, inovador e alinhado às demandas 
+institucionais e sociais.
+
+Por fim, este relatório destaca que o Programa de Pós-Graduação em 
+Administração do IFMG - Campus Formiga está comprometido com sua evolução 
+contínua. A implementação das ações propostas será monitorada pela CPA 
+em ciclos avaliativos futuros, assegurando que os resultados contribuam 
+efetivamente para o aperfeiçoamento do programa. A reflexão crítica 
+proporcionada pela autoavaliação fortalece não apenas a qualidade 
+acadêmica e administrativa do curso, mas também sua capacidade de 
+formar profissionais preparados para enfrentar os desafios contemporâneos 
+e contribuir para o desenvolvimento do país.
+
 
 
 
