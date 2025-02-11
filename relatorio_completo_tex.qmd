@@ -479,11 +479,11 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q5
   theme_void() +
   theme(legend.position = "none") +
   labs(
-    title = "Você exerce alguma atividade profissional remunerada?",
+    title = "Você exerce alguma atividade profissional \n remunerada?",
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -493,7 +493,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q5
 
 ```{r}
 #| label: fig-4.2
-#| fig-cap: "Atividades remuneradas exercidas pelos participantes da pesquisa."
+#| fig-cap: "Atividades remuneradas exercidas pelos discentes participantes da pesquisa."
 #| fig-width: 8  # Reduzindo a largura do gráfico
 #| fig-height: 5 # Reduzindo a altura do gráfico
 
@@ -543,7 +543,7 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
     aes(label = scales::percent(perc, accuracy = 0.1)),
     vjust = -1,  # ajusta a posição vertical do texto
     hjust = -0.2,
-    size = 4,  # ajusta o tamanho da fonte do texto
+    size = 5,  # ajusta o tamanho da fonte do texto
     fontface = "bold"
   ) +
   scale_color_manual(values = cores) +
@@ -553,9 +553,9 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
     labels = scales::label_percent()
   ) +
   labs(
-    title = "Em caso de possuir atividade profissional, por favor especifique qual.",
+    title = "Em caso de possuir atividade profissional, por favor especifique qual:",
     caption = "Fonte: Comissão Própria de Avaliação",
-    x = "Porcentagem de participantes",
+    x = NULL,
     y = NULL
   ) +
   theme_classic() +
@@ -566,7 +566,7 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
     plot.title = element_text(size = 12, face = "bold", hjust = 0.8),  
     plot.subtitle = element_text(size = 8),
     # Reduzindo o tamanho da fonte do eixo Y
-    axis.text.y = element_text(size = 10, face = "bold"),  
+    axis.text.y = element_text(size = 11, face = "bold"),  
     # Reduzindo o tamanho da fonte do eixo X
     axis.text.x = element_text(size = 10),  
     # Reduzindo a espessura da linha do eixo Y
@@ -592,7 +592,7 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
 
 ```{r}
 #| label: fig-4.3
-#| fig-cap: "Avaliação discente da interdisciplinaridade no Programa."
+#| fig-cap: "Avaliação discente da interdisciplinaridade do Programa."
 #| fig-width: 7.5
 #| fig-height: 4.5
 
@@ -651,10 +651,10 @@ ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -737,10 +737,10 @@ ggplot(q8_summary_diverging, aes(x = q8, y = percent_answers, fill = q8)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -823,10 +823,10 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -839,7 +839,7 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "O curso promove atividades de extensão como cursos, projetos de extensão e\noutras ações e/ou integra-se à atividades extensionistas?",
+    title = "O curso promove atividades de extensão como cursos, projetos de \n extensão e outras ações e/ou integra-se à atividades extensionistas?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -909,10 +909,10 @@ ggplot(q10_summary_diverging, aes(x = q10, y = percent_answers, fill = q10)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -995,10 +995,10 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1011,7 +1011,7 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "O curso proporciona um ambiente favorável ao crescimento intelectual dos\nmestrandos?",
+    title = "O curso proporciona um ambiente favorável ao seu crescimento \n intelectual?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -1081,10 +1081,10 @@ ggplot(q12_summary_diverging, aes(x = q12, y = percent_answers, fill = q12)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1167,10 +1167,10 @@ ggplot(q13_summary_diverging, aes(x = q13, y = percent_answers, fill = q13)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1253,10 +1253,10 @@ ggplot(q14_summary_diverging, aes(x = q14, y = percent_answers, fill = q14)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1269,7 +1269,7 @@ ggplot(q14_summary_diverging, aes(x = q14, y = percent_answers, fill = q14)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Como você avalia a reputação do curso no mercado/academia\nem relação às suas expectativas?",
+    title = "Como você avalia a reputação do curso no mercado e \n academia em relação às suas expectativas?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -1321,7 +1321,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -1371,7 +1371,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -1421,7 +1421,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -1491,10 +1491,10 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1577,10 +1577,10 @@ ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1663,10 +1663,10 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1749,10 +1749,10 @@ ggplot(q22_summary_diverging, aes(x = q22, y = percent_answers, fill = q22)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1835,10 +1835,10 @@ ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -1921,10 +1921,10 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2009,10 +2009,10 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2095,10 +2095,10 @@ ggplot(q27_summary_diverging, aes(x = q27, y = percent_answers, fill = q27)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2181,10 +2181,10 @@ ggplot(q28_summary_diverging, aes(x = q28, y = percent_answers, fill = q28)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2267,10 +2267,10 @@ ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2353,10 +2353,10 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2439,10 +2439,10 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2527,10 +2527,10 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2613,10 +2613,10 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2699,10 +2699,10 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2715,7 +2715,7 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "O horário de funcionamento da Secretaria atende às minhas necessidades?",
+    title = "O horário de funcionamento da Secretaria atende às minhas \n necessidades?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -2785,10 +2785,10 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -2801,7 +2801,7 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos discentes?",
+    title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos \n discentes?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -2873,17 +2873,17 @@ ggplot(q38_summary_diverging, aes(x = q38, y = percent_answers, fill = q38)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas obrigatórias contribuem para o meu desenvolvimento intelectual?",
+    title = "As disciplinas obrigatórias contribuem para o meu desenvolvimento \n intelectual?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -2953,17 +2953,17 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas obrigatórias contribuem para apreensão de novos conhecimentos\ne desenvolvimento de novas habilidades?",
+    title = "As disciplinas obrigatórias contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -3033,17 +3033,17 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas obrigatórias são coerentes com as linhas de pesquisa do Programa?",
+    title = "As disciplinas obrigatórias são coerentes com as linhas de pesquisa do \n Programa?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -3113,10 +3113,10 @@ ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
@@ -3193,10 +3193,10 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
@@ -3276,17 +3276,17 @@ ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas optativas contribuem para o meu desenvolvimento intelectual?",
+    title = "As disciplinas optativas contribuem para o meu desenvolvimento \n intelectual?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -3356,17 +3356,17 @@ ggplot(q45_summary_diverging, aes(x = q45, y = percent_answers, fill = q45)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas optativas contribuem para apreensão de novos conhecimentos\ne desenvolvimento de novas habilidades?",
+    title = "As disciplinas optativas contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -3436,17 +3436,17 @@ ggplot(q46_summary_diverging, aes(x = q46, y = percent_answers, fill = q46)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas optativas são coerentes com as linhas de pesquisa do Programa?",
+    title = "As disciplinas optativas são coerentes com as linhas de pesquisa do \n Programa?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -3516,10 +3516,10 @@ ggplot(q47_summary_diverging, aes(x = q47, y = percent_answers, fill = q47)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
@@ -3596,10 +3596,10 @@ ggplot(q48_summary_diverging, aes(x = q48, y = percent_answers, fill = q48)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
@@ -3676,10 +3676,10 @@ ggplot(q49_summary_diverging, aes(x = q49, y = percent_answers, fill = q49)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(t = 15, r = 15, b = 15, l = 15, unit = "pt"),
@@ -3758,10 +3758,10 @@ ggplot(q51_summary_diverging, aes(x = q51, y = percent_answers, fill = q51)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -3844,10 +3844,10 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -3930,10 +3930,10 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4016,10 +4016,10 @@ ggplot(q54_summary_diverging, aes(x = q54, y = percent_answers, fill = q54)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4102,10 +4102,10 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4118,7 +4118,7 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Participei das atividades e discussões desenvolvidas em sala de aula e fora dela?",
+    title = "Participei das atividades e discussões desenvolvidas em sala de aula \n e fora dela?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -4188,10 +4188,10 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4276,10 +4276,10 @@ ggplot(q57_summary_diverging, aes(x = q57, y = percent_answers, fill = q57)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4292,7 +4292,7 @@ ggplot(q57_summary_diverging, aes(x = q57, y = percent_answers, fill = q57)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Os professores demonstram conhecimento atualizado e domínio do conteúdo?",
+    title = "Os professores demonstram conhecimento atualizado e domínio do \n conteúdo?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -4362,10 +4362,10 @@ ggplot(q58_summary_diverging, aes(x = q58, y = percent_answers, fill = q58)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4378,7 +4378,7 @@ ggplot(q58_summary_diverging, aes(x = q58, y = percent_answers, fill = q58)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Os professores apresentaram o plano de ensino nos primeiros dias de aula?",
+    title = "Os professores apresentaram o plano de ensino nos primeiros dias \n de aula?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -4448,10 +4448,10 @@ ggplot(q59_summary_diverging, aes(x = q59, y = percent_answers, fill = q59)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4534,10 +4534,10 @@ ggplot(q60_summary_diverging, aes(x = q60, y = percent_answers, fill = q60)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4620,10 +4620,10 @@ ggplot(q61_summary_diverging, aes(x = q61, y = percent_answers, fill = q61)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4706,10 +4706,10 @@ ggplot(q62_summary_diverging, aes(x = q62, y = percent_answers, fill = q62)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4722,7 +4722,7 @@ ggplot(q62_summary_diverging, aes(x = q62, y = percent_answers, fill = q62)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Os professores utilizam metodologias adequadas ao ensino da disciplina?",
+    title = "Os professores utilizam metodologias adequadas ao ensino da \n disciplina?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -4792,10 +4792,10 @@ ggplot(q63_summary_diverging, aes(x = q63, y = percent_answers, fill = q63)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4878,10 +4878,10 @@ ggplot(q63_summary_diverging, aes(x = q63, y = percent_answers, fill = q63)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4964,10 +4964,10 @@ ggplot(q65_summary_diverging, aes(x = q65, y = percent_answers, fill = q65)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -4980,7 +4980,7 @@ ggplot(q65_summary_diverging, aes(x = q65, y = percent_answers, fill = q65)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Os professores respondem adequadamente os questionamentos dos alunos?",
+    title = "Os professores respondem adequadamente os questionamentos dos \n alunos?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -5050,10 +5050,10 @@ ggplot(q66_summary_diverging, aes(x = q66, y = percent_answers, fill = q66)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5136,10 +5136,10 @@ ggplot(q67_summary_diverging, aes(x = q67, y = percent_answers, fill = q67)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5222,10 +5222,10 @@ ggplot(q68_summary_diverging, aes(x = q68, y = percent_answers, fill = q68)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5238,7 +5238,7 @@ ggplot(q68_summary_diverging, aes(x = q68, y = percent_answers, fill = q68)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "A forma como os professores avaliam (distribuem as notas) as disciplinas é\nclara e justa?",
+    title = "A forma como os professores avaliam (distribuem as notas) das \n disciplinas é clara e justa?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -5310,10 +5310,10 @@ ggplot(q70_summary_diverging, aes(x = q70, y = percent_answers, fill = q70)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5396,10 +5396,10 @@ ggplot(q71_summary_diverging, aes(x = q71, y = percent_answers, fill = q71)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5412,7 +5412,7 @@ ggplot(q71_summary_diverging, aes(x = q71, y = percent_answers, fill = q71)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Conduz o processo de construção da dissertação de maneira adequada?",
+    title = "Conduz o processo de construção da dissertação de maneira \n adequada?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -5482,10 +5482,10 @@ ggplot(q72_summary_diverging, aes(x = q72, y = percent_answers, fill = q72)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5568,10 +5568,10 @@ ggplot(q73_summary_diverging, aes(x = q73, y = percent_answers, fill = q73)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5654,10 +5654,10 @@ ggplot(q74_summary_diverging, aes(x = q74, y = percent_answers, fill = q74)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5740,10 +5740,10 @@ ggplot(q75_summary_diverging, aes(x = q75, y = percent_answers, fill = q75)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5828,10 +5828,10 @@ ggplot(q77_summary_diverging, aes(x = q77, y = percent_answers, fill = q77)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(), 
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -5914,10 +5914,10 @@ ggplot(q78_summary_diverging, aes(x = q78, y = percent_answers, fill = q78)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6000,10 +6000,10 @@ ggplot(q79_summary_diverging, aes(x = q79, y = percent_answers, fill = q79)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6016,7 +6016,7 @@ ggplot(q79_summary_diverging, aes(x = q79, y = percent_answers, fill = q79)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Desenvolvo o trabalho de acordo com o que foi discutido nos encontros de orientação?",
+    title = "Desenvolvo o trabalho de acordo com o que foi discutido nas \n reuniões de orientação?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -6086,10 +6086,10 @@ ggplot(q80_summary_diverging, aes(x = q80, y = percent_answers, fill = q80)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6172,10 +6172,10 @@ ggplot(q81_summary_diverging, aes(x = q81, y = percent_answers, fill = q81)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6258,10 +6258,10 @@ ggplot(q82_summary_diverging, aes(x = q82, y = percent_answers, fill = q82)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6418,7 +6418,7 @@ progresso das pesquisas.
 
 
 
-
+\pagebreak
 
 ## Corpo Docente {#sec-docentes}
 
@@ -6426,7 +6426,7 @@ Esta subseção apresenta os resultados da autoavaliação realizada pelo
 corpo docente do Mestrado Profissional em Administração. Os questionários 
 aplicados permitiram avaliar:
 
-- A percepção sobre a qualidade geral do programa (@sec-avaprogdocentes);
+- A qualidade geral do programa (@sec-avaprogdocentes);
 - Incentivos à pesquisa (@sec-avaincentivosp);
 - Atuação da coordenação (@sec-avacoorddocentes);
 - Infraestrutura disponível (@sec-avainfradocentes);
@@ -6547,10 +6547,10 @@ ggplot(q3_summary_diverging, aes(x = q3, y = percent_answers, fill = q3)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(), 
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6563,7 +6563,7 @@ ggplot(q3_summary_diverging, aes(x = q3, y = percent_answers, fill = q3)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Como você avalia o Regimento do PPGA?",
+    title = "Como você avalia o Regimento do Programa?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -6633,10 +6633,10 @@ ggplot(q4_summary_diverging, aes(x = q4, y = percent_answers, fill = q4)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6719,10 +6719,10 @@ ggplot(q5_summary_diverging, aes(x = q5, y = percent_answers, fill = q5)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6805,10 +6805,10 @@ ggplot(q6_summary_diverging, aes(x = q6, y = percent_answers, fill = q6)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6891,10 +6891,10 @@ ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -6907,7 +6907,7 @@ ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "O curso promove atividades de extensão como cursos, projetos de extensão e\noutras ações e/ou integra-se à atividades extensionistas?",
+    title = "O curso promove atividades de extensão como cursos, projetos de \n extensão e outras ações e/ou integra-se à atividades extensionistas?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -6977,10 +6977,10 @@ ggplot(q8_summary_diverging, aes(x = q8, y = percent_answers, fill = q8)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7063,10 +7063,10 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7079,7 +7079,7 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "O curso proporciona um ambiente favorável ao crescimento intelectual dos\nmestrandos?",
+    title = "O curso proporciona um ambiente favorável ao crescimento intelectual \n dos mestrandos?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -7149,10 +7149,10 @@ ggplot(q10_summary_diverging, aes(x = q10, y = percent_answers, fill = q10)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7235,10 +7235,10 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7251,7 +7251,7 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Como você avalia a reputação do curso no mercado/academia em\nrelação às suas expectativas?",
+    title = "Como você avalia a reputação do curso no mercado \n e academia em relação às suas expectativas?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -7303,7 +7303,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -7352,11 +7352,11 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme_void() +
   theme(legend.position = "none") +
   labs(
-    title = "O Programa tem clareza e transparência para distribuição \n das bolsas?",
+    title = "O Programa tem clareza e transparência para a \n distribuição  das bolsas?",
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -7406,7 +7406,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -7452,11 +7452,11 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme_void() +
   theme(legend.position = "none") +
   labs(
-    title = "O Programa estimula a participação em reuniões de \n pesquisa, congressos, workshop, etc.?",
+    title = "O Programa estimula a participação em reuniões \n de pesquisa, congressos, workshop, etc.?",
     caption = "Fonte: Comissão Própria de Avaliação"
   ) +
   theme(
-    plot.title = element_text(size = 10, face = "bold", hjust = 1),
+    plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
     plot.caption = element_text(size = 8)
   )
 ```
@@ -7526,10 +7526,10 @@ ggplot(q18_summary_diverging, aes(x = q18, y = percent_answers, fill = q18)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7612,10 +7612,10 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7628,7 +7628,7 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "A coordenação encaminha adequadamente as solicitações feitas ao Colegiado?",
+    title = "A coordenação encaminha adequadamente as solicitações feitas \n ao Colegiado?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -7698,10 +7698,10 @@ ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7784,10 +7784,10 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7872,10 +7872,10 @@ ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -7958,10 +7958,10 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8044,10 +8044,10 @@ ggplot(q25_summary_diverging, aes(x = q25, y = percent_answers, fill = q25)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8130,10 +8130,10 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8218,10 +8218,10 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8304,10 +8304,10 @@ ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8390,10 +8390,10 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8406,7 +8406,7 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "O horário de funcionamento da Secretaria atende às minhas necessidades?",
+    title = "O horário de funcionamento da Secretaria atende às minhas \n necessidades?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -8476,10 +8476,10 @@ ggplot(q31_summary_diverging, aes(x = q31, y = percent_answers, fill = q31)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8492,7 +8492,7 @@ ggplot(q31_summary_diverging, aes(x = q31, y = percent_answers, fill = q31)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos discentes?",
+    title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos \n docentes?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -8565,10 +8565,10 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8581,7 +8581,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas obrigatórias contribuem para apreensão de novos conhecimentos e\ndesenvolvimento de novas habilidades?",
+    title = "As disciplinas obrigatórias contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -8651,10 +8651,10 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8667,7 +8667,7 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Os créditos exigidos em disciplinas obrigatórias são compatíveis com o\nobjetivo do programa?",
+    title = "Os créditos exigidos em disciplinas obrigatórias são compatíveis com \n os objetivos do programa?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -8738,10 +8738,10 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8824,10 +8824,10 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -8910,10 +8910,10 @@ ggplot(q37_summary_diverging, aes(x = q37, y = percent_answers, fill = q37)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9001,10 +9001,10 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9017,7 +9017,7 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "As disciplinas optativas contribuem para apreensão de novos conhecimentos e\ndesenvolvimento de novas habilidades?",
+    title = "As disciplinas optativas contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -9087,10 +9087,10 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9103,7 +9103,7 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Os créditos exigidos em disciplinas optativas são compatíveis com o objetivo do\nprograma?",
+    title = "Os créditos exigidos em disciplinas optativas são compatíveis com \n os objetivos do programa?",
     caption = "Fonte: Comissão Própria de Avaliação",
     x = NULL,
     fill = NULL
@@ -9173,10 +9173,10 @@ ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9259,10 +9259,10 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9345,10 +9345,10 @@ ggplot(q43_summary_diverging, aes(x = q43, y = percent_answers, fill = q43)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9431,10 +9431,10 @@ ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
   theme_minimal() +
   theme(
     text = element_text(family = "sans"),
-    plot.title = element_text(size = 10, face = "bold", hjust = 0),
+    plot.title = element_text(size = 11, face = "bold", hjust = 0),
     axis.text.x = element_blank(),
     axis.title.x = element_blank(),
-    axis.text.y = element_text(size = 9, face = "bold"),
+    axis.text.y = element_text(size = 10, face = "bold"),
     panel.grid = element_blank(),
     legend.position = "none",
     plot.margin = margin(
@@ -9888,12 +9888,9 @@ Este processo permitiu uma análise abrangente das dimensões avaliadas —
 ensino, pesquisa, extensão, infraestrutura e gestão — destacando tanto os 
 pontos fortes quanto as áreas que demandam aprimoramento. 
 
-**Entre as dimensõs bem avaliadas identificadas estão a qualidade 
-do corpo docente, diversos aspectos das disciplinas e da 
-infraestrutura disponível, o atendimento da secretaria do programa,
-entre outros. Por outro lado, foram apontadas oportunidades de melhoria 
-relacionadas à infraestrutura, à ampliação de atividades extracurriculares 
-e à comunicação institucional.**
+**Entre as dimensõs bem avaliadas identificadas estão a qualidade geral 
+do programa e do corpo docente, diversos aspectos das disciplinas e  
+infraestrutura disponível, entre outras. Por outro lado, foram apontadas oportunidades de melhoria relacionadas à infraestrutura e à ampliação de atividades extracurriculares, entre outras.**
 
 A meta-avaliação, realizada como etapa final do ciclo avaliativo, 
 desempenhou um papel essencial ao revisar criticamente os instrumentos e 
