@@ -78,7 +78,7 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 # Introdução 
 
-O Relatório Integral da Comissão Própria de Avaliação (CPA) do Programa de 
+O Relatório Integral da Comissão de Autovaliação do Programa de 
 Pós-Graduação em Administração do IFMG - Campus Formiga, referente ao 
 quadriênio 2021-2024, apresenta uma análise abrangente e reflexiva sobre 
 o desempenho do programa e seu compromisso com a melhoria contínua. Este 
@@ -93,14 +93,6 @@ para o ensino, pesquisa e extensão. A autoavaliação desempenhou um papel
 central nesse processo, permitindo identificar pontos fortes, áreas de 
 melhoria e orientar ações estratégicas para a consolidação do curso.
 
-Este relatório está organizado em seções que descrevem as principais 
-etapas do processo avaliativo: planejamento da autoavaliação 
-(@sec-planejamento), metodologia aplicada (@sec-metodologia), 
-resultados obtidos (@sec-resultados), ações demandadas (@sec-acoesdemanda) e 
-meta-avaliação (@sec-metaavaliacao). Cada seção reflete o esforço coletivo 
-da CPA e da comunidade acadêmica para promover um ambiente de reflexão 
-crítica e engajamento.
-
 Ao longo do quadriênio, foram aplicados instrumentos avaliativos 
 diversificados que captaram percepções de discentes, docentes e 
 técnicos administrativos. Os dados coletados foram analisados com rigor 
@@ -108,12 +100,20 @@ metodológico e apresentados em workshops voltados à discussão dos resultados.
 Esse processo assegurou transparência, inclusão e a construção de uma cultura 
 voltada ao aperfeiçoamento contínuo.
 
-Por fim, este relatório não apenas documenta os avanços alcançados pelo 
+Este relatório não apenas documenta os avanços alcançados pelo 
 programa ao longo de seus quatro anos iniciais, mas também aponta caminhos 
 para sua evolução futura. A implementação das ações propostas será 
-monitorada pela CPA em ciclos avaliativos subsequentes, reafirmando 
-o compromisso do programa com a formação de profissionais qualificados 
-para atender às demandas sociais e do mercado.
+monitorada pela Comissão de Autoavaliação em ciclos avaliativos 
+subsequentes, reafirmando o compromisso do programa com a formação 
+de profissionais qualificados para atender às demandas sociais e do mercado.
+
+Além desta introdução, este documento está organizado em seções 
+que descrevem as principais etapas do processo avaliativo: planejamento da 
+autoavaliação (@sec-planejamento), metodologia aplicada (@sec-metodologia), 
+resultados obtidos (@sec-resultados), ações demandadas (@sec-acoesdemanda) e 
+meta-avaliação (@sec-metaavaliacao). Cada seção reflete o esforço coletivo 
+da Comissão de Autoavaliação e da comunidade acadêmica para promover 
+um ambiente de reflexão crítica.
 
 
 
@@ -148,7 +148,7 @@ acadêmicos no processo avaliativo.
 prazos definidos para cada etapa.
 
 O cronograma sintetizado na Tab. 2.1 apresenta as ações realizadas pela 
-Comissão Própria de Avaliação (CPA) durante o quadriênio, incluindo 
+Comissão de Autovaliação durante o quadriênio, incluindo 
 a construção da política, aplicação dos instrumentos avaliativos, 
 análise dos resultados e a meta-avaliação final. Essas etapas 
 foram fundamentais para estruturar um processo avaliativo robusto 
@@ -184,16 +184,16 @@ tabela_planejamento <- data.frame(
     "Meta-Avaliação"
   ),
   Responsavel = c(
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA"
+    "CA",
+    "CA",
+    "CA",
+    "CA",
+    "CA",
+    "CA",
+    "CA",
+    "CA",
+    "CA",
+    "CA"
   ),
   Objetivo = c(
     "Estabelecer benchmarks e definir diretrizes iniciais para a política de autoavaliação.",
@@ -231,11 +231,15 @@ tabela_planejamento |>
   column_spec(2, width = "5cm") |>
   column_spec(4, width = "5cm") |>
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação.",
+    general = c(
+      "Fonte: Comissão de Autovaliação.",
+      "Nota: CA = Comissão de Autoavaliação."
+    ),
     general_title = "",
     threeparttable = TRUE
   )
 ```
+
 
 
 
@@ -267,7 +271,7 @@ acadêmica.
 2. **Engajamento:** Promoção da participação ativa de discentes e 
 docentes por meio de campanhas informativas.
 
-3. **Execução:** Aplicação anual dos instrumentos avaliativos pela CPA, 
+3. **Execução:** Aplicação anual dos instrumentos avaliativos pela Comissão de Autoavaliação, 
 composta por representantes dos segmentos acadêmicos do programa.
 
 4. **Meta-avaliação:** Revisão crítica dos métodos aplicados para aprimorar 
@@ -385,7 +389,7 @@ dados_taxa |>
   ) |>
   row_spec(5, background = "lightblue") |>
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação.",
+    general = "Fonte: Comissão de Autovaliação.",
     general_title = "",
     threeparttable = TRUE
   )
@@ -431,7 +435,7 @@ dados_discentes %>%
   column_spec(1, width = "4cm") %>%
   column_spec(2, width = "3cm") %>%
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação.",
+    general = "Fonte: Comissão de Autovaliação.",
     general_title = "",
     footnote_as_chunk = TRUE,
     threeparttable = TRUE
@@ -480,7 +484,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q5
   theme(legend.position = "none") +
   labs(
     title = "Você exerce alguma atividade profissional \n remunerada?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação"
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -554,7 +558,7 @@ ggplot(ativ_tab, aes(x = perc, y = q6)) +
   ) +
   labs(
     title = "Em caso de possuir atividade profissional, por favor especifique qual:",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     y = NULL
   ) +
@@ -668,7 +672,7 @@ ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
   ) +
   labs(
     title = "O curso utiliza ações de promoção da interdisciplinaridade?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     fill = NULL
   )
@@ -754,7 +758,7 @@ ggplot(q8_summary_diverging, aes(x = q8, y = percent_answers, fill = q8)) +
   ) +
   labs(
     title = "O curso emprega ações de promoção da internacionalização?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     fill = NULL
   )
@@ -840,7 +844,7 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
   ) +
   labs(
     title = "O curso promove atividades de extensão como cursos, projetos de \n extensão e outras ações e/ou integra-se à atividades extensionistas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     fill = NULL
   )
@@ -926,7 +930,7 @@ ggplot(q10_summary_diverging, aes(x = q10, y = percent_answers, fill = q10)) +
   ) +
   labs(
     title = "O curso promove atividades extraclasse como seminários, palestras,\ngrupos de estudos, dentre outros?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     fill = NULL
   )
@@ -1012,7 +1016,7 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
   ) +
   labs(
     title = "O curso proporciona um ambiente favorável ao seu crescimento \n intelectual?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     fill = NULL
   )
@@ -1098,7 +1102,7 @@ ggplot(q12_summary_diverging, aes(x = q12, y = percent_answers, fill = q12)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com a qualidade do curso?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação",
     x = NULL,
     fill = NULL
   )
@@ -1184,7 +1188,7 @@ ggplot(q13_summary_diverging, aes(x = q13, y = percent_answers, fill = q13)) +
   ) +
   labs(
     title = "Como você avalia a qualificação dos docentes em relação às suas\nexpectativas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1270,7 +1274,7 @@ ggplot(q14_summary_diverging, aes(x = q14, y = percent_answers, fill = q14)) +
   ) +
   labs(
     title = "Como você avalia a reputação do curso no mercado e \n academia em relação às suas expectativas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1318,7 +1322,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "Você conhece os objetivos do Programa?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -1368,7 +1372,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "O Programa tem clareza e transparência para \n distribuição das bolsas?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -1418,7 +1422,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "Você considerea que os critérios de manutenção \n de bolsa durante o curso são claros?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -1508,7 +1512,7 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
   ) +
   labs(
     title = "A coordenação demonstra compromisso com a melhoria do curso?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1594,7 +1598,7 @@ ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
   ) +
   labs(
     title = "A coordenação encaminha adequadamente as solicitações feitas ao\nColegiado?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1680,7 +1684,7 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
   ) +
   labs(
     title = "A coordenação envia avisos e comunicados de forma sistemática?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1766,7 +1770,7 @@ ggplot(q22_summary_diverging, aes(x = q22, y = percent_answers, fill = q22)) +
   ) +
   labs(
     title = "A coordenação está disponível para atendimento individual aos discentes?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1852,7 +1856,7 @@ ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
   ) +
   labs(
     title = "A coordenação trata os discentes de forma respeitosa e igualitária?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -1938,7 +1942,7 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
   ) +
   labs(
     title = "A coordenação considera a opinião dos discentes nas decisões?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2026,7 +2030,7 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com as salas dos grupos de pesquisa\n(recursos de informática, mesas, impressoras, etc.)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2112,7 +2116,7 @@ ggplot(q27_summary_diverging, aes(x = q27, y = percent_answers, fill = q27)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com as instalações sanitárias?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2198,7 +2202,7 @@ ggplot(q28_summary_diverging, aes(x = q28, y = percent_answers, fill = q28)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com os recursos audiovisuais?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2284,7 +2288,7 @@ ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com as salas de aula?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2370,7 +2374,7 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com o anfiteatro para eventos?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2456,7 +2460,7 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com o espaço de convivência?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2544,7 +2548,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
   ) +
   labs(
     title = "A Secretaria trata os discentes de maneira respeitosa e igualitária?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2630,7 +2634,7 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
   ) +
   labs(
     title = "A Secretaria emite declarações/documentos em tempo hábil?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2716,7 +2720,7 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
   ) +
   labs(
     title = "O horário de funcionamento da Secretaria atende às minhas \n necessidades?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2802,7 +2806,7 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
   ) +
   labs(
     title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos \n discentes?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2884,7 +2888,7 @@ ggplot(q38_summary_diverging, aes(x = q38, y = percent_answers, fill = q38)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias contribuem para o meu desenvolvimento \n intelectual?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -2964,7 +2968,7 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3044,7 +3048,7 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias são coerentes com as linhas de pesquisa do \n Programa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3124,7 +3128,7 @@ ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias contam com bibliografia atualizada?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3204,7 +3208,7 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias correspondem às minhas expectativas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3287,7 +3291,7 @@ ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
   ) +
   labs(
     title = "As disciplinas optativas contribuem para o meu desenvolvimento \n intelectual?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3367,7 +3371,7 @@ ggplot(q45_summary_diverging, aes(x = q45, y = percent_answers, fill = q45)) +
   ) +
   labs(
     title = "As disciplinas optativas contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3447,7 +3451,7 @@ ggplot(q46_summary_diverging, aes(x = q46, y = percent_answers, fill = q46)) +
   ) +
   labs(
     title = "As disciplinas optativas são coerentes com as linhas de pesquisa do \n Programa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3527,7 +3531,7 @@ ggplot(q47_summary_diverging, aes(x = q47, y = percent_answers, fill = q47)) +
   ) +
   labs(
     title = "As disciplinas optativas contam com bibliografia atualizada?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3607,7 +3611,7 @@ ggplot(q48_summary_diverging, aes(x = q48, y = percent_answers, fill = q48)) +
   ) +
   labs(
     title = "As disciplinas optativas contemplam temas variados?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3687,7 +3691,7 @@ ggplot(q49_summary_diverging, aes(x = q49, y = percent_answers, fill = q49)) +
   ) +
   labs(
     title = "As disciplinas optativas correspondem às minhas expectativas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3775,7 +3779,7 @@ ggplot(q51_summary_diverging, aes(x = q51, y = percent_answers, fill = q51)) +
   ) +
   labs(
     title = "Apreendi os conteúdos abordados nas disciplinas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3861,7 +3865,7 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
   ) +
   labs(
     title = "Realizei a leitura das bibliografias utilizadas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -3947,7 +3951,7 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
   ) +
   labs(
     title = "Realizei a leitura das bibliografias utilizadas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4033,7 +4037,7 @@ ggplot(q54_summary_diverging, aes(x = q54, y = percent_answers, fill = q54)) +
   ) +
   labs(
     title = "Fui frequente às aulas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4119,7 +4123,7 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
   ) +
   labs(
     title = "Participei das atividades e discussões desenvolvidas em sala de aula \n e fora dela?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4205,7 +4209,7 @@ ggplot(q55_summary_diverging, aes(x = q55, y = percent_answers, fill = q55)) +
   ) +
   labs(
     title = "Fui respeitoso com o(a) professor(a) e com os colegas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4293,7 +4297,7 @@ ggplot(q57_summary_diverging, aes(x = q57, y = percent_answers, fill = q57)) +
   ) +
   labs(
     title = "Os professores demonstram conhecimento atualizado e domínio do \n conteúdo?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4379,7 +4383,7 @@ ggplot(q58_summary_diverging, aes(x = q58, y = percent_answers, fill = q58)) +
   ) +
   labs(
     title = "Os professores apresentaram o plano de ensino nos primeiros dias \n de aula?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4465,7 +4469,7 @@ ggplot(q59_summary_diverging, aes(x = q59, y = percent_answers, fill = q59)) +
   ) +
   labs(
     title = "O conteúdo das disciplinas é atual e relevante?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4551,7 +4555,7 @@ ggplot(q60_summary_diverging, aes(x = q60, y = percent_answers, fill = q60)) +
   ) +
   labs(
     title = "Os professores cumprem o plano de ensino?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4637,7 +4641,7 @@ ggplot(q61_summary_diverging, aes(x = q61, y = percent_answers, fill = q61)) +
   ) +
   labs(
     title = "Os professores expõem o conteúdo de maneira clara?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4723,7 +4727,7 @@ ggplot(q62_summary_diverging, aes(x = q62, y = percent_answers, fill = q62)) +
   ) +
   labs(
     title = "Os professores utilizam metodologias adequadas ao ensino da \n disciplina?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4809,7 +4813,7 @@ ggplot(q63_summary_diverging, aes(x = q63, y = percent_answers, fill = q63)) +
   ) +
   labs(
     title = "Os professores se preocupam em manter um clima de respeito mútuo?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4895,7 +4899,7 @@ ggplot(q63_summary_diverging, aes(x = q63, y = percent_answers, fill = q63)) +
   ) +
   labs(
     title = "Os professores iniciam e terminam a aula no horário previsto?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -4981,7 +4985,7 @@ ggplot(q65_summary_diverging, aes(x = q65, y = percent_answers, fill = q65)) +
   ) +
   labs(
     title = "Os professores respondem adequadamente os questionamentos dos \n alunos?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5067,7 +5071,7 @@ ggplot(q66_summary_diverging, aes(x = q66, y = percent_answers, fill = q66)) +
   ) +
   labs(
     title = "Os professores são acessíveis e se comunicam bem com os alunos?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5153,7 +5157,7 @@ ggplot(q67_summary_diverging, aes(x = q67, y = percent_answers, fill = q67)) +
   ) +
   labs(
     title = "Os professores demonstram compromisso ético com a turma?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5239,7 +5243,7 @@ ggplot(q68_summary_diverging, aes(x = q68, y = percent_answers, fill = q68)) +
   ) +
   labs(
     title = "A forma como os professores avaliam (distribuem as notas) das \n disciplinas é clara e justa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5327,7 +5331,7 @@ ggplot(q70_summary_diverging, aes(x = q70, y = percent_answers, fill = q70)) +
   ) +
   labs(
     title = "Trata o(a) orientando(a) de forma respeitosa e igualitária?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5413,7 +5417,7 @@ ggplot(q71_summary_diverging, aes(x = q71, y = percent_answers, fill = q71)) +
   ) +
   labs(
     title = "Conduz o processo de construção da dissertação de maneira \n adequada?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5499,7 +5503,7 @@ ggplot(q72_summary_diverging, aes(x = q72, y = percent_answers, fill = q72)) +
   ) +
   labs(
     title = "Comparece aos encontros de orientação?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5585,7 +5589,7 @@ ggplot(q73_summary_diverging, aes(x = q73, y = percent_answers, fill = q73)) +
   ) +
   labs(
     title = "Retorna os textos produzidos pelo(a) orientando(a)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5671,7 +5675,7 @@ ggplot(q74_summary_diverging, aes(x = q74, y = percent_answers, fill = q74)) +
   ) +
   labs(
     title = "Incentiva a produção científica do(a) orientando(a)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5757,7 +5761,7 @@ ggplot(q75_summary_diverging, aes(x = q75, y = percent_answers, fill = q75)) +
   ) +
   labs(
     title = "É aberto ao debate e à exposição de novas ideias?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5845,7 +5849,7 @@ ggplot(q77_summary_diverging, aes(x = q77, y = percent_answers, fill = q77)) +
   ) +
   labs(
     title = "Sou respeitoso com o(a) orientador(a)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -5931,7 +5935,7 @@ ggplot(q78_summary_diverging, aes(x = q78, y = percent_answers, fill = q78)) +
   ) +
   labs(
     title = "Estou disponível quando meu(minha) orientador(a) solicita?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6017,7 +6021,7 @@ ggplot(q79_summary_diverging, aes(x = q79, y = percent_answers, fill = q79)) +
   ) +
   labs(
     title = "Desenvolvo o trabalho de acordo com o que foi discutido nas \n reuniões de orientação?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6103,7 +6107,7 @@ ggplot(q80_summary_diverging, aes(x = q80, y = percent_answers, fill = q80)) +
   ) +
   labs(
     title = "Cumpro o prazo no envio dos textos ao(à) orientador(a)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6189,7 +6193,7 @@ ggplot(q81_summary_diverging, aes(x = q81, y = percent_answers, fill = q81)) +
   ) +
   labs(
     title = "Tenho dedicação exclusiva ao curso?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6275,7 +6279,7 @@ ggplot(q82_summary_diverging, aes(x = q82, y = percent_answers, fill = q82)) +
   ) +
   labs(
     title = "Estou aberto ao debate e à exposição de novas ideias?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6476,7 +6480,7 @@ dados_taxa_docentes |>
   ) |>
   row_spec(1, background = "lightblue") |>
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação.",
+    general = "Fonte: Comissão de Autovaliação.",
     general_title = "",
     threeparttable = TRUE
   )
@@ -6564,7 +6568,7 @@ ggplot(q3_summary_diverging, aes(x = q3, y = percent_answers, fill = q3)) +
   ) +
   labs(
     title = "Como você avalia o Regimento do Programa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6650,7 +6654,7 @@ ggplot(q4_summary_diverging, aes(x = q4, y = percent_answers, fill = q4)) +
   ) +
   labs(
     title = "Como você avalia o processo de seleção (divulgação, edital e realização)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6736,7 +6740,7 @@ ggplot(q5_summary_diverging, aes(x = q5, y = percent_answers, fill = q5)) +
   ) +
   labs(
     title = "O curso utiliza ações de promoção da interdisciplinaridade?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6822,7 +6826,7 @@ ggplot(q6_summary_diverging, aes(x = q6, y = percent_answers, fill = q6)) +
   ) +
   labs(
     title = "O curso emprega ações de promoção da internacionalização?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6908,7 +6912,7 @@ ggplot(q7_summary_diverging, aes(x = q7, y = percent_answers, fill = q7)) +
   ) +
   labs(
     title = "O curso promove atividades de extensão como cursos, projetos de \n extensão e outras ações e/ou integra-se à atividades extensionistas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -6994,7 +6998,7 @@ ggplot(q8_summary_diverging, aes(x = q8, y = percent_answers, fill = q8)) +
   ) +
   labs(
     title = "O curso promove atividades extraclasse como seminários, palestras,\ngrupos de estudos, dentre outros?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7080,7 +7084,7 @@ ggplot(q9_summary_diverging, aes(x = q9, y = percent_answers, fill = q9)) +
   ) +
   labs(
     title = "O curso proporciona um ambiente favorável ao crescimento intelectual \n dos mestrandos?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7166,7 +7170,7 @@ ggplot(q10_summary_diverging, aes(x = q10, y = percent_answers, fill = q10)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com a qualidade do curso?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7252,7 +7256,7 @@ ggplot(q11_summary_diverging, aes(x = q11, y = percent_answers, fill = q11)) +
   ) +
   labs(
     title = "Como você avalia a reputação do curso no mercado \n e academia em relação às suas expectativas?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7300,7 +7304,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "Você conhece os objetivos do Programa?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -7353,7 +7357,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "O Programa tem clareza e transparência para a \n distribuição  das bolsas?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -7403,7 +7407,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "Você acha que os critérios de manutenção \n de bolsa durante o curso são claros?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -7453,7 +7457,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q1
   theme(legend.position = "none") +
   labs(
     title = "O Programa estimula a participação em reuniões \n de pesquisa, congressos, workshop, etc.?",
-    caption = "Fonte: Comissão Própria de Avaliação"
+    caption = "Fonte: Comissão de Autovaliação."
   ) +
   theme(
     plot.title = element_text(size = 12, face = "bold", hjust = 0.5),
@@ -7543,7 +7547,7 @@ ggplot(q18_summary_diverging, aes(x = q18, y = percent_answers, fill = q18)) +
   ) +
   labs(
     title = "A coordenação demonstra compromisso com a melhoria do curso?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7629,7 +7633,7 @@ ggplot(q19_summary_diverging, aes(x = q19, y = percent_answers, fill = q19)) +
   ) +
   labs(
     title = "A coordenação encaminha adequadamente as solicitações feitas \n ao Colegiado?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7715,7 +7719,7 @@ ggplot(q20_summary_diverging, aes(x = q20, y = percent_answers, fill = q20)) +
   ) +
   labs(
     title = "A coordenação envia avisos e comunicados de forma sistemática?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7801,7 +7805,7 @@ ggplot(q21_summary_diverging, aes(x = q21, y = percent_answers, fill = q21)) +
   ) +
   labs(
     title = "A coordenação considera a opinião dos docentes nas decisões?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7889,7 +7893,7 @@ ggplot(q23_summary_diverging, aes(x = q23, y = percent_answers, fill = q23)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com as salas dos grupo de pesquisa \n(recursos de informática, mesas, impressoras, etc.)?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -7975,7 +7979,7 @@ ggplot(q24_summary_diverging, aes(x = q24, y = percent_answers, fill = q24)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com os recursos audiovisuais?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8061,7 +8065,7 @@ ggplot(q25_summary_diverging, aes(x = q25, y = percent_answers, fill = q25)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com as salas de aula?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8147,7 +8151,7 @@ ggplot(q26_summary_diverging, aes(x = q26, y = percent_answers, fill = q26)) +
   ) +
   labs(
     title = "Qual o seu nível de satisfação com o anfiteatro para eventos?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8235,7 +8239,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
   ) +
   labs(
     title = "A Secretaria trata os discentes de maneira respeitosa e igualitária?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8321,7 +8325,7 @@ ggplot(q29_summary_diverging, aes(x = q29, y = percent_answers, fill = q29)) +
   ) +
   labs(
     title = "A Secretaria emite declarações/documentos em tempo hábil?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8407,7 +8411,7 @@ ggplot(q30_summary_diverging, aes(x = q30, y = percent_answers, fill = q30)) +
   ) +
   labs(
     title = "O horário de funcionamento da Secretaria atende às minhas \n necessidades?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8493,7 +8497,7 @@ ggplot(q31_summary_diverging, aes(x = q31, y = percent_answers, fill = q31)) +
   ) +
   labs(
     title = "A Secretaria é ágil nas respostas às demandas encaminhadas pelos \n docentes?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8582,7 +8586,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8668,7 +8672,7 @@ ggplot(q34_summary_diverging, aes(x = q34, y = percent_answers, fill = q34)) +
   ) +
   labs(
     title = "Os créditos exigidos em disciplinas obrigatórias são compatíveis com \n os objetivos do programa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8755,7 +8759,7 @@ ggplot(q35_summary_diverging, aes(x = q35, y = percent_answers, fill = q35)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias são coerentes com as linhas de pesquisa do\nPrograma?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8841,7 +8845,7 @@ ggplot(q36_summary_diverging, aes(x = q36, y = percent_answers, fill = q36)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias possuem aplicabilidade para a pesquisa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -8927,7 +8931,7 @@ ggplot(q37_summary_diverging, aes(x = q37, y = percent_answers, fill = q37)) +
   ) +
   labs(
     title = "As disciplinas obrigatórias contam com bibliografia atualizada?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9018,7 +9022,7 @@ ggplot(q39_summary_diverging, aes(x = q39, y = percent_answers, fill = q39)) +
   ) +
   labs(
     title = "As disciplinas optativas contribuem para apreensão de novos \n conhecimentos e desenvolvimento de novas habilidades?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9104,7 +9108,7 @@ ggplot(q40_summary_diverging, aes(x = q40, y = percent_answers, fill = q40)) +
   ) +
   labs(
     title = "Os créditos exigidos em disciplinas optativas são compatíveis com \n os objetivos do programa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9190,7 +9194,7 @@ ggplot(q41_summary_diverging, aes(x = q41, y = percent_answers, fill = q41)) +
   ) +
   labs(
     title = "As disciplinas optativas são coerentes com as linhas de pesquisa do\nPrograma?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9276,7 +9280,7 @@ ggplot(q42_summary_diverging, aes(x = q42, y = percent_answers, fill = q42)) +
   ) +
   labs(
     title = "As disciplinas optativas possuem aplicabilidade para a pesquisa?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9362,7 +9366,7 @@ ggplot(q43_summary_diverging, aes(x = q43, y = percent_answers, fill = q43)) +
   ) +
   labs(
     title = "As disciplinas optativas contam com bibliografia atualizada?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9448,7 +9452,7 @@ ggplot(q44_summary_diverging, aes(x = q44, y = percent_answers, fill = q44)) +
   ) +
   labs(
     title = "As disciplinas optativas contemplam temas variados?",
-    caption = "Fonte: Comissão Própria de Avaliação",
+    caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
   )
@@ -9600,7 +9604,7 @@ pesquisa dos professores e alunos.
 # Ações Demandadas a Partir da Autoavaliação {#sec-acoesdemanda}
 
 Com base no processo de autoavaliação realizado ao longo do quadriênio 
-2021-2024, a Comissão Própria de Avaliação (CPA) propôs um conjunto de 
+2021-2024, a Comissão de Autovaliação propôs um conjunto de 
 ações prioritárias para o aprimoramento contínuo do Programa de Pós-Graduação 
 em Administração do IFMG - Campus Formiga. Essas ações foram fundamentadas 
 em uma análise crítica dos dados coletados, utilizando a técnica de 
@@ -9608,7 +9612,7 @@ análise de conteúdo descrita no capítulo sobre metodologia. Essa abordagem
 permitiu identificar temas recorrentes e sintetizar sugestões apresentadas 
 pelos diferentes segmentos acadêmicos.
 
-Além disso, a CPA considerou informações complementares obtidas ao longo 
+Além disso, a Comissão de Autoavaliação considerou informações complementares obtidas ao longo 
 do quadriênio, como discussões realizadas, reuniões e 
 feedbacks informais da comunidade acadêmica. Esse esforço resultou em 
 uma síntese que equilibra as demandas da comunidade acadêmica com a visão 
@@ -9623,7 +9627,7 @@ atividades extracurriculares, fortalecimento do engajamento
 acadêmico e desenvolvimento de um planejamento estratégico para consolidar 
 o programa com vistas a um futuro doutorado.
 
-A CPA buscou garantir que essas ações fossem representativas das necessidades 
+A Comissão de Autoavaliação buscou garantir que essas ações fossem representativas das necessidades 
 identificadas pelos diferentes segmentos acadêmicos — discentes, docentes, 
 técnicos administrativos e representantes externos. A implementação dessas 
 ações será monitorada em ciclos avaliativos futuros, assegurando que os 
@@ -9713,7 +9717,7 @@ tabela_acoes_demandadas |>
   column_spec(2, width = "4.5cm") |>
   column_spec(3, width = "6cm") |>
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação.",
+    general = "Fonte: Comissão de Autovaliação.",
     general_title = "",
     threeparttable = TRUE
   )
@@ -9813,7 +9817,7 @@ grupos (por exemplo, discentes ingressantes).
 :::
 
 
-##  **Recomendações**
+## Recomendações
 
 Com base nos principais resultados da meta-avaliação, foram propostas as 
 ações exibidas na Tab. 6.1.
@@ -9829,10 +9833,10 @@ tabela_recomendacoes <- data.frame(
     "Implementar treinamentos ou orientações prévias aos respondentes para aumentar a qualidade das respostas fornecidas."
   ),
   Responsavel = c(
-    "CPA",
-    "CPA",
-    "CPA",
-    "CPA"
+    "Comissão de Autoavaliação",
+    "Comissão de Autoavaliação",
+    "Comissão de Autoavaliação",
+    "Comissão de Autoavaliação"
   )
 )
 
@@ -9856,26 +9860,26 @@ tabela_recomendacoes |>
   column_spec(1, width = "8cm") |>
   column_spec(2, width = "4cm") |>
   footnote(
-    general = "Fonte: Comissão Própria de Avaliação.",
+    general = "Fonte: Comissão de Autovaliação.",
     general_title = "",
     threeparttable = TRUE
   )
 ```
 
-A meta-avaliação representou uma etapa de grande aprendizagem para a CPA 
-neste primeiro ciclo avaliativo do Programa de Pós-Graduação em Administração 
-do IFMG - Campus Formiga. Ao refletir criticamente sobre os métodos 
-utilizados, a CPA empenhou-se em promover melhorias contínuas no processo 
-avaliativo, com o objetivo de que ele contribua de forma efetiva para 
-a evolução do programa.
+A meta-avaliação representou uma etapa de grande aprendizagem para a 
+Comissão de Autoavaliação neste primeiro ciclo avaliativo do Programa de 
+Pós-Graduação em Administração do IFMG - Campus Formiga. Ao refletir 
+criticamente sobre os métodos utilizados, a Comissão de Autoavaliação 
+empenhou-se em promover melhorias contínuas no processo avaliativo, com o 
+objetivo de que ele contribua de forma efetiva para a evolução do programa.
 
 
 
 # Considerações Finais {#sec-consideracoesfinais}
 
-O Relatório Integral da Comissão Própria de Avaliação (CPA) do Programa 
-de Pós-Graduação em Administração do IFMG - Campus Formiga, referente ao 
-quadriênio 2021-2024, evidencia o compromisso institucional com a 
+O Relatório Integral da Comissão de Autovaliação (Comissão de Autoavaliação) 
+do Programa de Pós-Graduação em Administração do IFMG - Campus Formiga, 
+referente ao quadriênio 2021-2024, evidencia o compromisso institucional com a 
 melhoria contínua do programa, baseada em evidências. Iniciado em 2021, 
 em um período crítico marcado pela pandemia da COVID-19, o programa 
 enfrentou desafios significativos logo em seus primeiros anos. Ainda 
@@ -9890,7 +9894,9 @@ pontos fortes quanto as áreas que demandam aprimoramento.
 
 **Entre as dimensõs bem avaliadas identificadas estão a qualidade geral 
 do programa e do corpo docente, diversos aspectos das disciplinas e  
-infraestrutura disponível, entre outras. Por outro lado, foram apontadas oportunidades de melhoria relacionadas à infraestrutura e à ampliação de atividades extracurriculares, entre outras.**
+infraestrutura disponível, entre outras. Por outro lado, foram apontadas 
+oportunidades de melhoria relacionadas à infraestrutura e à ampliação 
+de atividades extracurriculares, entre outras.**
 
 A meta-avaliação, realizada como etapa final do ciclo avaliativo, 
 desempenhou um papel essencial ao revisar criticamente os instrumentos e 
@@ -9910,9 +9916,9 @@ institucionais e sociais.
 
 Por fim, este relatório destaca que o Programa de Pós-Graduação em 
 Administração do IFMG - Campus Formiga está comprometido com sua evolução 
-contínua. A implementação das ações propostas será monitorada pela CPA 
-em ciclos avaliativos futuros, assegurando que os resultados contribuam 
-efetivamente para o aperfeiçoamento do programa. A reflexão crítica 
+contínua. A implementação das ações propostas será monitorada pela Comissão de 
+Autoavaliação em ciclos avaliativos futuros, assegurando que os resultados 
+contribuam efetivamente para o aperfeiçoamento do programa. A reflexão crítica 
 proporcionada pela autoavaliação fortalece não apenas a qualidade 
 acadêmica e administrativa do curso, mas também sua capacidade de 
 formar profissionais preparados para enfrentar os desafios contemporâneos 
