@@ -106,12 +106,11 @@ subsequentes, reafirmando o compromisso do programa com a formação
 de profissionais qualificados para atender às demandas sociais e do mercado.
 
 Além desta introdução, este documento está organizado em seções 
-que descrevem as principais etapas do processo avaliativo: planejamento da 
-autoavaliação (@sec-planejamento), metodologia aplicada (@sec-metodologia), 
-resultados obtidos (@sec-resultados), ações demandadas (@sec-acoesdemanda) e 
-meta-avaliação (@sec-metaavaliacao). Cada seção reflete o esforço coletivo 
-da Comissão de Autoavaliação e da comunidade acadêmica para promover 
-um ambiente de reflexão crítica.
+que descrevem as principais etapas do processo avaliativo: Planejamento da 
+Autoavaliação (@sec-planejamento), Metodologia aplicada (@sec-metodologia), 
+Resultados da Autoavaliação (@sec-resultados), Ações Executadas e Demandadas 
+a partir da Autoavaliação (@sec-acoesdemanda) e Meta-Avaliação 
+(@sec-metaavaliacao). 
 
 
 
@@ -248,9 +247,9 @@ tabela_planejamento |>
 A metodologia aplicada na autoavaliação do Mestrado Profissional em 
 Administração do IFMG - Campus Formiga foi desenvolvida em conformidade 
 com a Política de Autoavaliação do Programa, formalizada pela 
-Portaria IFMG nº 1706/2024 [@portaria1706ifmg]. Este capítulo descreve 
+Portaria IFMG nº 1706/2024 [@portaria1706ifmg]. Esta seção descreve 
 os procedimentos adotados para a coleta e análise dos dados, os instrumentos 
-utilizados e as técnicas empregadas no processo autoavaliativo.
+utilizados e as técnicas e procedimentos empregados no processo autoavaliativo.
 
 
 ## Metodologia Aplicada ao Processo de Autoavaliação
@@ -275,7 +274,7 @@ composta por representantes dos segmentos acadêmicos do programa.
 4. **Meta-avaliação:** Revisão crítica dos métodos aplicados para aprimorar 
 continuamente o processo.
 
-Os instrumentos utilizados incluíram questionários estruturados com 
+Os instrumentos utilizados incluíram questionários com 
 questões quantitativas (escalas Likert) e qualitativas (respostas abertas), 
 abordando dimensões como qualidade do ensino, infraestrutura, disciplinas 
 e coordenação do curso, entre outras. A análise dos dados seguiu 
@@ -284,16 +283,16 @@ técnicas estatísticas descritivas, notamente frequências percentuais e
 diversos tipos de gráficos, enquanto os dados qualitativos foram examinados 
 usando a método de categorização temática.
 
-A estrutura dos questionários aplicados reflete o compromisso do 
-programa com uma análise abrangente e detalhada. A alta quantidade de 
-questões, distribuídas em diversas dimensões avaliativas, foi 
-intencionalmente projetada para captar avaliações e percepções 
-detalhadas, incluindo sugestões específicas dos diferentes segmentos 
-acadêmicos. Essa abordagem é especialmente relevante para um programa 
-recente, iniciado em 2021, que busca promover melhorias contínuas 
-fundamentadas em evidências. Isto posto, a amplitude das questões 
-evidencia o esforço efetivo do processo avaliativo para contribuir para 
-a evolução do curso.
+A estrutura dos questionários aplicados buscou um alinhamento com o 
+estágio de maturidade de curso, o qual é recente, o que demandou 
+uma análise abrangente. A alta quantidade de questões, distribuídas 
+em diversas dimensões avaliativas, foi intencionalmente projetada 
+para captar avaliações e percepções detalhadas, incluindo sugestões 
+específicas dos diferentes segmentos acadêmicos. Essa abordagem 
+é especialmente relevante para um programa recente, iniciado em 2021, 
+que busca promover melhorias contínuas fundamentadas em evidências. 
+Isto posto, a amplitude das questões evidencia o esforço efetivo 
+do processo avaliativo para contribuir para a evolução do curso.
 
 Os resultados obtidos foram consolidados em relatórios e 
 amplamente divulgados aos segmentos acadêmicos, tanto pelo site 
@@ -313,8 +312,7 @@ Dada a alta quantidade de questões aplicadas nos questionários,
 abrangendo diversas dimensões avaliativas, a Comissão de Autoavaliação 
 optou por consolidar os resultados e sugestões pertinentes entre as 
 Ações Demandadas a partir do Processo de Autoavaliação apresentadas 
-na @tbl-5.1 da [@sec-acoesdemanda] (Ações Demandadas a Partir 
-da Autoavaliação). Essa decisão foi tomada para evitar redundâncias 
+na @tbl-5.2 da @sec-acoesdemanda, Ações Executadas e Demandadas a Partir da Autoavaliação. Essa decisão foi tomada para evitar redundâncias 
 no relatório e apresentar as análises de maneira objetiva e focada nas 
 melhorias concretas propostas. 
 
@@ -342,17 +340,8 @@ direcionados aos discentes e docentes, abrangendo aspectos como
 qualidade do ensino, infraestrutura, coordenação do programa e 
 impacto da pandemia da COVID-19, entre outros. Os dados coletados 
 foram analisados de maneira quantitativa e qualitativa, permitindo 
-identificar pontos fortes, desafios e oportunidades de melhoria. Este 
-capítulo apresenta os principais resultados resultantes desse processo.
-
-Os resultados da autoavaliação foram organizados em dimensões previamente 
-definidas e analisados com base nas respostas fornecidas pelos discentes 
-e docentes. Para garantir objetividade e evitar redundâncias, os dados 
-coletados foram consolidados na seção "Ações Demandadas a Partir da 
-Autoavaliação", onde são apresentados de forma integrada às propostas 
-de melhoria. Essa estrutura permite uma visão clara das prioridades 
-identificadas no processo avaliativo.
-
+identificar pontos fortes, desafios e oportunidades de melhoria. Esta 
+seção apresenta os principais resultados desse processo.
 
 
 ## Corpo Discente {#sec-discentes}
@@ -9693,7 +9682,7 @@ pesquisa dos professores e alunos.
 
 
 
-# Ações Demandadas a Partir da Autoavaliação {#sec-acoesdemanda}
+# Ações Executadas e Demandadas a Partir da Autoavaliação {#sec-acoesdemanda}
 
 Com base no processo de autoavaliação realizado ao longo do quadriênio 
 2021-2024, a Comissão de Autovaliação propôs um conjunto de 
@@ -9710,6 +9699,56 @@ reuniões e feedbacks informais da comunidade acadêmica. Esse esforço resultou
 em uma síntese que equilibra as demandas da comunidade acadêmica com a visão 
 estratégica da comissão, assegurando que as ações propostas sejam viáveis 
 e alinhadas ao objetivo estratégico de melhoria contínua do programa.
+
+```{r}
+#| tbl-cap: "Demandas Identificadas no Processo de Autoavaliaçào e Ações Executadas."
+
+tabela_demandas <- data.frame(
+  Demanda = c(
+    "Necessidade de disciplina para exposição do desenvolvimento dos projetos de Qualificação e Dissertação.",
+    "Redução da carga de disciplinas obrigatórias, considerando o perfil profissional dos mestrandos.",
+    "Maior suporte ao trabalho dos docentes e discentes pela coordenação."
+  ),
+  Acao = c(
+    "Criação dos Seminários de Qualificação e Dissertação.",
+    "Alteração da disciplina 'Inovação Aplicada às Finanças' de obrigatória para optativa.",
+    "Suporte ao trabalho dos docentes e discentes."
+  ),
+  Dimensao = c(
+    "Matriz Curricular",
+    "Matriz Curricular",
+    "Coordenação Acadêmica"
+  )
+)
+
+tabela_demandas |>
+  kbl(
+    col.names = c(
+      "\\textbf{Demanda Identificada}",
+      "\\textbf{Ação Executada}",
+      "\\textbf{Dimensão}"
+    ),
+    format = "latex",
+    booktabs = TRUE,
+    escape = FALSE,
+    align = c('l', 'l', 'c'),
+    longtable = FALSE
+  ) |>
+  kable_styling(
+    latex_options = c("HOLD_position", "striped", "repeat_header"),
+    stripe_color = "gray!10",
+    font_size = 12
+  ) |>
+  column_spec(1, width = "6cm") |>
+  column_spec(2, width = "5cm") |>
+  column_spec(3, width = "3cm") |>
+  footnote(
+    general = "Fonte: Comissão de Autoavaliação.",
+    general_title = "",
+    threeparttable = TRUE
+  )
+```
+
 
 As ações demandadas estão organizadas na Tab. 5.1, que apresenta as 
 propostas detalhadas por dimensões estratégicas, responsáveis pela 
@@ -9730,7 +9769,7 @@ aprimoramento contínuo do programa.
 ::: {.landscape}
 
 ```{r}
-#| label: tbl-5.1
+#| label: tbl-5.2
 #| tbl-cap: "Ações Demandadas a Partir do Processo de Autoavaliação."
 
 tabela_acoes_demandadas <- data.frame(
@@ -9987,7 +10026,7 @@ corpo docente e a coordenação acadêmica. Por outro lado, identificou
 infraestrutura e à ampliação de atividades extracurriculares.
 
 As ações demandadas foram organizadas em dimensões estratégicas detalhadas 
-na @tbl-5.1 deste relatório. Entre as principais iniciativas propostas 
+na @tbl-5.2 deste relatório. Entre as principais iniciativas propostas 
 estão a revisão curricular, melhorias na infraestrutura, incentivo à 
 pesquisa e ampliação das atividades de extensão e internacionalização. A 
 implementação dessas ações será monitorada pela Comissão de Autoavaliação 
