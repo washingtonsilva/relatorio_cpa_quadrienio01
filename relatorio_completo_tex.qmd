@@ -75,7 +75,6 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 
 
-
 # Introdução 
 
 O Relatório Integral da Comissão de Autovaliação do Programa de 
@@ -94,11 +93,10 @@ central nesse processo, permitindo identificar pontos fortes, áreas de
 melhoria e orientar ações estratégicas para a consolidação do curso.
 
 Ao longo do quadriênio, foram aplicados instrumentos avaliativos 
-diversificados que captaram percepções de discentes, docentes e 
-técnicos administrativos. Os dados coletados foram analisados com rigor 
-metodológico e apresentados em workshops voltados à discussão dos resultados. 
-Esse processo assegurou transparência, inclusão e a construção de uma cultura 
-voltada ao aperfeiçoamento contínuo.
+diversificados que buscaram captar percepções dos segmentos acadêmicos 
+sobre diversas dimensões do programa. Os dados coletados foram analisados 
+com criticamente e os resultados foram apresentados em relatórios 
+aos diferentes segmentos. **Esse processo assegurou transparência e a construção de uma cultura voltada ao aperfeiçoamento contínuo.**
 
 Este relatório não apenas documenta os avanços alcançados pelo 
 programa ao longo de seus quatro anos iniciais, mas também aponta caminhos 
@@ -280,23 +278,51 @@ continuamente o processo.
 Os instrumentos utilizados incluíram questionários estruturados com 
 questões quantitativas (escalas Likert) e qualitativas (respostas abertas), 
 abordando dimensões como qualidade do ensino, infraestrutura, disciplinas 
-e coordenação do curso. A análise dos dados seguiu uma abordagem mista:
+e coordenação do curso, entre outras. A análise dos dados seguiu 
+uma abordagem mista, os dados quantitativos foram analisados com
+técnicas estatísticas descritivas, notamente frequências percentuais e 
+diversos tipos de gráficos, enquanto os dados qualitativos foram examinados 
+usando a método de categorização temática.
 
-- Dados quantitativos foram analisados por técnicas estatísticas 
-descritivas (médias, percentuais e gráficos).
+A estrutura dos questionários aplicados reflete o compromisso do 
+programa com uma análise abrangente e detalhada. A alta quantidade de 
+questões, distribuídas em diversas dimensões avaliativas, foi 
+intencionalmente projetada para captar avaliações e percepções 
+detalhadas, incluindo sugestões específicas dos diferentes segmentos 
+acadêmicos. Essa abordagem é especialmente relevante para um programa 
+recente, iniciado em 2021, que busca promover melhorias contínuas 
+fundamentadas em evidências. Isto posto, a amplitude das questões 
+evidencia o esforço efetivo do processo avaliativo para contribuir para 
+a evolução do curso.
 
-- Dados qualitativos foram examinados por análise de conteúdo com 
-categorização temática.
-
-Os resultados obtidos foram consolidados em relatórios apresentados à 
-comunidade acadêmica em workshops dedicados à reflexão coletiva. Essa 
-abordagem assegurou transparência e inclusão no processo avaliativo, 
-permitindo identificar pontos fortes, desafios e oportunidades de melhoria.
+Os resultados obtidos foram consolidados em relatórios e 
+amplamente divulgados aos segmentos acadêmicos, tanto pelo site 
+institucional do Mestrado quanto por meio de e-mails informativos. 
+Essa estratégia assegurou a transparência e a disseminação do 
+processo avaliativo.
 
 Por fim, a meta-avaliação revisou criticamente os instrumentos e 
 métodos aplicados ao longo do ciclo avaliativo, garantindo a validade e 
 confiabilidade dos resultados obtidos. Essa etapa final reforçou o 
 compromisso do programa com a excelência acadêmica e administrativa.
+
+
+## Procedimento em Relação aos Resultados 
+
+Dada a alta quantidade de questões aplicadas nos questionários, 
+abrangendo diversas dimensões avaliativas, a Comissão de Autoavaliação 
+optou por consolidar os resultados e sugestões pertinentes entre as 
+Ações Demandadas a partir do Processo de Autoavaliação apresentadas 
+na @tbl-5.1 da [@sec-acoesdemanda] (Ações Demandadas a Partir 
+da Autoavaliação). Essa decisão foi tomada para evitar redundâncias 
+no relatório e apresentar as análises de maneira objetiva e focada nas 
+melhorias concretas propostas. 
+
+No entanto, para proporcionar uma visão geral das informações extraídos dos 
+dados coletados, foram incluídas subseções específicas contendo sínteses 
+dos principais resultados obtidos junto ao corpo discente 
+(@sec-sintesediscentes) e ao corpo docente (@sec-sintesedocentes). 
+
 
 
 
@@ -314,10 +340,18 @@ com as diretrizes da CAPES e as demandas institucionais.
 A pesquisa foi estruturada com base na aplicação de questionários 
 direcionados aos discentes e docentes, abrangendo aspectos como 
 qualidade do ensino, infraestrutura, coordenação do programa e 
-impacto da pandemia da COVID-19. Os dados coletados foram analisados 
-de maneira quantitativa e qualitativa, permitindo identificar 
-pontos fortes, desafios e oportunidades de melhoria. Este capítulo 
-detalha os principais achados e reflexões resultantes desse processo.
+impacto da pandemia da COVID-19, entre outros. Os dados coletados 
+foram analisados de maneira quantitativa e qualitativa, permitindo 
+identificar pontos fortes, desafios e oportunidades de melhoria. Este 
+capítulo apresenta os principais resultados resultantes desse processo.
+
+Os resultados da autoavaliação foram organizados em dimensões previamente 
+definidas e analisados com base nas respostas fornecidas pelos discentes 
+e docentes. Para garantir objetividade e evitar redundâncias, os dados 
+coletados foram consolidados na seção "Ações Demandadas a Partir da 
+Autoavaliação", onde são apresentados de forma integrada às propostas 
+de melhoria. Essa estrutura permite uma visão clara das prioridades 
+identificadas no processo avaliativo.
 
 
 
@@ -329,7 +363,7 @@ Os questionários aplicados buscaram a avaliação de dimensões como:
 
 - Qualidade geral do programa (@sec-avaprogdiscentes) e atuação da coordenação (@sec-avacoorddiscentes);
 
-- Infraestrutura disponível (@sec-avainfradiscentes) e atendimeento 
+- Infraestrutura disponível (@sec-avainfradiscentes) e atendimento 
 admnistrativo (@sec-avasecdiscentes);
 
 - Disciplinas obrigatórias (@sec-avadobrigdiscentes) e optativas 
@@ -357,7 +391,40 @@ do processo avaliativo. Esses resultados são fundamentais para
 orientar ações que promovam o aprimoramento contínuo do curso.
 
 
+### Síntese dos Principais Resultados {#sec-sintesediscentes}
+
+Os resultados da autoavaliação do corpo discente indicaram altos 
+níveis de satisfação em dimensões como a qualidade do curso, a atuação 
+dos docentes, a coordenação do programa e o atendimento da Secretaria, 
+e com outras dimensões. No entanto, foram identificadas oportunidades 
+de melhoria em aspectos como infraestrutura (especialmente o espaço 
+de convivência) e ampliação de atividades extracurriculares. As sugestões 
+fornecidas pelos discentes indicam a necessidade de revisão das disciplinas 
+obrigatórias e optativas, incluindo sua sequência, para aperfeiçoar seu
+alinhmento às linhas de pesquisa do mestrado e às demandas específicas 
+dos discentes que desenvolvem projetos nas respectivas linhas.
+
+
 ### Taxas de Resposta {#sec-taxadiscentes}
+
+As taxas de resposta dos discentes por ano ou turma de ingresso 
+apresentam variações, conforme a Tab. 4.1. A turma 
+de ingressantes de 2023 se destaca positivamente com uma taxa de 
+resposta de 100%, evidenciando um engajamento pleno dos estudantes. Por 
+outro lado, turmas como a de 2021 (22%) e 2024 (43%) apresentaram níveis 
+de participação abaixo do ideal, o que aponta para a necessidade de 
+estratégias mais eficazes de sensibilização e engajamento. Importante 
+destacar que a turma de ingressantes em 2023 foi fortemente afetada 
+pelos impactos negativos da pandemia da COVID-19.
+
+Apesar dessas diferenças, a taxa geral de resposta no quadriênio (48%) é 
+um indicador importante e relevante para o processo de autoavaliação. Os dados 
+coletados permitem uma análise representativa das avaliações epercepções dos 
+discentes, contribuindo para identificar pontos fortes e áreas que 
+demandam melhorias no programa. A participação obtida, mesmo com 
+algumas limitações, reforça o valor do envolvimento discente no 
+fortalecimento da cultura avaliativa do programa.
+
 
 ```{r}
 #| tbl-cap: "Taxas de Resposta dos Discentes por Ano/Turma de Ingresso e Total."
@@ -397,7 +464,7 @@ dados_taxa |>
 
 
 
-### Características dos Discentes {#sec-caractdiscentes}
+### Perfil dos Participantes {#sec-caractdiscentes}
 
 
 ```{r}
@@ -497,7 +564,7 @@ ggplot(ativ_tab, aes(ymax = ymax, ymin = ymin, xmax = 3.5, xmin = 2.5, fill = q5
 
 ```{r}
 #| label: fig-4.2
-#| fig-cap: "Atividades remuneradas exercidas pelos discentes participantes da pesquisa."
+#| fig-cap: "Atividades profissionais exercidas pelos discentes participantes."
 #| fig-width: 8  # Reduzindo a largura do gráfico
 #| fig-height: 5 # Reduzindo a altura do gráfico
 
@@ -506,7 +573,7 @@ dados_discentes <- dados_discentes %>%
   mutate(q6 = factor(
     case_when(
       q6 == "Não tenho no momento." ~ NA_character_,
-      q6 %in% c("Professor", "Professora universitária") ~ "Professor(a)",
+      q6 %in% c("Professor", "Professora universitária", "Instrutora de formação profissional") ~ "Professor(a)",
       q6 %in% c(
         "Funcionário Público - Agento de Correios",
         "Servidor Público",
@@ -3875,12 +3942,12 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
 
 ```{r}
 #| label: fig-4.43
-#| fig-cap: "Autoavaliação discente da leitura das bibliografias das disciplinas."
+#| fig-cap: "Autoavaliação discente da dedicação aos estudos."
 #| fig-width: 7.5
 #| fig-height: 4.5
 
 # Definir todos os níveis possíveis da escala Likert
-q52_levels <- c(
+q53_levels <- c(
   "Discordo Totalmente",
   "Discordo Parcialmente",
   "Não Concordo, Nem Discordo",
@@ -3888,27 +3955,27 @@ q52_levels <- c(
   "Concordo Totalmente"
 )
 
-# Criar a tabela de frequência para a variável q52, incluindo níveis não utilizados
-q52_summary <- dados_discentes %>%
-  count(q52, sort = TRUE) %>%
-  complete(q52 = q52_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
-  mutate(q52 = factor(q52, levels = q52_levels)) %>%
+# Criar a tabela de frequência para a variável q53, incluindo níveis não utilizados
+q53_summary <- dados_discentes %>%
+  count(q53, sort = TRUE) %>%
+  complete(q53 = q53_levels, fill = list(n = 0)) %>%  # Adicionar níveis não utilizados com 0
+  mutate(q53 = factor(q53, levels = q53_levels)) %>%
   mutate(
     percent_answers = n / sum(n),
     percent_answers_label = percent(percent_answers, accuracy = 1)
   )
 
 # Criar dados para o gráfico de barras divergentes
-q52_summary_diverging <- q52_summary %>%
+q53_summary_diverging <- q53_summary %>%
   mutate(percent_answers = if_else(
-    q52 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
+    q53 %in% c("Concordo Totalmente", "Concordo Parcialmente"),
     percent_answers,
     -percent_answers
   )) %>%
   mutate(percent_answers_label = if_else(percent_answers == 0, "0%", percent(abs(percent_answers), accuracy = 1)))
 
 # Criar o gráfico de barras divergentes
-ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
+ggplot(q53_summary_diverging, aes(x = q53, y = percent_answers, fill = q53)) +
   geom_col() +
   geom_text(
     aes(
@@ -3916,7 +3983,7 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
       hjust = if_else(percent_answers == 0, -0.2, 0.5)
     ),
     position = position_stack(vjust = 0.5),
-    color = if_else(q52_summary_diverging$percent_answers == 0, "black", "white"),
+    color = if_else(q53_summary_diverging$percent_answers == 0, "black", "white"),
     fontface = "bold",
     size = 3.5
   ) +
@@ -3950,7 +4017,7 @@ ggplot(q52_summary_diverging, aes(x = q52, y = percent_answers, fill = q52)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "Realizei a leitura das bibliografias utilizadas?",
+    title = "Dediquei-me aos estudos fora da sala de aula?",
     caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
@@ -6330,7 +6397,7 @@ qualidade e a relevância do programa [@portaria1706ifmg].
 
 Nesse contexto, as sugestões dos discentes são essenciais para identificar 
 áreas de melhoria e fortalecer o programa. As sugestões recebidas foram 
-coletadas por meio de questões abertos e refletem as percepções dos 
+coletadas por meio de questões abertas e refletem as percepções dos 
 mestrandos participantes da pesquisa sobre os aspectos que podem ser 
 aprimorados.
 
@@ -6361,7 +6428,8 @@ no programa, promovendo uma aprendizagem mais integral.
 ::: {.callout-tip icon=false}
 ## **Sugestões de Melhorias para a Coordenação**
 
-- **Aperfeiçoamento da Publicidade das Decisões**: Recomenda-se ampliar a publicidade dss decisões do colegiado e da coordenação do mestrado para 
+- **Aperfeiçoamento da Publicidade das Decisões**: Recomenda-se ampliar a 
+publicidade dss decisões do colegiado e da coordenação do mestrado para 
 melhorar a comunicação com os mestrandos.
 
 - **Integração com Alunos Especiais**: Sugere-se realizar uma breve 
@@ -6448,7 +6516,31 @@ fundamentais para embasar decisões estratégicas que visem a
 consolidação do programa e do curso.
 
 
+
+### Síntese dos Principais Resultados {#sec-sintesedocentes}
+
+O corpo docente demonstrou um alto nível de engajamento no processo 
+avaliativo, com destaque para avaliações positivas sobre a qualidade 
+geral do programa, entre outras dimensões bem avaliadas. Por outro lado, 
+foram apontadas necessidades de revisão do currículo e limitações 
+na infraestrutura, como a necessidade de ambientes mais adequados para 
+aulas híbridas. Além disso, os docentes sugeriram ações estratégicas 
+para ampliar o incentivo à pesquisa por meio de maior acesso a bases 
+de dados especializadas, recursos computacionais, softwares e uma maior 
+mobilização para a prospeção de parcerias e para a captação de 
+recursos externos.
+
+
 ### Taxa de Resposta  {#sec-docentestaxa}
+
+A Tab. 4.3 mostra que a taxa de resposta do corpo docente atingiu 73%, 
+refletindo um nível significativo de engajamento, altamente relevante 
+para o processo de autoavaliação do programa. Embora a meta ideal seja 
+alcançar uma adesão ainda maior, a representatividade obtida permitiu 
+coletar avaliações e percepções do corpo docente de alta relevância sobre 
+os diversos aspectos do programa, as quais certamente fornecem subsídios 
+fundamentais para sua evolução contínua.
+
 
 ```{r}
 #| tbl-cap: "Taxa de Resposta Docente."
@@ -8238,7 +8330,7 @@ ggplot(q33_summary_diverging, aes(x = q33, y = percent_answers, fill = q33)) +
     plot.caption = element_text(size = 9)
   ) +
   labs(
-    title = "A Secretaria trata os discentes de maneira respeitosa e igualitária?",
+    title = "A Secretaria trata os docentes de maneira respeitosa e igualitária?",
     caption = "Fonte: Comissão de Autovaliação.",
     x = NULL,
     fill = NULL
@@ -9612,10 +9704,10 @@ análise de conteúdo descrita no capítulo sobre metodologia. Essa abordagem
 permitiu identificar temas recorrentes e sintetizar sugestões apresentadas 
 pelos diferentes segmentos acadêmicos.
 
-Além disso, a Comissão de Autoavaliação considerou informações complementares obtidas ao longo 
-do quadriênio, como discussões realizadas, reuniões e 
-feedbacks informais da comunidade acadêmica. Esse esforço resultou em 
-uma síntese que equilibra as demandas da comunidade acadêmica com a visão 
+Além disso, a Comissão de Autoavaliação considerou informações 
+complementares obtidas ao longo do quadriênio, como discussões realizadas, 
+reuniões e feedbacks informais da comunidade acadêmica. Esse esforço resultou 
+em uma síntese que equilibra as demandas da comunidade acadêmica com a visão 
 estratégica da comissão, assegurando que as ações propostas sejam viáveis 
 e alinhadas ao objetivo estratégico de melhoria contínua do programa.
 
@@ -9627,16 +9719,18 @@ atividades extracurriculares, fortalecimento do engajamento
 acadêmico e desenvolvimento de um planejamento estratégico para consolidar 
 o programa com vistas a um futuro doutorado.
 
-A Comissão de Autoavaliação buscou garantir que essas ações fossem representativas das necessidades 
-identificadas pelos diferentes segmentos acadêmicos — discentes, docentes, 
-técnicos administrativos e representantes externos. A implementação dessas 
-ações será monitorada em ciclos avaliativos futuros, assegurando que os 
-resultados contribuam efetivamente para o aprimoramento contínuo do programa.
+A Comissão de Autoavaliação buscou garantir que essas ações fossem 
+representativas das necessidades identificadas pelos diferentes segmentos 
+acadêmicos — discentes, docentes, técnicos administrativos e representantes 
+externos. A implementação dessas ações será monitorada em ciclos avaliativos 
+futuros, assegurando que os resultados contribuam efetivamente para o 
+aprimoramento contínuo do programa.
 
 
 ::: {.landscape}
 
 ```{r}
+#| label: tbl-5.1
 #| tbl-cap: "Ações Demandadas a Partir do Processo de Autoavaliação."
 
 tabela_acoes_demandadas <- data.frame(
@@ -9761,18 +9855,17 @@ A meta-avaliação seguiu uma abordagem sistemática, dividida em cinco
 etapas principais:
 
 1. **Revisão dos Instrumentos**: Análise detalhada dos questionários aplicados 
-aos segmentos acadêmicos (discentes, docentes, técnicos administrativos e 
-egressos), com foco na clareza das perguntas e na abrangência das dimensões 
-avaliadas.
+aos segmentos acadêmicos. com foco na clareza das perguntas e na abrangência 
+das dimensões avaliadas.
 
 2. **Análise Crítica dos Resultados**: Verificação da consistência dos dados 
 coletados ao longo do quadriênio, utilizando técnicas estatísticas 
 descritivas para os dados quantitativos e análise de conteúdo para as 
 respostas qualitativas.
 
-3. **Consulta à Comunidade Acadêmica**: Realização de workshops e reuniões 
-para discutir os resultados da autoavaliação e coletar feedbacks sobre o 
-processo avaliativo.
+3. **Consulta à Comunidade Acadêmica**: Realização de reuniões para discutir 
+os resultados da autoavaliação e coletar feedbacks sobre o processo 
+avaliativo.
 
 4. **Elaboração do Relatório Final**: Consolidação das análises realizadas 
 em um documento que destaca pontos fortes, fragilidades e recomendações para 
@@ -9823,7 +9916,7 @@ Com base nos principais resultados da meta-avaliação, foram propostas as
 ações exibidas na Tab. 6.1.
 
 ```{r}
-#| tbl-cap: "Meta-Avaliação: Recomendações"
+#| tbl-cap: "Meta-Avaliação: Recomendações."
 
 tabela_recomendacoes <- data.frame(
   Recomendacao = c(
@@ -9877,52 +9970,41 @@ objetivo de que ele contribua de forma efetiva para a evolução do programa.
 
 # Considerações Finais {#sec-consideracoesfinais}
 
-O Relatório Integral da Comissão de Autovaliação (Comissão de Autoavaliação) 
-do Programa de Pós-Graduação em Administração do IFMG - Campus Formiga, 
-referente ao quadriênio 2021-2024, evidencia o compromisso institucional com a 
-melhoria contínua do programa, baseada em evidências. Iniciado em 2021, 
-em um período crítico marcado pela pandemia da COVID-19, o programa 
-enfrentou desafios significativos logo em seus primeiros anos. Ainda 
-assim, o processo de autoavaliação demonstrou a resiliência e o 
-comprometimento do curso com sua evolução e consolidação.
+O Relatório Integral de Autoavaliação do Programa de Pós-Graduação 
+em Administração do IFMG - Campus Formiga, referente ao quadriênio 2021-2024, 
+reflete o compromisso institucional com a melhoria contínua do programa, 
+fundamentada em evidências. Desde sua criação em 2021, o programa enfrentou 
+desafios consideráveis, especialmente devido ao contexto da pandemia da 
+COVID-19. Apesar disso, o processo de autoavaliação evidenciou a resiliência 
+e o empenho do curso em consolidar suas bases acadêmicas e administrativas.
 
-A autoavaliação foi conduzida de forma estruturada, alinhada à Política de 
-Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg]. 
-Este processo permitiu uma análise abrangente das dimensões avaliadas — 
-ensino, pesquisa, extensão, infraestrutura e gestão — destacando tanto os 
-pontos fortes quanto as áreas que demandam aprimoramento. 
+Conduzida de forma estruturada e alinhada à Política de Autoavaliação 
+formalizada pela Portaria Nº 1706/IFMG/2024, a autoavaliação permitiu 
+uma análise abrangente das dimensões avaliadas. O processo destacou 
+pontos fortes, como a qualidade geral do programa, a qualificação do 
+corpo docente e a coordenação acadêmica. Por outro lado, identificou 
+áreas que podem ser aprimoradas, incluindo aspectos relacionados à 
+infraestrutura e à ampliação de atividades extracurriculares.
 
-**Entre as dimensõs bem avaliadas identificadas estão a qualidade geral 
-do programa e do corpo docente, diversos aspectos das disciplinas e  
-infraestrutura disponível, entre outras. Por outro lado, foram apontadas 
-oportunidades de melhoria relacionadas à infraestrutura e à ampliação 
-de atividades extracurriculares, entre outras.**
+As ações demandadas foram organizadas em dimensões estratégicas detalhadas 
+na @tbl-5.1 deste relatório. Entre as principais iniciativas propostas 
+estão a revisão curricular, melhorias na infraestrutura, incentivo à 
+pesquisa e ampliação das atividades de extensão e internacionalização. A 
+implementação dessas ações será monitorada pela Comissão de Autoavaliação 
+nos próximos ciclos avaliativos, assegurando que contribuam efetivamente 
+para o fortalecimento do programa. Além disso, a meta-avaliação desempenhou 
+um papel central ao revisar criticamente os instrumentos e métodos aplicados, 
+resultando em recomendações para aprimorar futuros ciclos avaliativos.
 
-A meta-avaliação, realizada como etapa final do ciclo avaliativo, 
-desempenhou um papel essencial ao revisar criticamente os instrumentos e 
-métodos aplicados. Essa etapa validou a eficácia do processo avaliativo e 
-gerou recomendações importantes para ajustes futuros. Entre as principais 
-recomendações estão a revisão dos instrumentos avaliativos para maior 
-clareza e especificidade, o desenvolvimento de indicadores mais detalhados 
-e a ampliação das estratégias de engajamento dos segmentos acadêmicos.
+Este relatório fornece evidências consistentes de que o Programa de 
+Pós-Graduação em Administração do IFMG - Campus Formiga está comprometido 
+com sua evolução contínua. A reflexão crítica proporcionada pela 
+autoavaliação não apenas fortalece a qualidade acadêmica e administrativa 
+do curso, mas também amplia sua capacidade de formar profissionais 
+qualificados para enfrentar os desafios contemporâneos e contribuir para o 
+desenvolvimento local e regional.
 
-As ações demandadas a partir da autoavaliação foram organizadas em dimensões 
-estratégicas e detalhadas na Tab. 5.1 deste relatório. Essas ações visam 
-consolidar os avanços alcançados e superar os desafios identificados, 
-promovendo melhorias na matriz curricular, na infraestrutura e no planejamento 
-estratégico do programa. Além disso, reforçam o compromisso com a construção 
-de um ambiente acadêmico inclusivo, inovador e alinhado às demandas 
-institucionais e sociais.
 
-Por fim, este relatório destaca que o Programa de Pós-Graduação em 
-Administração do IFMG - Campus Formiga está comprometido com sua evolução 
-contínua. A implementação das ações propostas será monitorada pela Comissão de 
-Autoavaliação em ciclos avaliativos futuros, assegurando que os resultados 
-contribuam efetivamente para o aperfeiçoamento do programa. A reflexão crítica 
-proporcionada pela autoavaliação fortalece não apenas a qualidade 
-acadêmica e administrativa do curso, mas também sua capacidade de 
-formar profissionais preparados para enfrentar os desafios contemporâneos 
-e contribuir para o desenvolvimento do país.
 
 
 
