@@ -77,40 +77,60 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 # Introdução 
 
-O Relatório Integral da Comissão de Autovaliação do Programa de 
+O Relatório Integral da Comissão de Autoavaliação do Programa de 
 Pós-Graduação em Administração do IFMG - Campus Formiga, referente ao 
 quadriênio 2021-2024, apresenta uma análise abrangente e reflexiva sobre 
-o desempenho do programa e seu compromisso com a melhoria contínua. Este 
-documento foi elaborado em conformidade com a Política de Autoavaliação, 
+o desempenho do programa sob a ótica dos diferentes segmentos acadêmicos. 
+Este documento foi elaborado em conformidade com a Política de Autoavaliação, 
 formalizada pela Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg], que 
 estabelece diretrizes para um processo avaliativo estruturado e permanente.
 
 O Programa de Pós-Graduação em Administração iniciou suas atividades em 2021, 
 em um contexto desafiador marcado pela pandemia da COVID-19. Desde o início, 
-o programa demonstrou resiliência e dedicação à construção de uma base sólida 
-para o ensino, pesquisa e extensão. A autoavaliação desempenhou um papel 
-central nesse processo, permitindo identificar pontos fortes, áreas de 
-melhoria e orientar ações estratégicas para a consolidação do curso.
+o programa demonstrou resiliência e dedicação à construção de uma base 
+sólida para a formação de pesquisadores qualificados em usa área de atuação. 
+Além dos desafios impostos pela pandemia, o cenário da pós-graduação no Brasil 
+tem sido impactado por uma redução no interesse dos candidatos potenciais, 
+conforme apontam estudos recentes [@marques2024]. Esta queda na demanda por 
+cursos de mestrado e doutorado, associada a substanciais restrições de 
+financiamento e mudanças rápidas e potencialmente disruptivas no mercado 
+de trabalho, impulsionadas pelo avanço tecnológico — como o desenvolvimento 
+da Inteligência Artificial e outras inovações digitais — observadas neste 
+início do século XXI, impõe desafios adicionais para a sustentabilidade e 
+consolidação dos programas de pós-graduação stricto sensu, sejam 
+profissionais ou acadêmicos.
 
-Ao longo do quadriênio, foram aplicados instrumentos avaliativos 
-diversificados que buscaram captar percepções dos segmentos acadêmicos 
-sobre diversas dimensões do programa. Os dados coletados foram analisados 
-com criticamente e os resultados foram apresentados em relatórios 
-aos diferentes segmentos. **Esse processo assegurou transparência e a construção de uma cultura voltada ao aperfeiçoamento contínuo.**
+Isto posto, a metodologia aplicada na autoavaliação foi planejada para 
+fornecer informações amplas e adequadas a um programa tão recente, iniciado 
+sob o cenário descrito, além de garantir uma representatividade apropriada 
+das avaliações e percepções dos diferentes segmentos acadêmicos. Por meio 
+de questionários estruturados com questões quantitativas e qualitativas, 
+foram analisadas dimensões como qualidade do ensino, infraestrutura e gestão administrativa. A análise crítica dos dados coletados buscou não apenas 
+identificar as principais demandas, mas também propor ações concretas e 
+bem fundamentadas para o aprimoramento contínuo do programa.
 
-Este relatório não apenas documenta os avanços alcançados pelo 
-programa ao longo de seus quatro anos iniciais, mas também aponta caminhos 
-para sua evolução futura. A implementação das ações propostas será 
-monitorada pela Comissão de Autoavaliação em ciclos avaliativos 
-subsequentes, reafirmando o compromisso do programa com a formação 
-de profissionais qualificados para atender às demandas sociais e do mercado.
+Os resultados obtidos ao longo do quadriênio destacaram resultados 
+significativos e positivos sobre qualificação do corpo docente, 
+adequação de diversos aspectos da matriz curricular, da infraestrutura, 
+entre outros. Contudo, como esperado, também foram identificadas 
+oportunidades de melhoria em áreas como revisão do currículo em face dos 
+resultados e avaliações realizadas no quadriênio, infraestrutura, atividades 
+extracurriculares e internacionalização. 
 
-Além desta introdução, este documento está organizado em seções 
-que descrevem as principais etapas do processo avaliativo: Planejamento da 
-Autoavaliação (@sec-planejamento), Metodologia aplicada (@sec-metodologia), 
-Resultados da Autoavaliação (@sec-resultados), Ações Executadas e Demandadas 
-a partir da Autoavaliação (@sec-acoesdemanda) e Meta-Avaliação 
-(@sec-metaavaliacao). 
+Além disso, o relatório busca consolidar a autoavaliação como uma ferramenta 
+estratégica para o planejamento da evolução contínua do curso. Ao documentar 
+os avanços alcançados e os desafios enfrentados, ele fornece subsídios 
+para decisões futuras que visem à sustentabilidade e à evolução do curso 
+diante do atual cenário desafiador. A implementação das ações propostas será 
+monitorada pela Comissão de Autoavaliação em ciclos avaliativos subsequentes, 
+de forma que o processo avaliativo contribua efetivamente para a consolidação e 
+evolução do programa.
+
+Este relatório está organizado em seções que descrevem as principais etapas 
+do processo avaliativo: Planejamento da Autoavaliação (@sec-planejamento), 
+Metodologia aplicada (@sec-metodologia), Resultados da Autoavaliação (@sec-resultados), 
+Ações Executadas e Demandadas a partir da Autoavaliação (@sec-acoesdemanda) e 
+Meta-Avaliação (@sec-metaavaliacao).
 
 
 
@@ -177,7 +197,7 @@ tabela_planejamento <- data.frame(
     "Aplicação dos instrumentos, organização e análise dos dados",
     "Formalização da política de autoavaliação do programa",
     "Compilação, organização, análise e construção do relatório integral com os resultados obtidos ao longo do quadriênio",
-    "Workshop para discussão e recebimento de sugestões para o relatório integral de autoavaliação",
+    "Reunião para discussão e feedback sobre o relatório integral de autoavaliação",
     "Meta-Avaliação"
   ),
   Responsavel = c(
@@ -201,7 +221,7 @@ tabela_planejamento <- data.frame(
     "Avaliar a qualidade do ensino, pesquisa e extensão, consolidando dados para melhorias.",
     "Consolidar formalmente a política de autoavaliação do programa.",
     "Documentar os resultados obtidos ao longo do quadriênio e propor recomendações.",
-    "Discutir e coletar sugestões dos segmentos acadêmicos para o relatório integral e para a meta-avaliação.",
+    "Discutir e coletar sugestões para o relatório integral e para a meta-avaliação.",
     "Refletir criticamente sobre o processo realizado no quadriênio, identificando melhorias."
   )
 )
@@ -330,10 +350,11 @@ dos principais resultados obtidos junto ao corpo discente
 
 Esta seção apresenta os resultados das pesquisas de autoavaliação 
 conduzidas no Mestrado Profissional em Administração do IFMG - Campus Formiga, 
-conforme estabelecido pela Portaria N. 1706/IFMG, de 29 de novembro de 2024. 
-Essa política orienta o processo avaliativo como um instrumento 
-essencial para a melhoria contínua do programa, em alinhamento 
-com as diretrizes da CAPES e as demandas institucionais.
+ao longo do quadriênio 2021 - 2023 e conforme estabelecido pela 
+Portaria N. 1706/IFMG, de 29 de novembro de 2024 [@portaria1706ifmg]. 
+Essa política estabelece o processo avaliativo como um instrumento 
+crítico para a melhoria contínua do programa, em alinhamento com as 
+diretrizes da CAPES e objetivos estratégicos do programa.
 
 A pesquisa foi estruturada com base na aplicação de questionários 
 direcionados aos discentes e docentes, abrangendo aspectos como 
@@ -9684,35 +9705,45 @@ pesquisa dos professores e alunos.
 
 # Ações Executadas e Demandadas a Partir da Autoavaliação {#sec-acoesdemanda}
 
-Com base no processo de autoavaliação realizado ao longo do quadriênio 
-2021-2024, a Comissão de Autovaliação propôs um conjunto de 
-ações prioritárias para o aprimoramento contínuo do Programa de Pós-Graduação 
-em Administração do IFMG - Campus Formiga. Essas ações foram fundamentadas 
-em uma análise crítica dos dados coletados, utilizando a técnica de 
-análise de conteúdo descrita no capítulo sobre metodologia. Essa abordagem 
-permitiu identificar temas recorrentes e sintetizar sugestões apresentadas 
-pelos diferentes segmentos acadêmicos.
+ O processo de autoavaliação do Mestrado Profissional em Administração 
+do IFMG - Campus Formiga, realizado ao longo do quadriênio 2021-2024, 
+possibilitou a identificação de avanços, desafios e oportunidades 
+de aprimoramento do programa. A partir da análise dos dados coletados, 
+a Comissão de Autoavaliação sistematizou as principais demandas 
+apresentadas pelos diferentes segmentos acadêmicos, algumas das quais 
+resultaram em ações concretas de melhoria, e propôs um 
+conjunto de ações estratégicas para fortalecer a estrutura curricular, 
+a infraestrutura, a gestão administrativa e para enriquecer a experiência 
+dos mestrandos.  
 
-Além disso, a Comissão de Autoavaliação considerou informações 
-complementares obtidas ao longo do quadriênio, como discussões realizadas, 
-reuniões e feedbacks informais da comunidade acadêmica. Esse esforço resultou 
-em uma síntese que equilibra as demandas da comunidade acadêmica com a visão 
-estratégica da comissão, assegurando que as ações propostas sejam viáveis 
-e alinhadas ao objetivo estratégico de melhoria contínua do programa.
+Nesta seção, apresentam-se as ações já implementadas em resposta às demandas identificadas ao longo do quadriênio (@sec-executadas), bem como aquelas 
+que permanecem em fase de planejamento ou execução (@sec-demandadas). A 
+implementação dessas ações será acompanhada pela Comissão de Autoavaliação 
+para que os ajustes necessários sejam feitos com base em novas avaliações 
+e feedbacks dos diferentes segmentos.
+
+
+
+## Ações Executadas {#sec-executadas}
+
+Durante o processo de autoavaliação, algumas demandas foram identificadas 
+e atendidas por meio da implementação de ações específicas, enquanto 
+outras permanecem em fase de planejamento ou execução. A Tab. 5.1 
+apresenta um resumo das demandas que já resultaram em ações concretas.
 
 ```{r}
-#| tbl-cap: "Demandas Identificadas no Processo de Autoavaliaçào e Ações Executadas."
+#| tbl-cap: "Demandas Identificadas no Processo de Autoavaliação e Ações Executadas."
 
 tabela_demandas <- data.frame(
   Demanda = c(
-    "Necessidade de disciplina para exposição do desenvolvimento dos projetos de Qualificação e Dissertação.",
-    "Redução da carga de disciplinas obrigatórias, considerando o perfil profissional dos mestrandos.",
-    "Maior suporte ao trabalho dos docentes e discentes pela coordenação."
+    "Demanda por oportunidades para exposição do estágio do desenvolvimento dos projetos de Qualificação e Dissertação e obtenção de feedbacks.",
+    "Demanda por redução da carga de disciplinas obrigatórias, considerando o perfil profissional dos mestrandos.",
+    "Demanda por maior suporte ao trabalho dos docentes e discentes pela coordenação."
   ),
   Acao = c(
     "Criação dos Seminários de Qualificação e Dissertação.",
     "Alteração da disciplina 'Inovação Aplicada às Finanças' de obrigatória para optativa.",
-    "Suporte ao trabalho dos docentes e discentes."
+    "Implementação de ações para melhor suporte acadêmico e administrativo aos docentes e discentes."
   ),
   Dimensao = c(
     "Matriz Curricular",
@@ -9750,20 +9781,23 @@ tabela_demandas |>
 ```
 
 
-As ações demandadas estão organizadas na Tab. 5.1, que apresenta as 
-propostas detalhadas por dimensões estratégicas, responsáveis pela 
-implementação e áreas prioritárias. Entre os principais aspectos abordados 
-estão: revisão curricular, melhorias na infraestrutura, ampliação das 
-atividades extracurriculares, fortalecimento do engajamento 
-acadêmico e desenvolvimento de um planejamento estratégico para consolidar 
-o programa com vistas a um futuro doutorado.
+## Ações Demandadas {#sec-demandadas}
 
-A Comissão de Autoavaliação buscou garantir que essas ações fossem 
-representativas das necessidades identificadas pelos diferentes segmentos 
-acadêmicos — discentes, docentes, técnicos administrativos e representantes 
-externos. A implementação dessas ações será monitorada em ciclos avaliativos 
-futuros, assegurando que os resultados contribuam efetivamente para o 
-aprimoramento contínuo do programa.
+Ao longo do processo autoavaliativo, a Comissão de Autoavaliação identificou, 
+um conjunto de demandas estratégicas a partir de uma análise crítica dos dados coletados. Essa abordagem permitiu identificar temas recorrentes e 
+sintetizar sugestões apresentadas pelos diferentes segmentos acadêmicos.
+
+Além disso, a Comissão de Autoavaliação considerou informações 
+complementares obtidas ao longo do quadriênio, como discussões realizadas, 
+reuniões e feedbacks informais da comunidade acadêmica. Esse esforço resultou 
+em uma síntese que busca equilibrar as demandas dos diferenets segmentos com 
+a visão global da comissão, visando assegurar que as ações propostas 
+sejam viáveis e alinhadas ao objetivo estratégico de melhoria 
+contínua do programa, essas ações estão organizadas na Tab. 5.2.
+
+A implementação dessas ações será monitorada em ciclos avaliativos 
+subsequentes, visando que os resultados do processo de autoavaliação 
+contribuam efetivamente para o aprimoramento contínuo do programa.
 
 
 ::: {.landscape}
@@ -9857,6 +9891,7 @@ tabela_acoes_demandadas |>
 ```
 
 :::
+
 
 
 
@@ -10007,43 +10042,72 @@ objetivo de que ele contribua de forma efetiva para a evolução do programa.
 
 
 
+
+
 # Considerações Finais {#sec-consideracoesfinais}
 
-O Relatório Integral de Autoavaliação do Programa de Pós-Graduação 
-em Administração do IFMG - Campus Formiga, referente ao quadriênio 2021-2024, 
-reflete o compromisso institucional com a melhoria contínua do programa, 
-fundamentada em evidências. Desde sua criação em 2021, o programa enfrentou 
-desafios consideráveis, especialmente devido ao contexto da pandemia da 
-COVID-19. Apesar disso, o processo de autoavaliação evidenciou a resiliência 
-e o empenho do curso em consolidar suas bases acadêmicas e administrativas.
+O Relatório Integral de Autoavaliação do Mestrado Profissional em 
+Administração do IFMG - Campus Formiga, referente ao quadriênio 2021-2024, 
+demonstra o compromisso institucional com a construção de uma cultura 
+avaliativa focada na melhoria contínua do programa, fundamentada em 
+evidências e desenvolvida de forma coletiva. 
 
-Conduzida de forma estruturada e alinhada à Política de Autoavaliação 
-formalizada pela Portaria Nº 1706/IFMG/2024, a autoavaliação permitiu 
-uma análise abrangente das dimensões avaliadas. O processo destacou 
-pontos fortes, como a qualidade geral do programa, a qualificação do 
-corpo docente e a coordenação acadêmica. Por outro lado, identificou 
-áreas que podem ser aprimoradas, incluindo aspectos relacionados à 
-infraestrutura e à ampliação de atividades extracurriculares.
+Criado em um período desafiador, marcado pela pandemia da COVID-19, 
+o programa demonstrou resiliência ao consolidar suas bases acadêmicas e 
+administrativas, superando adversidades e garantindo a continuidade 
+das atividades de ensino, pesquisa e extensão. Por meio de um processo 
+avaliativo estruturado e alinhado à Política de Autoavaliação formalizada pela 
+Portaria Nº 1706/IFMG/2024, o relatório apresenta um panorama abrangente 
+dos avanços alcançados, desafios enfrentados e direções estratégicas 
+para o aprimoramento do curso.
 
-As ações demandadas foram organizadas em dimensões estratégicas detalhadas 
-na @tbl-5.2 deste relatório. Entre as principais iniciativas propostas 
-estão a revisão curricular, melhorias na infraestrutura, incentivo à 
-pesquisa e ampliação das atividades de extensão e internacionalização. A 
-implementação dessas ações será monitorada pela Comissão de Autoavaliação 
-nos próximos ciclos avaliativos, assegurando que contribuam efetivamente 
-para o fortalecimento do programa. Além disso, a meta-avaliação desempenhou 
-um papel central ao revisar criticamente os instrumentos e métodos aplicados, 
-resultando em recomendações para aprimorar futuros ciclos avaliativos.
+Desde sua criação em 2021, o programa tem buscado consolidar suas bases 
+acadêmicas e administrativas, destacando-se pelo alto nível de 
+qualificação do corpo docente, pela adequação de diversos aspectos 
+da matriz curricular, da infraestrutura e da gestão acadêmica, 
+conforme pode se verificar nos resultados apresentados. Além disso, 
+a estrutura avaliativa utilizada foi considerada abrangente e eficiente na c
+aptação de percepções sobre ensino, pesquisa, infraestrutura e gestão 
+administrativa.  
 
-Este relatório fornece evidências consistentes de que o Programa de 
-Pós-Graduação em Administração do IFMG - Campus Formiga está comprometido 
-com sua evolução contínua. A reflexão crítica proporcionada pela 
-autoavaliação não apenas fortalece a qualidade acadêmica e administrativa 
-do curso, mas também amplia sua capacidade de formar profissionais 
-qualificados para enfrentar os desafios contemporâneos e contribuir para o 
-desenvolvimento local e regional.
+Por outro lado, o processo de autoavaliação identificou áreas que apresentam oportunidades de aprimoramento, especialmente no que se refere à necessidade 
+de revisão da matriz curricular — um aspecto esperado e desejável para um 
+programa recente que passará por sua primeira avaliação quadrienal. Também 
+foram apontadas demandas estratégicas para o aperfeiçoamento da 
+infraestrutura, a ampliação das atividades extracurriculares, o 
+fortalecimento da internacionalização e o aumento da prospecção de 
+oportunidades de pesquisa e interação com o setor produtivo. Além disso, identificaram-se oportunidades para aprimorar a comunicação institucional.  
 
+Isto posto, foram identificadas demandas estratégicas para os 
+próximos ciclos avaliativos, com foco na reestruturação curricular, no 
+aperfeiçoamento da infraestrutura, na promoção de incentivos à pesquisa e 
+na expansão das atividades extracurriculares. A implementação dessas ações 
+será monitorada pela Comissão de Autoavaliação, para que as 
+mudanças propostas contribuam efetivamente para o fortalecimento do 
+programa e a evolução da formação oferecida.  
 
+Este relatório reforça a relevância do processo avaliativo como 
+instrumento de gestão e aprimoramento contínuo, permitindo que o 
+programa se adapte às demandas institucionais e de mercado. A reflexão 
+crítica proporcionada pela autoavaliação pode orientar o planejamento estratégico 
+do curso e fortalecer sua capacidade de formar profissionais qualificados 
+para enfrentar os desafios contemporâneos, contribuindo efetivamente para o 
+desenvolvimento local, regional e nacional.  
+
+Além dos avanços e desafios identificados, a Comissão de Autoavaliação 
+também realizou uma Meta-Avaliação do processo, revisando criticamente 
+os instrumentos e métodos aplicados. Esse aprendizado resultou em 
+recomendações para tornar os próximos ciclos avaliativos mais eficazes 
+e alinhados às necessidades do programa. 
+
+Considerando o cenário nacional da pós-graduação, marcado por uma 
+redução no interesse de potenciais candidatos [@marques2024] e por desafios 
+institucionais, a autoavaliação contínua será um fator crítico para 
+garantir a atratividade e a sustentabilidade do curso. A implementação 
+de estratégias voltadas à atração e retenção de discentes com perfil 
+apropriado, entre outras ações, aliadas à formulação e execução de um 
+planejamento estratégico flexível, porém assertivo, contribuirá para a 
+sustentabilidade e a consolidação do programa como uma referência na área.
 
 
 
