@@ -77,60 +77,65 @@ dados_docentes <- readr::read_rds(path_docentes)
 
 # Introdução 
 
-O Relatório Integral da Comissão de Autoavaliação do Programa de 
-Pós-Graduação em Administração do IFMG - Campus Formiga, referente ao 
-quadriênio 2021-2024, apresenta uma análise abrangente e reflexiva sobre 
-o desempenho do programa sob a ótica dos diferentes segmentos acadêmicos. 
-Este documento foi elaborado em conformidade com a Política de Autoavaliação, 
-formalizada pela Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg], que 
-estabelece diretrizes para um processo avaliativo estruturado e permanente.
+O Relatório Integral da Comissão de Autoavaliação do Programa de Pós-Graduação 
+em Administração do IFMG - Campus Formiga, referente ao quadriênio 2021-2024, 
+apresenta uma análise abrangente e reflexiva sobre o desempenho do programa 
+sob a ótica dos diferentes segmentos acadêmicos. Este documento foi 
+elaborado em conformidade com a Política de Autoavaliação, formalizada pela 
+Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg], que estabelece diretrizes 
+para um processo avaliativo estruturado e permanente.
 
 O Programa de Pós-Graduação em Administração iniciou suas atividades em 2021, 
 em um contexto desafiador marcado pela pandemia da COVID-19. Desde o início, 
 o programa demonstrou resiliência e dedicação à construção de uma base 
-sólida para a formação de pesquisadores qualificados em usa área de atuação. 
+sólida para a formação de pesquisadores qualificados em sua área de atuação. 
 Além dos desafios impostos pela pandemia, o cenário da pós-graduação no Brasil 
 tem sido impactado por uma redução no interesse dos candidatos potenciais, 
-conforme apontam estudos recentes [@marques2024]. Esta queda na demanda por 
-cursos de mestrado e doutorado, associada a substanciais restrições de 
-financiamento e mudanças rápidas e potencialmente disruptivas no mercado 
-de trabalho, impulsionadas pelo avanço tecnológico — como o desenvolvimento 
-da Inteligência Artificial e outras inovações digitais — observadas neste 
-início do século XXI, impõe desafios adicionais para a sustentabilidade e 
-consolidação dos programas de pós-graduação stricto sensu, sejam 
+conforme apontam estudos recentes [@marques2024]. Essa queda na demanda por 
+cursos de mestrado e doutorado, associada a restrições de financiamento e 
+mudanças rápidas e disruptivas no mercado de trabalho — impulsionadas pelo 
+avanço tecnológico, como o desenvolvimento da Inteligência Artificial e 
+outras inovações digitais —, impõe desafios adicionais para a sustentabilidade 
+e consolidação dos programas de pós-graduação *stricto sensu*, sejam 
 profissionais ou acadêmicos.
 
-Isto posto, a metodologia aplicada na autoavaliação foi planejada para 
-fornecer informações amplas e adequadas a um programa tão recente, iniciado 
-sob o cenário descrito, além de garantir uma representatividade apropriada 
-das avaliações e percepções dos diferentes segmentos acadêmicos. Por meio 
-de questionários estruturados com questões quantitativas e qualitativas, 
-foram analisadas dimensões como qualidade do ensino, infraestrutura e gestão administrativa. A análise crítica dos dados coletados buscou não apenas 
-identificar as principais demandas, mas também propor ações concretas e 
-bem fundamentadas para o aprimoramento contínuo do programa.
+Diante desse cenário, a metodologia aplicada na autoavaliação foi 
+planejada para fornecer informações amplas e adequadas a um programa 
+recente, iniciado sob condições adversas, além de garantir uma 
+representatividade apropriada das avaliações e percepções dos diferentes 
+segmentos acadêmicos. Por meio de questionários estruturados com questões 
+quantitativas e qualitativas, foram analisadas dimensões como qualidade 
+do ensino, infraestrutura, gestão administrativa, internacionalização e 
+atividades extracurriculares. A análise crítica dos dados coletados buscou 
+não apenas identificar as principais demandas, mas também propor ações 
+ concretas e bem fundamentadas para o aprimoramento contínuo do programa.
 
-Os resultados obtidos ao longo do quadriênio destacaram resultados 
-significativos e positivos sobre qualificação do corpo docente, 
-adequação de diversos aspectos da matriz curricular, da infraestrutura, 
-entre outros. Contudo, como esperado, também foram identificadas 
-oportunidades de melhoria em áreas como revisão do currículo em face dos 
-resultados e avaliações realizadas no quadriênio, infraestrutura, atividades 
-extracurriculares e internacionalização. 
+Os resultados obtidos ao longo do quadriênio destacaram avanços significativos, 
+como a qualificação do corpo docente, a adequação da matriz curricular e a 
+infraestrutura disponível. Contudo, também foram identificadas 
+oportunidades de melhoria em áreas como a revisão do currículo, a ampliação 
+de atividades extracurriculares, o fortalecimento da internacionalização e 
+o aprimoramento da infraestrutura. Essas demandas refletem a necessidade 
+de adaptação do programa às mudanças no mercado de trabalho e às expectativas 
+dos discentes, que em sua maioria estão em uma fase profissional madura, 
+com idade mediana de 35,5 anos e 92% exercendo atividades remuneradas, conforme 
+detalhado na @sec-perfil.
 
-Além disso, o relatório busca consolidar a autoavaliação como uma ferramenta 
-estratégica para o planejamento da evolução contínua do curso. Ao documentar 
-os avanços alcançados e os desafios enfrentados, ele fornece subsídios 
-para decisões futuras que visem à sustentabilidade e à evolução do curso 
-diante do atual cenário desafiador. A implementação das ações propostas será 
-monitorada pela Comissão de Autoavaliação em ciclos avaliativos subsequentes, 
-de forma que o processo avaliativo contribua efetivamente para a consolidação e 
-evolução do programa.
+Além disso, o relatório busca consolidar a autoavaliação como uma 
+ferramenta estratégica para o planejamento da evolução contínua do curso. 
+Ao documentar os avanços alcançados e os desafios enfrentados, ele fornece 
+subsídios para decisões futuras que visem à sustentabilidade e à evolução 
+do programa diante do atual cenário desafiador. A implementação das ações 
+propostas será monitorada pela Comissão de Autoavaliação em ciclos 
+avaliativos subsequentes, de forma que o processo avaliativo contribua 
+efetivamente para a consolidação e evolução do programa.
 
-Este relatório está organizado em seções que descrevem as principais etapas 
-do processo avaliativo: Planejamento da Autoavaliação (@sec-planejamento), 
-Metodologia aplicada (@sec-metodologia), Resultados da Autoavaliação (@sec-resultados), 
-Ações Executadas e Demandadas a partir da Autoavaliação (@sec-acoesdemanda) e 
-Meta-Avaliação (@sec-metaavaliacao).
+Este relatório está organizado em seções que descrevem as principais 
+etapas do processo avaliativo: Planejamento da Autoavaliação 
+(@sec-planejamento), Metodologia aplicada (@sec-metodologia), Resultados 
+da Autoavaliação (@sec-resultados), Ações Executadas e Demandadas a 
+partir da Autoavaliação (@sec-acoesdemanda), Meta-Avaliação (@sec-metaavaliacao) 
+e as Considerações Finais (@sec-consideracoesfinais).
 
 
 
@@ -403,29 +408,45 @@ orientar ações que promovam o aprimoramento contínuo do curso.
 
 ### Síntese dos Principais Resultados {#sec-sintesediscentes}
 
-Os resultados da autoavaliação do corpo discente indicaram altos 
-níveis de satisfação em dimensões como a qualidade do curso, a atuação 
-dos docentes, a coordenação do programa e o atendimento da Secretaria, 
-e com outras dimensões. No entanto, foram identificadas oportunidades 
-de melhoria em aspectos como infraestrutura (especialmente o espaço 
-de convivência) e ampliação de atividades extracurriculares. As sugestões 
-fornecidas pelos discentes indicam a necessidade de revisão das disciplinas 
-obrigatórias e optativas, incluindo sua sequência, para aperfeiçoar seu
-alinhmento às linhas de pesquisa do mestrado e às demandas específicas 
-dos discentes que desenvolvem projetos nas respectivas linhas.
+Os resultados da autoavaliação do corpo discente indicaram altos níveis 
+de satisfação em diversos aspectos envolvendo a qualidade do curso, 
+a qualificação e atuação dos docentes, a coordenação do programa e o 
+atendimento da Secretaria. O perfil dos participantes revela que a maioria 
+dos mestrandos está em uma fase profissional madura, com idade média 
+de 38 anos, e 92% exercem atividades profissionais remuneradas, o que 
+reforça o caráter profissional do mestrado e a necessidade de alinhar 
+o programa às demandas do mercado e sociais. As principais ocupações 
+incluem Servidor Público, Professor e Contador, evidenciando a diversidade 
+de atuações profissionais e a aplicabilidade dos conhecimentos em 
+diferentes setores.
+
+Além disso, foram identificadas oportunidades de implementação de melhorias 
+em dimensões como infraestrutura, ampliação de atividades extracurriculares, 
+internacionalização e aperfeiçoamento da comunicação institucional. As 
+sugestões fornecidas pelos discentes indicam a necessidade de revisão 
+das disciplinas obrigatórias e optativas, incluindo sua sequência, para 
+aperfeiçoar seu alinhamento às linhas de pesquisa do mestrado e às demandas 
+específicas dos discentes que desenvolvem projetos nas respectivas linhas. 
+Por fim, é importante descatar que algumas demandas identificadas junto ao 
+corpo discente ao longo do processo avaliativo que envolviam ajustes no 
+currículo, resultaram em ações concretas, conforme pode ser verificado na 
+@sec-executadas (Ações Executadas). 
+
 
 
 ### Taxas de Resposta {#sec-taxadiscentes}
 
-As taxas de resposta dos discentes por ano ou turma de ingresso 
-apresentam variações, conforme a Tab. 4.1. A turma 
-de ingressantes de 2023 se destaca positivamente com uma taxa de 
-resposta de 100%, evidenciando um engajamento pleno dos estudantes. Por 
-outro lado, turmas como a de 2021 (22%) e 2024 (43%) apresentaram níveis 
-de participação abaixo do ideal, o que aponta para a necessidade de 
-estratégias mais eficazes de sensibilização e engajamento. Importante 
-destacar que a turma de ingressantes em 2023 foi fortemente afetada 
-pelos impactos negativos da pandemia da COVID-19.
+As taxas de resposta dos discentes por ano ou turma de ingresso apresentam 
+variações, conforme a Tab. 4.1. A turma de ingressantes de 2023 se destaca 
+positivamente com uma taxa de resposta de 100%, evidenciando um engajamento 
+pleno dos estudantes. Por outro lado, turmas como a de 2021 (22%) e 2024 (43%) apresentaram níveis de participação abaixo do ideal, o que aponta para a 
+necessidade de estratégias mais eficazes de sensibilização.
+
+Importante destacar que os formulários aplicados aos mestrandos ficaram 
+disponíveis por vários meses e que a Comissão de Autoavaliação enviou 
+avisos e lembretes periodicamente sobre a importância da participação. 
+Considerou-se relevante ainda que a turma de ingressantes em 2023 foi 
+fortemente afetada pelos impactos negativos da pandemia da COVID-19.
 
 Apesar dessas diferenças, a taxa geral de resposta no quadriênio (48%) é 
 um indicador importante e relevante para o processo de autoavaliação. Os dados 
@@ -474,7 +495,23 @@ dados_taxa |>
 
 
 
-### Perfil dos Participantes {#sec-caractdiscentes}
+### Perfil dos Participantes {#sec-perfil}
+
+A Tab. 4.2 apresenta estatísticas das idades dos discentes participantes 
+da pesquisa. A idade média dos respondentes é de 38 anos, com uma mediana de 
+35,5 anos, indicando que a maioria dos mestrandos está em uma fase profissional 
+relativamente madura, o que é coerente com o perfil de um mestrado profissional. 
+A @fig-4.1 mostra que cerca 92% dos mestrandos exercem alguma atividade 
+profissional remunerada, o que reforça o caráter profissional do mestrado 
+e a necessidade de alinhar o programa às demandas do mercado e sociais. 
+
+A @fig-4.2 exibe as atividades profissionais exercidas pelos discentes 
+participantes, sendo que as principais ocupações incluem Servidor Público, 
+Professor e Contador. A diversidade de atuações profissionais reflete a 
+multidisciplinaridade do curso e a aplicabilidade dos conhecimentos 
+em diferentes setores, alinhando-se aos objetivos do mestrado profissional, 
+que visa capacitar profissionais para práticas avançadas e inovadoras em 
+suas áreas de atuação.
 
 
 ```{r}
@@ -6405,11 +6442,12 @@ novembro de 2024, destaca a importância da reflexão
 crítica e do aperfeiçoamento contínuo como fundamentais para garantir a 
 qualidade e a relevância do programa [@portaria1706ifmg]. 
 
-Nesse contexto, as sugestões dos discentes são essenciais para identificar 
-áreas de melhoria e fortalecer o programa. As sugestões recebidas foram 
-coletadas por meio de questões abertas e refletem as percepções dos 
-mestrandos participantes da pesquisa sobre os aspectos que podem ser 
-aprimorados.
+Nesse contexto, as sugestões dos discentes são muito importantes para 
+identificar áreas de melhoria e fortalecer o programa. As sugestões 
+recebidas foram coletadas por meio de questões abertas e refletem as 
+percepções dos mestrandos participantes da pesquisa sobre os aspectos 
+que podem ser aprimorados. As sugestões dos discentes para algumas 
+dimensões avaliadas, categorizadas por temas, são exibidas a seguir.
 
 
 ::: {.callout-tip icon=false}
@@ -6530,15 +6568,21 @@ consolidação do programa e do curso.
 ### Síntese dos Principais Resultados {#sec-sintesedocentes}
 
 O corpo docente demonstrou um alto nível de engajamento no processo 
-avaliativo, com destaque para avaliações positivas sobre a qualidade 
-geral do programa, entre outras dimensões bem avaliadas. Por outro lado, 
-foram apontadas necessidades de revisão do currículo e limitações 
-na infraestrutura, como a necessidade de ambientes mais adequados para 
-aulas híbridas. Além disso, os docentes sugeriram ações estratégicas 
-para ampliar o incentivo à pesquisa por meio de maior acesso a bases 
-de dados especializadas, recursos computacionais, softwares e uma maior 
-mobilização para a prospeção de parcerias e para a captação de 
-recursos externos.
+avaliativo, com destaque para avaliações positivas nas dimensões relacionadas 
+à qualidade geral do programa. Por outro lado, foram identificadas necessidades 
+de revisão das disciplinas obrigatórias e optativas, ampliação de attividades 
+extracurricularese e limitações na infraestrutura, como a necessidade 
+de ambientes mais adequados para aulas híbridas e de um anfiteatro maior 
+para a realização de eventos.  
+
+Além disso, os docentes sugeriram ações estratégicas para a realização de 
+uma revisão curricular dados os resultados obtidos no quadriênio, 
+para o aperfeiçoamento da infraestrutura dedicada à pesquisa, como maior 
+acesso a bases de dados especializadas, recursos 
+computacionais modernos (hardware e software),à literatura especializada e 
+uma maior mobilização para a prospecção de parcerias que possam gerar 
+oportunidades de pesquisa e para a captação de recursos externos.  
+
 
 
 ### Taxa de Resposta  {#sec-docentestaxa}
@@ -9614,10 +9658,9 @@ docentes no processo de reflexão crítica e aperfeiçoamento contínuo.
 
 As sugestões apresentadas pelos docentes, que atuam diretamente no 
 desenvolvimento do programa, oferecem uma perspectiva valiosa sobre 
-as áreas que necessitam de ajustes e melhorias. Essas contribuições 
-devem ser utilizadas como fundamento para alinhar o programa com as 
-necessidades acadêmicas e profissionais emergentes, sob a perspectiva 
-do corpo docente do programa.
+as áreas que necessitam de ajustes e melhorias. As sugestões 
+recebidas do corpo docente para algumas das dimensões avaliadas, 
+categorizadas por temas, são exibidas a seguir.
 
 
 ::: {.callout-tip icon=false}
@@ -9716,7 +9759,8 @@ conjunto de ações estratégicas para fortalecer a estrutura curricular,
 a infraestrutura, a gestão administrativa e para enriquecer a experiência 
 dos mestrandos.  
 
-Nesta seção, apresentam-se as ações já implementadas em resposta às demandas identificadas ao longo do quadriênio (@sec-executadas), bem como aquelas 
+Nesta seção, apresentam-se as ações já implementadas em resposta às demandas 
+identificadas ao longo do quadriênio (@sec-executadas), bem como aquelas 
 que permanecem em fase de planejamento ou execução (@sec-demandadas). A 
 implementação dessas ações será acompanhada pela Comissão de Autoavaliação 
 para que os ajustes necessários sejam feitos com base em novas avaliações 
@@ -9809,14 +9853,17 @@ contribuam efetivamente para o aprimoramento contínuo do programa.
 tabela_acoes_demandadas <- data.frame(
   Demanda = c(
     "Reavaliar as disciplinas obrigatórias e optativas, bem como sua sequência, para alinhá-las melhor às linhas de pesquisa do mestrado e aprimorar o desenvolvimento das competências necessárias aos mestrandos para a formulação e execução de projetos de pesquisa de alto impacto, com base nos resultados obtidos no quadriênio.",
-    "Solicitar às instâncias competentes do IFMG a ampliação do acesso à bases de dados especializadas, recursos computacionais, softwares e literatura especializada para apoiar as atividades de pesquisa do programa.",
-    "Expandir as oportunidades de atividades extracurriculares, de extensão e 
-    de internacionalização para enriquecer a experiência acadêmica dos mestrandos.",
+    "Solicitar às instâncias competentes do IFMG a ampliação do acesso à bases de dados especializadas, a recursos computacionais modernos (hardware e softwares) e `a literatura especializada, aprimorando a infraestrura de apoio às atividades de pesquisa do programa.",
+    "Expandir as oportunidades de atividades extracurriculares,  
+    de internacionalização e de extensão para enriquecer a experiência 
+    acadêmica dos mestrandos.",
     "Ampliar a prospecção e a interação com empresas da região para fortalecer 
     as parcerias atuais e criar novas parcerias e oportunidades de pesquisa.",
     "Buscar captação de recursos para oferecer mais bolsas de estudos.",
     "Encaminhar às instâncias competentes do IFMG a demanda pelo aperfeiçoamento dos recursos para aulas remotas ou híbridas.",
-    "Avaliar a carga de trabalho dos orientadores para evitar sobrecarga e viabilizar condições de trabalho mais adequadas.",
+    "Encaminhar às instâncias competentes do IFMG a necessidade de monitoramento da carga 
+de trabalho dos docentes permanentes para evitar sobrecarga e aumentar a 
+produtividade exigida em um programa stricto sensu.",
     "Adotar medidas ou incentivos para um maior engajamento do corpo docente na construção e evolução do curso.",
     "Desenvolver um nova plano estratégico para a consolidação do mestrado e para uma futura aprovação de um programa de doutorado.",
     "Ampliar a publicidade das decisões do colegiado e da coordenação do mestrado para aperfeiçoar a comunicação com os mestrandos.",
@@ -9824,7 +9871,7 @@ tabela_acoes_demandadas <- data.frame(
     "Realizar, na recepção dos mestrandos, uma apresentação detalhada da estrutura do IFMG - Campus Formiga, destacando os recursos disponíveis.",
     "Encaminhar às instâncias competentes do IFMG a demanda por melhoria do espaço de convivência, tornando-o mais atraente e funcional para os mestrandos.",
     "Aperfeiçoar a comunicação sobre o processo de bolsas, ampliando-se os prazos e divulgando os procedimentos com a maior antecedência possível.",
-    "Encaminhar às instâncias competentes do IFMG a demanda por um anfiteatro maior para eventos acadêmicos, para aumentar a capacidade de realização de seminários e congressos."
+    "Encaminhar às instâncias competentes do IFMG a demanda por um anfiteatro maior para eventos, para aumentar a capacidade de realização de seminários e congressos."
   ),
   Representacao = c(
     "Colegiado do curso",
@@ -9834,7 +9881,7 @@ tabela_acoes_demandadas <- data.frame(
     "Coordenação do curso",
     "Coordenação do curso",
     "Coordenação do curso",
-    "Coordenação do curso",
+    "Coordenação do curso e Docentes",
     "Colegiado do curso",
     "Coordenação do curso",
     "Coordenação do curso",
@@ -10052,62 +10099,63 @@ demonstra o compromisso institucional com a construção de uma cultura
 avaliativa focada na melhoria contínua do programa, fundamentada em 
 evidências e desenvolvida de forma coletiva. 
 
-Criado em um período desafiador, marcado pela pandemia da COVID-19, 
-o programa demonstrou resiliência ao consolidar suas bases acadêmicas e 
-administrativas, superando adversidades e garantindo a continuidade 
-das atividades de ensino, pesquisa e extensão. Por meio de um processo 
-avaliativo estruturado e alinhado à Política de Autoavaliação formalizada pela 
-Portaria Nº 1706/IFMG/2024, o relatório apresenta um panorama abrangente 
-dos avanços alcançados, desafios enfrentados e direções estratégicas 
-para o aprimoramento do curso.
+Criado em um período desafiador, marcado pela pandemia da COVID-19, o 
+programa buscou consolidar suas bases acadêmicas e administrativas, superando 
+adversidades e garantindo a continuidade das atividades acadêmicas do 
+curso. O perfil dos discentes revelou que a maioria está em uma fase 
+profissional madura, com idade mediana de 35,5 anos, e 92% exercem atividades 
+profissionais remuneradas, o que reforça o caráter profissional do mestrado 
+e a necessidade de alinhar o programa às demandas do mercado e sociais. As 
+principais ocupações dos participantes incluem Servidor Público, Professor 
+e Contador, evidenciando a diversidade de atuações profissionais e a 
+aplicabilidade dos conhecimentos em diferentes setores.
 
-Desde sua criação em 2021, o programa tem buscado consolidar suas bases 
-acadêmicas e administrativas, destacando-se pelo alto nível de 
-qualificação do corpo docente, pela adequação de diversos aspectos 
-da matriz curricular, da infraestrutura e da gestão acadêmica, 
-conforme pode se verificar nos resultados apresentados. Além disso, 
-a estrutura avaliativa utilizada foi considerada abrangente e eficiente na c
-aptação de percepções sobre ensino, pesquisa, infraestrutura e gestão 
-administrativa.  
+Por meio de um processo avaliativo estruturado e alinhado à Política de 
+Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024, o relatório 
+apresenta um panorama abrangente dos avanços alcançados, desafios enfrentados 
+e direções estratégicas para o aprimoramento do curso. Desde sua criação 
+em 2021, o programa destacou-se pelo alto nível de qualificação do corpo 
+docente, pela adequação da matriz curricular, da infraestrutura e da gestão 
+acadêmica, conforme evidenciado nos resultados apresentados. A estrutura 
+avaliativa utilizada mostrou-se abrangente e eficiente na captação de 
+percepções sobre ensino, pesquisa, infraestrutura e gestão administrativa.
 
-Por outro lado, o processo de autoavaliação identificou áreas que apresentam oportunidades de aprimoramento, especialmente no que se refere à necessidade 
-de revisão da matriz curricular — um aspecto esperado e desejável para um 
-programa recente que passará por sua primeira avaliação quadrienal. Também 
-foram apontadas demandas estratégicas para o aperfeiçoamento da 
-infraestrutura, a ampliação das atividades extracurriculares, o 
-fortalecimento da internacionalização e o aumento da prospecção de 
-oportunidades de pesquisa e interação com o setor produtivo. Além disso, identificaram-se oportunidades para aprimorar a comunicação institucional.  
+No entanto, como esperado, o processo de autoavaliação identificou 
+oportunidades de aprimoramento, especialmente na revisão da matriz curricular — 
+um aspecto esperado para um programa recente que passará por sua primeira 
+avaliação quadrienal. Também foram apontadas demandas estratégicas para o 
+aperfeiçoamento da infraestrutura, a ampliação das atividades 
+extracurriculares, o fortalecimento da internacionalização e o aumento 
+da prospecção de oportunidades de pesquisa e interação com o setor produtivo. 
+Além disso, identificaram-se oportunidades para aprimorar a comunicação 
+institucional.
 
-Isto posto, foram identificadas demandas estratégicas para os 
-próximos ciclos avaliativos, com foco na reestruturação curricular, no 
-aperfeiçoamento da infraestrutura, na promoção de incentivos à pesquisa e 
-na expansão das atividades extracurriculares. A implementação dessas ações 
-será monitorada pela Comissão de Autoavaliação, para que as 
-mudanças propostas contribuam efetivamente para o fortalecimento do 
-programa e a evolução da formação oferecida.  
+Foram identificadas demandas estratégicas (@sec-demandadas) para os próximos 
+ciclos avaliativos, com foco na reestruturação curricular, no aperfeiçoamento 
+da infraestrutura, na promoção de incentivos à pesquisa e na expansão das atividades 
+extracurriculares. A implementação dessas ações será monitorada pela 
+Comissão de Autoavaliação, visando contribuir para o fortalecimento do 
+programa e a evolução da formação oferecida.
 
-Este relatório reforça a relevância do processo avaliativo como 
-instrumento de gestão e aprimoramento contínuo, permitindo que o 
-programa se adapte às demandas institucionais e de mercado. A reflexão 
-crítica proporcionada pela autoavaliação pode orientar o planejamento estratégico 
-do curso e fortalecer sua capacidade de formar profissionais qualificados 
-para enfrentar os desafios contemporâneos, contribuindo efetivamente para o 
-desenvolvimento local, regional e nacional.  
+Este relatório reforça a relevância do processo avaliativo como instrumento 
+de gestão e aprimoramento contínuo, permitindo que o programa se adapte às 
+demandas institucionais e de mercado. A reflexão crítica proporcionada 
+pela autoavaliação pode orientar o planejamento estratégico do curso e 
+fortalecer sua capacidade de formar profissionais qualificados para 
+enfrentar os desafios contemporâneos, contribuindo efetivamente para 
+o desenvolvimento local, regional e nacional.
 
 Além dos avanços e desafios identificados, a Comissão de Autoavaliação 
-também realizou uma Meta-Avaliação do processo, revisando criticamente 
-os instrumentos e métodos aplicados. Esse aprendizado resultou em 
-recomendações para tornar os próximos ciclos avaliativos mais eficazes 
-e alinhados às necessidades do programa. 
+realizou uma Meta-Avaliação do processo, revisando criticamente os 
+instrumentos e métodos aplicados. Esse aprendizado resultou em recomendações 
+para tornar os próximos ciclos avaliativos mais eficazes e alinhados às 
+necessidades e ao novo nível de maturidade do programa.
 
-Considerando o cenário nacional da pós-graduação, marcado por uma 
-redução no interesse de potenciais candidatos [@marques2024] e por desafios 
-institucionais, a autoavaliação contínua será um fator crítico para 
-garantir a atratividade e a sustentabilidade do curso. A implementação 
-de estratégias voltadas à atração e retenção de discentes com perfil 
-apropriado, entre outras ações, aliadas à formulação e execução de um 
-planejamento estratégico flexível, porém assertivo, contribuirá para a 
-sustentabilidade e a consolidação do programa como uma referência na área.
+Considerando o cenário nacional da pós-graduação, marcado por uma redução 
+no interesse de potenciais candidatos [@marques2024], por potenciais 
+mudanças disruptivas no mundo do trabalho e por desafios 
+institucionais e políticos, a autoavaliação contínua será um fator crítico para 
+garantir a atratividade e a sustentabilidade do curso. 
 
 
 
