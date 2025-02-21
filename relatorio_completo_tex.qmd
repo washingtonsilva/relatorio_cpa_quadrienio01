@@ -127,7 +127,7 @@ exercendo atividades remuneradas, conforme detalhado na @sec-perfil.
 
 Além disso, o relatório busca consolidar a autoavaliação como uma 
 ferramenta estratégica para o planejamento da evolução contínua do curso. 
-Ao documentar os avanços alcançados e os desafios enfrentados, ele fornece 
+Ao documentar as dimensões bem avaliadas e os desafios enfrentados, ele fornece 
 subsídios para decisões futuras que visem à sustentabilidade e à evolução 
 do programa diante do atual cenário desafiador. A implementação das ações 
 propostas será monitorada pela Comissão de Autoavaliação em ciclos 
@@ -274,45 +274,34 @@ tabela_planejamento |>
 
 A metodologia aplicada na autoavaliação do Mestrado Profissional em 
 Administração do IFMG - Campus Formiga foi desenvolvida em conformidade 
-com a Política de Autoavaliação do Programa, formalizada pela 
-Portaria IFMG nº 1706/2024 [@portaria1706ifmg]. Esta seção descreve 
-os procedimentos adotados para a coleta e análise dos dados, os instrumentos 
-utilizados e as técnicas e procedimentos empregados no processo autoavaliativo.
+com a Política de Autoavaliação do Programa, formalizada pela Portaria 
+1706/2024/IFMG [@portaria1706ifmg]. Esta seção descreve os procedimentos 
+adotados para a coleta e análise dos dados, os instrumentos utilizados 
+e as técnicas e procedimentos empregados no processo autoavaliativo.
 
 
-## Metodologia Aplicada ao Processo de Autoavaliação
+##  Metodologia Aplicada ao Processo de Autoavaliação
 
-Para incorporar o conteúdo da subseção **4.1 Ingressantes e Taxas de Conclusão** na seção **3 Metodologia**, você pode adicionar um parágrafo que descreva como as taxas de conclusão e outros indicadores quantitativos foram analisados. Abaixo está uma sugestão de como você pode fazer essa inclusão:
-
----
-
-### 3 Metodologia
-
-A metodologia aplicada na autoavaliação do Mestrado Profissional em Administração do IFMG - Campus Formiga foi desenvolvida em conformidade com a Política de Autoavaliação do Programa, formalizada pela Portaria IFMG nº 1706/2024 (Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais, 2024). Esta seção descreve os procedimentos adotados para a coleta e análise dos dados, os instrumentos utilizados e as técnicas e procedimentos empregados no processo autoavaliativo.
-
-#### 3.1 Metodologia Aplicada ao Processo de Autoavaliação
-
-A metodologia aplicada na autoavaliação foi desenvolvida com base na 
-Política de Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024. O 
-objetivo principal foi promover uma reflexão crítica que orientasse ações 
+O objetivo principal foi promover uma reflexão crítica que orientasse ações 
 para a melhoria contínua do programa. O processo metodológico seguiu quatro 
-etapas integradas:
+etapas:
 
-1. **Planejamento**: Revisão das diretrizes normativas da CAPES e definição 
-dos critérios avaliativos, abrangendo ensino, pesquisa, extensão e 
-gestão acadêmica. Nesta etapa, foram definidos indicadores quantitativos, 
-como as taxas de conclusão e o número de ingressantes, que foram analisados 
-para avaliar o desempenho do programa ao longo do quadriênio 2021-2024.
-
-2. **Engajamento**: Promoção da participação ativa de discentes e docentes por 
-meio de campanhas informativas.
+1. **Planejamento**: Revisão das diretrizes normativas da CAPES e 
+definição dos critérios avaliativos, abrangendo diversas dimensões. 
+Além dos critérios de avaliação das dimensões estabelecidas, foram 
+definidos como indicadores quantitativos relevantes para análise o 
+número de ingressantes e as taxas de conclusão, conforme previsto 
+na Política de Autoavaliação.
+\
+2. **Engajamento**: Promoção da participação ativa de discentes e 
+docentes por meio de e-mails informativos e do site institucional.
 
 3. **Execução**: Aplicação anual dos instrumentos avaliativos pela 
 Comissão de Autoavaliação, composta por representantes dos segmentos 
 acadêmicos do programa. Os dados quantitativos, como as taxas de 
 conclusão e o número de ingressantes, foram coletados e analisados para 
 fornecer uma visão geral do desempenho do programa em termos da 
-demanda e taxa de sucesso na conclusão.
+demanda e taxa de sucesso da formação.
 
 4. **Meta-avaliação**: Revisão crítica dos métodos aplicados para aprimorar 
 continuamente o processo.
@@ -320,7 +309,9 @@ continuamente o processo.
 Os instrumentos utilizados incluíram questionários com questões quantitativas 
 (escalas Likert) e qualitativas (respostas abertas), abordando dimensões como 
 qualidade do ensino, infraestrutura, disciplinas e coordenação do curso, 
-entre outras. Além disso, foram analisados indicadores quantitativos, como 
+entre outras. As questões com respostas abertas foram utilizadas para 
+coletar possíveis sugestões em relação às dimensões avaliadas. 
+Além disso, foram analisados indicadores quantitativos, como 
 as taxas de conclusão e o número de ingressantes. A análise dos dados 
 seguiu uma abordagem mista, os dados quantitativos foram analisados 
 com técnicas estatísticas descritivas, notadamente frequências percentuais 
@@ -339,15 +330,12 @@ Isto posto, a amplitude das questões evidencia o esforço efetivo
 do processo avaliativo para contribuir para a evolução do curso.
 
 Os resultados obtidos foram consolidados em relatórios e 
-amplamente divulgados aos segmentos acadêmicos, tanto pelo site 
+divulgados aos segmentos acadêmicos, tanto pelo site 
 institucional do Mestrado quanto por meio de e-mails informativos. 
-Essa estratégia assegurou a transparência e a disseminação do 
-processo avaliativo.
-
-Por fim, a meta-avaliação revisou criticamente os instrumentos e 
-métodos aplicados ao longo do ciclo avaliativo, garantindo a validade e 
-confiabilidade dos resultados obtidos. Essa etapa final reforçou o 
-compromisso do programa com a excelência acadêmica e administrativa.
+Essa estratégia assegurou a disseminação do processo avaliativo. Por fim, 
+com a meta-avaliação, a Comissão de Autoavaliação revisou 
+criticamente os instrumentos e métodos aplicados ao longo do 
+ciclo avaliativo.
 
 
 ## Procedimento em Relação aos Resultados 
@@ -385,9 +373,9 @@ crítico para a melhoria contínua do programa, em alinhamento com as
 diretrizes da CAPES e objetivos estratégicos do programa.
 
 A pesquisa foi estruturada com base na aplicação de questionários 
-direcionados aos discentes e docentes, abrangendo aspectos como 
-qualidade do ensino, infraestrutura, coordenação do programa e 
-impacto da pandemia da COVID-19, entre outros. Os dados coletados 
+direcionados aos discentes e docentes, abrangendo dimensões como 
+qualidade do programa, infraestrutura, coordenação do curso, 
+impacto da pandemia da COVID-19, entre outras. Os dados coletados 
 foram analisados de maneira quantitativa e qualitativa, permitindo 
 identificar pontos fortes, desafios e oportunidades de melhoria. Esta 
 seção apresenta os principais resultados desse processo.
@@ -6494,8 +6482,8 @@ ggplot(q82_summary_diverging, aes(x = q82, y = percent_answers, fill = q82)) +
 As respostas dos mestrandos sobre o impacto da pandemia da COVID-19 no 
 curso foram divergentes:
 
-- **Desafios com o formato online**: Um dos mestrandos destacou que a 
-substituição das aulas presenciais por online prejudicou significativamente 
+- **Desafios com o formato remoto**: Um dos mestrandos destacou que a 
+substituição das aulas presenciais por remotas prejudicou significativamente 
 a interação entre professores e colegas, limitando debates e trocas de 
 experiências. Além disso, o mestrando enfrentou desafios pessoais ao 
 contrair COVID-19, o que afetou sua saúde e capacidade de acompanhar 
@@ -6508,9 +6496,9 @@ desenvolvimento das pesquisas e na assimilação dos conteúdos.
 
 Essas respostas destacam a complexidade do impacto da pandemia no 
 desempenho dos mestrandos. Enquanto alguns enfrentaram desafios 
-significativos com o formato online, outros encontraram oportunidades 
+significativos com o formato remoto, outros encontraram oportunidades 
 para se adaptar e crescer. Isso sugere que o curso deve considerar 
-estratégias para melhorar a interação online e apoiar os estudantes que 
+estratégias para melhorar a interação remota e apoiar os estudantes que 
 preferem ambientes presenciais, ao mesmo tempo em que promove a autonomia 
 e disciplina necessárias para o sucesso em formatos remotos.
 
@@ -6538,7 +6526,7 @@ que podem ser aprimorados. As sugestões dos discentes para algumas
 dimensões avaliadas, categorizadas por temas, são exibidas a seguir.
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias Gerais**
 
 - **Direcionamento de Disciplinas Optativas**: Sugere-se que as disciplinas 
@@ -6561,7 +6549,7 @@ no programa, promovendo uma aprendizagem mais integral.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para a Coordenação**
 
 - **Aperfeiçoamento da Publicidade das Decisões**: Recomenda-se ampliar a 
@@ -6578,7 +6566,7 @@ divulgando os procedimentos com a maior antecedência possível.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para a Infraestrutura**
 
 - **Melhoria do Espaço de Convivência**: Sugere-se melhorar o espaço 
@@ -6590,7 +6578,7 @@ Campus Formiga, destacando os recursos disponíveis.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para as Disciplinas Obrigatórias**
 
 - **Revisão e Atualização de Conteúdos**: Sugere-se revisar periodicamente 
@@ -6599,7 +6587,7 @@ relevância para o programa.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para as Disciplinas Optativas**
 
 - **Alinhamento com Objetivos de Pesquisa**: Sugere-se que as disciplinas 
@@ -6612,7 +6600,7 @@ diferenciadas para atendê-las quando possível.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para os Orientadores**
 
 - **Carga de Trabalho dos Orientadores**: Propõe-se avaliar a carga de 
@@ -6690,8 +6678,8 @@ fundamentais para sua evolução contínua.
 dados_taxa_docentes <- tibble(
   Categoria = "Docentes",
   Respondentes = 8,
-  Total_Docentes = 10,
-  Taxa_Resposta = 0.80
+  Total_Docentes = 11,
+  Taxa_Resposta = 0.73
 )
 
 dados_taxa_docentes |>
@@ -9751,7 +9739,7 @@ recebidas do corpo docente para algumas das dimensões avaliadas,
 categorizadas por temas, são exibidas a seguir.
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias Gerais para o Programa**
 
 - **Revisão e Atualização do Currículo**: Sugere-se reavaliar a sequência 
@@ -9768,7 +9756,7 @@ minicursos e palestras para enriquecer a experiência acadêmica.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para Incentivos à Pesquisa**
 
 - **Captação de Recursos para Bolsas**: Recomenda-se buscar captação de 
@@ -9780,7 +9768,7 @@ de alto impacto.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para a Coordenação**
 
 - **Participação e Envolvimento dos Docentes**: Sugere-se a adoção de 
@@ -9793,7 +9781,7 @@ novas parcerias e oportunidades para a pesquisa.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para a Infraestrutura**
 
 - **Ambientes para Aulas Híbridas**: Propõe-se aperfeiçoar os ambientes 
@@ -9809,7 +9797,7 @@ para apoiar as atividades de pesquisa.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para as Disciplinas Obrigatórias**
 
 - **Reavaliação das Disciplinas Obrigatórias**: Sugere-se reavaliar as 
@@ -9823,7 +9811,7 @@ seus projetos.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Sugestões de Melhorias para as Disciplinas Optativas**
 
 - **Revisão e Expansão das Disciplinas Optativas**: Recomenda-se reavaliar 
@@ -9838,7 +9826,7 @@ pesquisa dos professores e alunos.
 
  O processo de autoavaliação do Mestrado Profissional em Administração 
 do IFMG - Campus Formiga, realizado ao longo do quadriênio 2021-2024, 
-possibilitou a identificação de avanços, desafios e oportunidades 
+possibilitou a identificação de aspectos positivos, desafios e oportunidades 
 de aprimoramento do programa. A partir da análise dos dados coletados, 
 a Comissão de Autoavaliação sistematizou as principais demandas 
 apresentadas pelos diferentes segmentos acadêmicos, algumas das quais 
@@ -9938,20 +9926,17 @@ contribuam efetivamente para o aprimoramento contínuo do programa.
 #| label: tbl-5.2
 #| tbl-cap: "Ações Demandadas a Partir do Processo de Autoavaliação."
 
+# Criar o data frame com os dados originais
 tabela_acoes_demandadas <- data.frame(
   Demanda = c(
     "Reavaliar as disciplinas obrigatórias e optativas, bem como sua sequência, para alinhá-las melhor às linhas de pesquisa do mestrado e aprimorar o desenvolvimento das competências necessárias aos mestrandos para a formulação e execução de projetos de pesquisa de alto impacto, com base nos resultados obtidos no quadriênio.",
     "Solicitar às instâncias competentes do IFMG a ampliação do acesso à bases de dados especializadas, a recursos computacionais modernos (hardware e softwares) e `a literatura especializada, aprimorando a infraestrura de apoio às atividades de pesquisa do programa.",
-    "Expandir as oportunidades de atividades extracurriculares,  
-    de internacionalização e de extensão para enriquecer a experiência 
-    acadêmica dos mestrandos.",
-    "Ampliar a prospecção e a interação com empresas da região para fortalecer 
-    as parcerias atuais e criar novas parcerias e oportunidades de pesquisa.",
+    "Expandir as oportunidades de atividades extracurriculares, de internacionalização e de extensão para enriquecer a experiência acadêmica dos mestrandos.",
+    "Ampliar a prospecção e a interação com empresas da região para fortalecer as parcerias atuais e criar novas parcerias e oportunidades de pesquisa.",
+    "Elaborar e implementar um Código de Conduta para orientadores e orientandos, com o objetivo de estabelecer expectativas claras, promover relações acadêmicas saudáveis e prevenir conflitos, contribuindo para a evolução e consolidação do mestrado.",
     "Buscar captação de recursos para oferecer mais bolsas de estudos.",
     "Encaminhar às instâncias competentes do IFMG a demanda pelo aperfeiçoamento dos recursos para aulas remotas ou híbridas.",
-    "Encaminhar às instâncias competentes do IFMG a necessidade de monitoramento da carga 
-de trabalho dos docentes permanentes para evitar sobrecarga e aumentar a 
-produtividade exigida em um programa stricto sensu.",
+    "Encaminhar às instâncias competentes do IFMG a necessidade de monitoramento da carga de trabalho dos docentes permanentes para evitar sobrecarga e aumentar a produtividade exigida em um programa stricto sensu.",
     "Adotar medidas ou incentivos para um maior engajamento do corpo docente na construção e evolução do curso.",
     "Desenvolver um nova plano estratégico para a consolidação do mestrado e para uma futura aprovação de um programa de doutorado.",
     "Ampliar a publicidade das decisões do colegiado e da coordenação do mestrado para aperfeiçoar a comunicação com os mestrandos.",
@@ -9966,6 +9951,7 @@ produtividade exigida em um programa stricto sensu.",
     "Coordenação do curso",
     "Coordenação e Colegiado do curso",
     "Coordenação do curso",
+    "Colegiado do Curso",
     "Coordenação do curso",
     "Coordenação do curso",
     "Coordenação do curso",
@@ -9983,6 +9969,7 @@ produtividade exigida em um programa stricto sensu.",
     "Infraestrutura",
     "Atividades extracurriculares, de extensão e internacionalização",
     "Coordenação do Programa",
+    "Alinhamento às boas práticas internacionais de orientação acadêmica",
     "Incentivos à pesquisa",
     "Infraestrutura",
     "Coordenação do Programa",
@@ -9997,6 +9984,7 @@ produtividade exigida em um programa stricto sensu.",
   )
 )
 
+# Formatação da tabela
 tabela_acoes_demandadas |>
   kbl(
     col.names = c(
@@ -10024,6 +10012,7 @@ tabela_acoes_demandadas |>
     threeparttable = TRUE
   )
 ```
+
 
 :::
 
@@ -10086,9 +10075,9 @@ avaliativos, metodologias e estratégias de engajamento para futuros ciclos.
 
 ## Resultados da Meta-Avaliação
 
-Os resultados da meta-avaliação indicaram avanços significativos no processo 
-avaliativo do programa, mas também apontaram aspectos que podem ser 
-aprimorados:
+Os resultados da meta-avaliação indicaram dimensões e aspectos bem 
+avaliados no processo avaliativo do programa, mas também apontaram 
+aspectos que podem ser aprimorados:
 
 
 ::: {.callout-note icon=false}
@@ -10105,7 +10094,7 @@ adequada das respostas.
 :::
 
 
-::: {.callout-tip icon=false}
+::: {.callout-note icon=false}
 ## **Áreas de Melhoria**:
 
 - Necessidade de maior clareza em algumas questões abertas dos questionários 
@@ -10219,14 +10208,14 @@ expectativas dos discentes.
 
 Por meio de um processo avaliativo estruturado e alinhado à Política de 
 Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024, o relatório 
-apresenta um panorama abrangente dos avanços alcançados, desafios enfrentados 
-e direções estratégicas para o aprimoramento do curso. Desde sua criação 
-em 2021, o programa destacou-se pelo alto nível de qualificação do corpo 
-docente, pela adequação da matriz curricular, da infraestrutura e da 
-gestão acadêmica, conforme evidenciado nos resultados apresentados. A 
-estrutura avaliativa utilizada mostrou-se abrangente e eficiente na 
-captação de percepções sobre ensino, pesquisa, infraestrutura e gestão 
-administrativa.
+apresenta um panorama abrangente das dimensões bem avaliadas, 
+desafios enfrentados e direções estratégicas para o aprimoramento 
+do curso. Desde sua criação em 2021, o programa destacou-se pelo alto 
+nível de qualificação do corpo docente, pela adequação da matriz 
+curricular, da infraestrutura e da gestão acadêmica, conforme 
+evidenciado nos resultados apresentados. A estrutura avaliativa 
+utilizada mostrou-se abrangente e eficiente na captação de percepções 
+sobre ensino, pesquisa, infraestrutura e gestão administrativa.
 
 No entanto, o processo de autoavaliação identificou oportunidades de 
 aprimoramento, especialmente na revisão da matriz curricular — um aspecto 
@@ -10253,10 +10242,10 @@ fortalecer sua capacidade de formar profissionais qualificados para
 enfrentar os desafios contemporâneos, ampliando sua contribuição 
 para o desenvolvimento local e regional.
 
-Além dos avanços e desafios identificados, a Comissão de Autoavaliação 
-realizou uma Meta-Avaliação do processo, revisando criticamente os 
-instrumentos e métodos aplicados. Esse aprendizado resultou em 
-recomendações para tornar os próximos ciclos avaliativos mais eficazes 
+Além das dimensões bem avaliadas e desafios identificados, a Comissão de 
+Autoavaliação realizou uma Meta-Avaliação do processo, revisando 
+criticamente os instrumentos e métodos aplicados. Esse aprendizado resultou 
+em recomendações para tornar os próximos ciclos avaliativos mais eficazes 
 e alinhados às necessidades e ao novo nível de maturidade do programa.
 
 
