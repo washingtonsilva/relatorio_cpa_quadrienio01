@@ -37,6 +37,9 @@ format:
     lof: true
     lot: true
     link-citations: true
+    title-meta: "Relatório Integral de Autoavaliação do Mestrado Profissional em Admnistração do IFMG - Campus Formiga"
+    author-meta: "Washington Santos da Silva"
+    subject: "Autoavaliação"  
 execute: 
   echo: false
   warning: false
@@ -71,6 +74,10 @@ dados_discentes <- readr::read_rds(path_discentes)
 ## docentes
 path_docentes <- here::here("dados/limpos/dados_docentes.rds")
 dados_docentes <- readr::read_rds(path_docentes)
+
+## producao intelectual dos concluintes
+path_producao <- here::here("dados/limpos/producoes_concluintes.rds")
+dados_producao <- readr::read_rds(path_producao)
 ```
 
 
@@ -80,66 +87,69 @@ dados_docentes <- readr::read_rds(path_docentes)
 O Relatório Integral da Comissão de Autoavaliação do Programa de Pós-Graduação 
 em Administração do IFMG - Campus Formiga, referente ao quadriênio 2021-2024, 
 apresenta uma análise abrangente e reflexiva sobre o desempenho do programa 
-sob a ótica dos diferentes segmentos acadêmicos. Este documento foi 
-elaborado em conformidade com a Política de Autoavaliação, formalizada pela 
-Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg], que estabelece diretrizes 
+sob a ótica dos diferentes segmentos acadêmicos. Este documento foi elaborado 
+em conformidade com a Política de Autoavaliação, formalizada pela 
+Portaria Nº 1706/IFMG/2024 [@portaria1706ifmg], que estabeleceu diretrizes 
 para um processo avaliativo estruturado e permanente.
 
-O Programa iniciou suas atividades em 2021, em um contexto desafiador marcado 
-pela pandemia da COVID-19. Desde o início, o programa demonstrou resiliência e 
-compromisso com a construção de uma base sólida para a formação de 
+O mestrado iniciou suas atividades em 2021, em um contexto desafiador marcado 
+pela pandemia da COVID-19. Desde o início, o programa demonstrou resiliência 
+e compromisso com a construção de uma base sólida para a formação de 
 pesquisadores qualificados em sua área de atuação. Além dos desafios impostos 
 pela pandemia, o cenário da pós-graduação no Brasil tem sido impactado pela 
 tendência de redução no interesse dos candidatos potenciais, conforme apontado 
-por @castro2024 e @crise2024, devida a diversos possíveis fatores citados na 
-@sec-ingressantes. Essa tendência refletiu-se no programa, com uma redução 
-no número de ingressantes entre 2021 e 2022 e o não preenchimento do 
-número de vagas ofertadas. Essa queda na demanda, associada a restrições 
-de financiamento e mudanças rápidas e potencialmente disruptivas no 
-mercado de trabalho — impulsionadas pelo avanço tecnológico, como o 
-desenvolvimento da Inteligência Artificial e outras inovações digitais — 
+por @castro2024 e @crise2024, devida a diversos possíveis fatores citados 
+na @sec-ingressantes. Essa tendência refletiu-se no programa, com uma redução 
+no número de ingressantes entre 2021 e 2022 e o não preenchimento do número 
+de vagas ofertadas. Essa queda na demanda, associada a restrições de 
+financiamento da pesquisa no país e mudanças rápidas e potencialmente 
+disruptivas no mercado de trabalho — impulsionadas pelo avanço tecnológico, 
+como o desenvolvimento da Inteligência Artificial e outras inovações digitais — 
 impõe desafios adicionais para a sustentabilidade e consolidação dos programas 
-de pós-graduação *stricto sensu*, sejam profissionais ou acadêmicos. 
+de pós-graduação *stricto sensu*, sejam profissionais ou acadêmicos.
 
-Diante desse cenário, a metodologia aplicada na autoavaliação foi 
-planejada para fornecer informações amplas e adequadas a um programa 
-recente, iniciado sob condições adversas, além de garantir uma 
-representatividade apropriada das avaliações e percepções dos diferentes 
-segmentos acadêmicos. Por meio de questionários estruturados com questões 
-quantitativas e qualitativas, foram analisadas dimensões como qualidade 
-geral do curso, corpo docente, infraestrutura, gestão administrativa, 
-internacionalização e atividades extracurriculares. A análise crítica dos 
-dados coletados buscou não apenas identificar as principais demandas, 
-mas também propor ações concretas e bem fundamentadas para o aprimoramento 
-contínuo do programa.
+Diante desse cenário, a metodologia aplicada na autoavaliação foi planejada 
+para fornecer informações amplas e adequadas a um programa recente, iniciado 
+sob condições adversas, além de garantir uma representatividade apropriada 
+das avaliações e percepções dos diferentes segmentos acadêmicos. Por meio 
+de questionários estruturados com questões quantitativas e qualitativas, 
+foram analisadas dimensões como qualidade geral do curso, corpo docente, 
+infraestrutura, gestão administrativa, internacionalização, atividades 
+extracurriculares e produção intelectual dos concluintes. A análise crítica 
+dos dados coletados buscou não apenas identificar as principais demandas, 
+mas também propor ações concretas e baseadas em evidências para o 
+aprimoramento contínuo do programa.
 
-Os resultados da autoavaliação ao longo do quadriênio destacaram 
-aspectos positivos, como a qualificação e atuação do corpo docente, 
-a adequação de diversos aspectos da matriz curricular e a 
-infraestrutura disponível. No entanto, também foram identificadas 
-oportunidades de melhoria, como a revisão curricular, a ampliação de 
-atividades extracurriculares, o fortalecimento da internacionalização e 
-o aprimoramento da infraestrutura. Essas demandas, identificadas por meio 
+Os resultados da autoavaliação ao longo do quadriênio destacaram aspectos 
+positivos, como a qualificação e atuação do corpo docente, a adequação de 
+diversos aspectos da matriz curricular, a infraestrutura disponível e a 
+relevância da produção intelectual dos concluintes, que incluiu a criação 
+de soluções técnicas inovadoras e a publicação de artigo em periódico de 
+alto impacto. No entanto, também foram identificadas oportunidades de melhoria, 
+como a revisão curricular, a ampliação de atividades extracurriculares, o 
+fortalecimento da internacionalização e o aprimoramento da infraestrutura, 
+incluindo a ampliação dos recursos disponíveis para o desenvolvimento 
+das pesquisas. Essas demandas, identificadas por meio 
 do processo de autoavaliação, visam fornecer subsídios para a evolução 
 do curso, considerando o perfil dos discentes, que em sua maioria estão 
-em uma fase profissional madura, com idade mediana de 35,5 anos e 92% 
-exercendo atividades remuneradas, conforme detalhado na @sec-perfil.
+em uma fase profissional madura, com idade mediana de 35,5 anos e 
+92% exercendo atividades remuneradas, conforme detalhado na @sec-perfil.
 
-Além disso, o relatório busca consolidar a autoavaliação como uma 
-ferramenta estratégica para o planejamento da evolução contínua do curso. 
-Ao documentar as dimensões bem avaliadas e os desafios enfrentados, ele fornece 
-subsídios para decisões futuras que visem à sustentabilidade e à evolução 
-do programa diante do atual cenário desafiador. A implementação das ações 
-propostas será monitorada pela Comissão de Autoavaliação em ciclos 
-avaliativos subsequentes, de forma que o processo avaliativo contribua 
-efetivamente para a consolidação e evolução do programa.
+Além disso, o relatório busca consolidar a autoavaliação como uma ferramenta 
+estratégica para o planejamento da evolução contínua do curso. Ao documentar 
+as dimensões bem avaliadas e os desafios enfrentados, ele fornece subsídios 
+para decisões futuras que visem à sustentabilidade e à evolução do programa 
+diante do atual cenário desafiador. A implementação das ações propostas será 
+monitorada pela Comissão de Autoavaliação em ciclos avaliativos subsequentes, 
+de forma que o processo avaliativo contribua efetivamente para a consolidação 
+e evolução do programa.
 
-Este relatório está organizado em seções que descrevem as principais 
-etapas do processo avaliativo: Planejamento da Autoavaliação 
-(@sec-planejamento), Metodologia aplicada (@sec-metodologia), Resultados 
-da Autoavaliação (@sec-resultados), Ações Executadas e Demandadas a 
-partir da Autoavaliação (@sec-acoesdemanda), Meta-Avaliação 
-(@sec-metaavaliacao) e as Considerações Finais (@sec-consideracoesfinais).
+Este relatório está organizado em seções que descrevem as principais etapas 
+do processo avaliativo: Planejamento da Autoavaliação (@sec-planejamento), 
+Metodologia aplicada (@sec-metodologia), Resultados da Autoavaliação 
+(@sec-resultados), Ações Executadas e Demandadas a partir da Autoavaliação 
+(@sec-acoesdemanda), Meta-Avaliação (@sec-metaavaliacao) e as Considerações 
+Finais (@sec-consideracoesfinais).
 
 
 
@@ -169,8 +179,10 @@ adequados ao contexto do programa.
 - **Sensibilização:** Engajamento ativo dos diferentes segmentos 
 acadêmicos no processo avaliativo.
 
-- **Cronograma detalhado:** Planejamento das ações avaliativas com 
-prazos definidos para cada etapa.
+- **Cronograma de Ações** Planejamento das ações avaliativas com 
+prazos definidos para cada etapa, conforme os objetivos 
+estratégicos e metas estabelecidos no planejamento estratégico 
+do progrma.
 
 O cronograma sintetizado na Tab. 2.1 apresenta as ações realizadas pela 
 Comissão de Autovaliação durante o quadriênio, incluindo 
@@ -268,96 +280,92 @@ tabela_planejamento |>
 
 
 
-
-
 # Metodologia {#sec-metodologia}
 
 A metodologia aplicada na autoavaliação do Mestrado Profissional em 
 Administração do IFMG - Campus Formiga foi desenvolvida em conformidade 
-com a Política de Autoavaliação do Programa, formalizada pela Portaria 
-1706/2024/IFMG [@portaria1706ifmg]. Esta seção descreve os procedimentos 
-adotados para a coleta e análise dos dados, os instrumentos utilizados 
-e as técnicas e procedimentos empregados no processo autoavaliativo.
+com a Política de Autoavaliação do Programa, formalizada pela 
+Portaria 1706/2024/IFMG [@portaria1706ifmg]. Esta seção descreve os 
+procedimentos adotados para a coleta e análise dos dados, os instrumentos 
+utilizados e as técnicas e procedimentos empregados no processo 
+autoavaliativo.
 
 
-##  Metodologia Aplicada ao Processo de Autoavaliação
+## Metodologia Aplicada ao Processo de Autoavaliação
 
-O objetivo principal foi promover uma reflexão crítica que orientasse ações 
-para a melhoria contínua do programa. O processo metodológico seguiu quatro 
-etapas:
+O objetivo principal foi promover uma reflexão crítica que orientasse 
+ações para a melhoria contínua do programa. O processo metodológico 
+seguiu quatro etapas:
 
-1. **Planejamento**: Revisão das diretrizes normativas da CAPES e 
-definição dos critérios avaliativos, abrangendo diversas dimensões. 
-Além dos critérios de avaliação das dimensões estabelecidas, foram 
-definidos como indicadores quantitativos relevantes para análise o 
-número de ingressantes e as taxas de conclusão, conforme previsto 
+1. **Planejamento**: Revisão das diretrizes normativas da CAPES e definição 
+dos critérios avaliativos, abrangendo diversas dimensões. Além dos 
+critérios de avaliação dessas dimensões, foram estabelecidos como indicadores 
+quantitativos relevantes para a análise o número de ingressantes, as taxas 
+de conclusão e a produção intelectual dos concluintes, conforme previsto 
 na Política de Autoavaliação.
-\
+
 2. **Engajamento**: Promoção da participação ativa de discentes e 
 docentes por meio de e-mails informativos e do site institucional.
 
-3. **Execução**: Aplicação anual dos instrumentos avaliativos pela 
-Comissão de Autoavaliação, composta por representantes dos segmentos 
-acadêmicos do programa. Os dados quantitativos, como as taxas de 
-conclusão e o número de ingressantes, foram coletados e analisados para 
-fornecer uma visão geral do desempenho do programa em termos da 
-demanda e taxa de sucesso da formação.
+3. **Execução**: Aplicação anual dos instrumentos avaliativos pela Comissão 
+de Autoavaliação, composta por representantes dos segmentos acadêmicos do 
+programa. Os dados quantitativos, como as taxas de conclusão, o número de 
+ingressantes e a produção intelectual dos concluintes, foram coletados e 
+analisados para fornecer uma visão geral do desempenho do programa em 
+termos da demanda, taxa de sucesso da formação e impacto das pesquisas 
+realizadas.
 
 4. **Meta-avaliação**: Revisão crítica dos métodos aplicados para aprimorar 
 continuamente o processo.
 
-Os instrumentos utilizados incluíram questionários com questões quantitativas 
-(escalas Likert) e qualitativas (respostas abertas), abordando dimensões como 
-qualidade do ensino, infraestrutura, disciplinas e coordenação do curso, 
-entre outras. As questões com respostas abertas foram utilizadas para 
-coletar possíveis sugestões em relação às dimensões avaliadas. 
-Além disso, foram analisados indicadores quantitativos, como 
-as taxas de conclusão e o número de ingressantes. A análise dos dados 
-seguiu uma abordagem mista, os dados quantitativos foram analisados 
-com técnicas estatísticas descritivas, notadamente frequências percentuais 
-e diversos tipos de gráficos, enquanto os dados qualitativos foram 
-examinados usando o método de categorização temática.
+Os instrumentos utilizados incluíram questionários com questões 
+quantitativas (escalas Likert) e qualitativas (respostas abertas), abordando 
+dimensões como qualidade do ensino, infraestrutura, disciplinas, coordenação 
+do curso e produção intelectual, entre outras. As questões com respostas 
+abertas foram utilizadas para coletar possíveis sugestões em relação às 
+dimensões avaliadas. A análise dos dados seguiu uma abordagem mista: os 
+dados quantitativos foram analisados com técnicas estatísticas descritivas, 
+notadamente frequências percentuais e diversos tipos de gráficos, enquanto 
+os dados qualitativos foram examinados usando o método de categorização temática.
 
 A estrutura dos questionários aplicados buscou um alinhamento com o 
-estágio de maturidade de curso, o qual é recente, o que demandou 
-uma análise abrangente. A alta quantidade de questões, distribuídas 
-em diversas dimensões avaliativas, foi intencionalmente projetada 
-para captar avaliações e percepções detalhadas, incluindo sugestões 
-específicas dos diferentes segmentos acadêmicos. Essa abordagem 
-é especialmente relevante para um programa recente, iniciado em 2021, 
-que busca promover melhorias contínuas fundamentadas em evidências. 
-Isto posto, a amplitude das questões evidencia o esforço efetivo 
-do processo avaliativo para contribuir para a evolução do curso.
+estágio de maturidade do curso, o qual é recente, o que demandou uma 
+análise abrangente. A alta quantidade de questões, distribuídas em diversas 
+dimensões avaliativas, foi intencionalmente projetada para captar avaliações 
+e percepções detalhadas, incluindo sugestões específicas dos diferentes 
+segmentos acadêmicos. Essa abordagem é especialmente relevante para um 
+programa recente, iniciado em 2021, que busca promover melhorias contínuas 
+fundamentadas em evidências. Isto posto, a amplitude das questões evidencia 
+o esforço efetivo do processo avaliativo para contribuir para a evolução 
+do curso.
 
-Os resultados obtidos foram consolidados em relatórios e 
-divulgados aos segmentos acadêmicos, tanto pelo site 
-institucional do Mestrado quanto por meio de e-mails informativos. 
-Essa estratégia assegurou a disseminação do processo avaliativo. Por fim, 
-com a meta-avaliação, a Comissão de Autoavaliação revisou 
-criticamente os instrumentos e métodos aplicados ao longo do 
-ciclo avaliativo.
+Os resultados obtidos produziram informativos parciais e este relatório 
+integral que consolida os resultados obtidos no quadriênio. Esses resultados 
+são divulgados aos segmentos acadêmicos, tanto pelo site institucional 
+do Mestrado quanto por meio de e-mails informativos. Por fim, com a 
+meta-avaliação, a Comissão de Autoavaliação revisou criticamente os 
+instrumentos e métodos aplicados ao longo do ciclo avaliativo.
 
 
-## Procedimento em Relação aos Resultados 
+## Procedimento em Relação aos Resultados
 
 Dada a alta quantidade de questões aplicadas nos questionários, 
 abrangendo diversas dimensões avaliativas, a Comissão de Autoavaliação 
 optou por consolidar os resultados e sugestões pertinentes entre as 
 Ações Demandadas a partir do Processo de Autoavaliação apresentadas 
 na @tbl-5.2 da @sec-acoesdemanda, Ações Executadas e Demandadas a Partir 
-da Autoavaliação. Essa decisão foi tomada para evitar redundâncias 
-no relatório e apresentar as análises de maneira objetiva e focada nas 
-melhorias concretas propostas. No entanto, para proporcionar uma visão 
-geral das informações extraídos dos dados coletados, foram incluídas 
-subseções específicas contendo sínteses dos principais resultados obtidos 
-junto ao corpo discente (@sec-sintesediscentes) e ao corpo docente 
-(@sec-sintesedocentes). 
+da Autoavaliação. Essa decisão foi tomada para evitar redundâncias no 
+relatório e apresentar as análises de maneira objetiva e focada nas 
+melhorias concretas propostas. No entanto, para proporcionar uma 
+visão geral das informações extraídas dos dados coletados, foram 
+incluídas subseções específicas contendo sínteses dos principais 
+resultados obtidos junto ao corpo discente (@sec-sintesediscentes) 
+e ao corpo docente (@sec-sintesedocentes).
 
-Por fim, cabe ressaltar que todas as questões dos instrumentos aplicados aos 
-discentes e docente foram exibidas nas figuras apresentadas nas secões 
--@sec-discentes e -@sec-docentes. Assim, não se justificaria a inclusão de 
-das questões em seção própria, pois isso resultaria em redundância.
-
+Por fim, cabe ressaltar que todas as questões dos instrumentos aplicados 
+aos discentes e docentes foram exibidas nas figuras apresentadas nas 
+seções @sec-discentes e @sec-docentes. Assim, não se justificaria a 
+inclusão destas questões em seção própria.
 
 
 
@@ -399,11 +407,10 @@ acadêmicos no mercado de trabalho, a falta de incentivos financeiros e a
 percepção de que a pós-graduação nem sempre garante melhores oportunidades 
 profissionais contribuem para esse cenário.  
 
-Em resumo, os dados mostram que os desafios enfrentados pela pós-graduação no 
+Em suma, os dados mostram que os desafios enfrentados pela pós-graduação no 
 país estão refletidos no número de ingressantes e, por consequência, nas 
-taxas de conclusão do Mestrado Profissional em Administração do IFMG - Campus. 
-Esses resultados reforçam a importância da autoavaliação contínua  
-para a sustentabilidade do curso, permitindo que o programa identifique 
+taxas de conclusão do Mestrado Profissional em Administração do IFMG - Campus 
+Formiga. Esses resultados reforçam a importância da autoavaliação contínua para a sustentabilidade do curso, permitindo que o programa identifique 
 oportunidades de melhoria e busque se adaptar rapidamente às novas demandas 
 do mercado e às expectativas dos discentes.
 
@@ -443,6 +450,611 @@ dados_turmas |>
     threeparttable = TRUE
   )
 ```
+
+
+
+## Produção Intelectual dos Concluintes {#sec-producao}
+
+A análise da produção intelectual dos concluintes do Mestrado 
+Profissional em Administração do IFMG - Campus Formiga é realizada em 
+conformidade com a Política de Autoavaliação do Programa, formalizada 
+pela Portaria nº 1706/IFMG de 29 de novembro de 2024. Essa política 
+estabelece a importância de monitorar e avaliar a produção técnica, 
+bibliográfica e outras formas de disseminação do conhecimento gerado 
+no curso, visando garantir a qualidade e a relevância do programa. 
+Nesta seção, são apresentados os resultados das produções técnicas, 
+bibliográficas e outras produções realizadas pelos concluintes durante 
+o quadriênio 2021-2024, destacando os resultados alcançados e as 
+oportunidades de aprimoramento do curso.
+
+
+
+### Producão Técnica
+
+As Figuras -@fig-prod.1 e -@fig-prod.2 apresentam a distribuição dos tipos 
+de produção técnica realizados pelos concluintes que ingressaram no programa 
+em 2021 e 2022, respectivamente. Essas produções refletem os objetivos 
+estabelecidos pela Portaria CAPES nº 60/2019, que define como missão dos 
+mestrados profissionais a capacitação de profissionais qualificados para 
+práticas avançadas, inovadoras e transformadoras dos processos de trabalho, 
+visando atender às demandas sociais, econômicas e organizacionais 
+dos diversos setores da economia.
+
+Para os ingressantes de 2021, observa-se que a maior parte das produções 
+técnicas concentra-se em relatórios técnicos conclusivos (38,5%), 
+seguidos por softwares/aplicativos (30,8%) e 
+processos/tecnologias não patenteáveis (15,4%). Essa distribuição 
+demonstra a aplicabilidade prática do conhecimento adquirido no curso, 
+com destaque para a criação de ferramentas e soluções que podem ser 
+diretamente implementadas no mercado, alinhando-se ao objetivo de 
+transferir conhecimento para a sociedade de forma a atender às 
+demandas sociais e econômicas, conforme previsto na Portaria CAPES.
+
+Já para os ingressantes de 2022, os relatórios técnicos conclusivos 
+representam 50% das produções técnicas, enquanto softwares/aplicativos 
+e processos/tecnologias não patenteáveis correspondem a 25% cada. A 
+predominância de relatórios técnicos sugere uma forte orientação para 
+a resolução de problemas práticos e a entrega de resultados tangíveis, 
+contribuindo para a agregação de conhecimentos que impulsionam o 
+aumento da produtividade em empresas e organizações, conforme 
+estabelecido pela Portaria CAPES.
+
+
+```{r}
+#| label: fig-prod.1
+#| fig-cap: "Tipos de producão técnica dos concluintes que ingressaram em 2021."
+#| fig-width: 8
+#| fig-height: 5
+
+# Filtrando as observações da turma de 2021 com tipo "técnica"
+# E removendo as observações com subtipo_area "Apresentação de Trabalho"
+producoes_tecnicas_2021 <- dados_producao %>%
+  filter(turma == 2021, 
+         tolower(tipo) == "técnica",
+         subtipo_area != "Apresentação de Trabalho")
+
+# Contando a frequência dos subtipos de produção técnica
+subtipo_area_tab_2021 <- producoes_tecnicas_2021 %>%
+  count(subtipo_area) %>%
+  mutate(
+    perc = n / sum(n),
+    subtipo = fct_reorder(subtipo_area, n),  # Reordenando para o gráfico
+    # Criando rótulo com percentual e contagem absoluta
+    label = paste0(scales::percent(perc, accuracy = 0.1), " (", n, ")")
+  )
+
+# Criando o gráfico lollipop para os subtipos de produção técnica
+ggplot(subtipo_area_tab_2021, aes(x = perc, y = subtipo)) +
+  geom_segment(aes(
+    x = 0,
+    xend = perc,
+    y = subtipo,
+    yend = subtipo
+  ), color = "#1E6F5C", linewidth = 2) +
+  geom_point(color = "#1E6F5C", size = 5) +
+  geom_text(
+    aes(label = label),  # Usando o novo rótulo combinado
+    vjust = -0.5,
+    hjust = -0.2,
+    size = 4.5,
+    fontface = "bold"
+  ) +
+  scale_x_continuous(
+    expand = expansion(mult = c(0, 0.15)),
+    limits = c(0, 0.6),
+    labels = scales::label_percent()
+  ) +
+  scale_y_discrete(
+    labels = function(x) stringr::str_wrap(x, width = 25)
+  ) +
+  labs(
+    title = "Tipos de Produção Técnica - Ingressantes em 2021",
+    subtitle = "Porcentagem e Total de Producões Técnicas por Tipo",
+    caption = "Fonte: Comissão de Autovaliação",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_classic() +
+  theme(
+    text = element_text(family = "sans"),
+    legend.position = "none",
+    plot.title = element_text(size = 13, face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5),
+    axis.text.y = element_text(size = 11, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    axis.line.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.line.x = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.x = element_line(color = "grey80", linewidth = 0.3),
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    )
+  )
+```
+
+
+
+```{r}
+#| label: fig-prod.2
+#| fig-cap: "Tipos de producão técnica dos concluintes que ingressaram em 2022."
+#| fig-width: 8
+#| fig-height: 5
+
+# Filtrando as observações da turma de 2022 com tipo "técnica"
+# E removendo as observações com subtipo_area "Apresentação de Trabalho"
+producoes_tecnicas_2022 <- dados_producao %>%
+  filter(turma == 2022, 
+         tolower(tipo) == "técnica",
+         subtipo_area != "Apresentação de Trabalho")
+
+# Contando a frequência dos subtipos de produção técnica
+subtipo_area_tab_2022 <- producoes_tecnicas_2022 %>%
+  count(subtipo_area) %>%
+  mutate(
+    perc = n / sum(n),
+    subtipo = fct_reorder(subtipo_area, n),  # Reordenando para o gráfico
+    # Criando rótulo com percentual e contagem absoluta
+    label = paste0(scales::percent(perc, accuracy = 0.1), " (", n, ")")
+  )
+
+# Criando o gráfico lollipop para os subtipos de produção técnica
+ggplot(subtipo_area_tab_2022, aes(x = perc, y = subtipo)) +
+  geom_segment(aes(
+    x = 0,
+    xend = perc,
+    y = subtipo,
+    yend = subtipo
+  ), color = "#1E6F5C", linewidth = 2) +
+  geom_point(color = "#1E6F5C", size = 5) +
+  geom_text(
+    aes(label = label),  # Usando o novo rótulo combinado
+    vjust = -0.5,
+    hjust = -0.2,
+    size = 4.5,
+    fontface = "bold"
+  ) +
+  scale_x_continuous(
+    expand = expansion(mult = c(0, 0.15)),
+    limits = c(0, 0.6),
+    labels = scales::label_percent()
+  ) +
+  scale_y_discrete(
+    labels = function(x) stringr::str_wrap(x, width = 25)
+  ) +
+  labs(
+    title = "Tipos de Produção Técnica - Ingressantes em 2022",
+    subtitle = "Porcentagem e Total de Producões Técnicas por Tipo",
+    caption = "Fonte: Comissão de Autovaliação",
+    x = NULL,
+    y = NULL
+  ) +
+  theme_classic() +
+  theme(
+    text = element_text(family = "sans"),
+    legend.position = "none",
+    plot.title = element_text(size = 13, face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5),
+    axis.text.y = element_text(size = 11, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    axis.line.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.line.x = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.x = element_line(color = "grey80", linewidth = 0.3),
+    plot.margin = margin(
+      t = 15,
+      r = 15,
+      b = 15,
+      l = 15,
+      unit = "pt"
+    )
+  )
+```
+
+
+Entre os destaques da produção técnica do primeiro quadriênio do curso,
+foi o desenvolvimento e registro de um software no 
+Instituto Nacional da Propriedade Industrial (INPI) por um 
+concluinte da turma de 2021, com formação em Contabilidade e Análise 
+de Sistemas. O software, denominado *Sistema de Tributação Inteligente*, 
+utiliza algoritmos de aprendizagem de máquina, um elemento fundamental 
+dos sistemas baseados em Inteligência Artificial, e está sendo aplicado 
+no escritório de contabilidade do próprio concluinte. Essa produção 
+técnica exemplifica o alinhamento do programa com os processos e 
+procedimentos de inovação, seja em atividades industriais geradoras 
+de produtos ou na organização de serviços públicos ou privados, 
+conforme previsto na Portaria CAPES.
+
+Esses resultados indicam que o programa tem conseguido estimular a 
+produção de soluções técnicas relevantes, embora haja espaço para 
+diversificar ainda mais os tipos de produções, incentivando a criação 
+de tecnologias patenteáveis e outras inovações de maior impacto. A 
+continuidade desse processo de aprimoramento será fundamental para 
+garantir que o programa continue a atender às demandas do mercado e 
+da sociedade, contribuindo para o desenvolvimento regional.
+
+
+### Producão Bibliográfica
+
+A @fig-prod.3 apresenta a quantidade de artigos completos publicados em 
+periódicos pelos concluintes que ingressaram em 2021 e 2022. Para os 
+ingressantes de 2021, observa-se que 3 concluintes publicaram 
+artigos como primeiros autores, enquanto 1 concluinte publicou 
+como coautor, totalizando  4 artigos. Em relação aos 
+ingressantes em 2022, 1 concluinte publicou 2 artigos como 
+primeiro autor.
+
+Um dos destaques da produção bibliográfica no quadriênio foi a 
+publicação de um artigo na revista *Finance Research Letters*, de 
+alto fator de impacto, por um concluinte da turma de 2022. O artigo 
+aborda a otimização de carteiras de investimento utilizando algoritmos 
+de aprendizagem de máquina, demonstrando a aplicação de técnicas 
+avançadas de análise de dados na área financeira. Essa publicação 
+reflete o alinhamento das pesquisas desenvolvidas no programa com as 
+tendências contemporâneas do mercado financeiro e a capacidade dos 
+egressos de contribuir para o avanço do conhecimento em sua área de atuação.
+
+
+
+```{r}
+#| label: fig-prod.3
+#| fig-cap: "Artigos completos publicados em periódicos pelos ingressantes em 2021 e 2022."
+#| fig-width: 8
+#| fig-height: 5
+
+# Filtrando apenas artigos completos publicados em periódicos
+artigos_periodicos <- dados_producao %>%
+  filter(subtipo_area == "Artigos Completos Publicados em Periódicos")
+
+# Contando a frequência por turma
+artigos_por_turma <- artigos_periodicos %>%
+  count(turma) %>%
+  mutate(
+    turma = as.factor(turma),
+    # Adicionando informações sobre os alunos (apenas o texto explicativo)
+    info = case_when(
+      turma == 2021 ~ "(publicados por 3 concluintes como primeiros autores\n e por 1 como coautor)",
+      turma == 2022 ~ "(publicados por 1 concluinte como\n primeiro autor)",
+      TRUE ~ ""
+    )
+  ) %>%
+  # Ordenando em ordem decrescente pelo número de artigos
+  arrange(desc(n))
+
+# Reordenando o fator turma com base na contagem
+artigos_por_turma$turma <- factor(artigos_por_turma$turma, 
+                                 levels = artigos_por_turma$turma)
+
+# Criando o gráfico lollipop
+ggplot(artigos_por_turma, aes(x = n, y = turma)) +
+  geom_segment(aes(
+    x = 0,
+    xend = n,
+    y = turma,
+    yend = turma
+  ), color = "#1E6F5C", linewidth = 2) +
+  geom_point(color = "#1E6F5C", size = 5) +
+  # Número absoluto ACIMA do círculo
+  geom_text(
+    aes(label = n),
+    hjust = -0.6,
+    vjust = -0.8,  # Valor negativo para posicionar acima
+    size = 4.5,
+    fontface = "bold"
+  ) +
+  # Texto explicativo ABAIXO do círculo e mais à esquerda
+  geom_text(
+    aes(label = info),
+    hjust = 0.5,     # Valor 1 para alinhar à direita (mais à esquerda do ponto)
+    vjust = 2,     # Valor positivo para posicionar abaixo
+    size = 3.5,
+    color = "gray30",
+    fontface = "italic"
+  ) +
+  scale_x_continuous(
+    expand = expansion(mult = c(0, 0.3)),
+    limits = c(0, 4.5),
+    breaks = 0:4
+  ) +
+  scale_y_discrete(limits = rev(levels(artigos_por_turma$turma))) +
+  labs(
+    title = "Artigos Completos Publicados em Periódicos - Ingressantes em 2021 e 2022",
+    x = "Número de Artigos",
+    y = NULL,
+    caption = "Fonte: Comissão de Autoavaliação"
+  ) +
+  theme_classic() +
+  theme(
+    text = element_text(family = "sans"),
+    plot.title = element_text(size = 13, face = "bold", hjust = 0.5),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    axis.line.y = element_line(color = "gray80", linewidth = 0.3),
+    axis.ticks.y = element_line(color = "gray80", linewidth = 0.3),
+    axis.line.x = element_line(color = "gray80", linewidth = 0.3),
+    axis.ticks.x = element_line(color = "gray80", linewidth = 0.3),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    plot.margin = margin(t = 15, r = 25, b = 15, l = 15, unit = "pt")
+  )
+```
+
+
+É importante destacar que o processo de publicação de artigos 
+científicos, especialmente em periódicos de alto impacto, envolve 
+um longo prazo médio de submissão, avaliação, retorno e revisão. 
+Esse processo pode levar meses ou até anos, dependendo da revista e 
+da área de pesquisa. No caso das revistas científicas nacionais 
+da área de Administração, os prazos são frequentemente prolongados 
+devido à alta demanda, entre outros fatores. Esse fator explica, 
+em parte, o número ainda reduzido de artigos publicados em 
+periódicos no quadriênio, uma vez que alguns concluintes ainda estão 
+em alguma fase do processo de publicação. Esse cenário sugere que o 
+número de publicações pode aumentar nos próximos anos, à medida que 
+esses artigos forem aprovados e publicados.
+
+Esses números demonstram que o programa tem incentivado a produção 
+científica, o que contribui para a disseminação do conhecimento gerado 
+no curso. No entanto, o número reduzido de publicações entre 2021 e 2022 
+pode indicar a necessidade de aumentar os esforços e os recursos 
+destinados à produção e publicação em periódicos, especialmente em 
+periódicos de alto impacto. 
+
+
+### Outras Produções - Publicações e Apresentações em Eventos
+
+As Figuras -@fig-prod.4 e -@fig-prod.5 mostram a quantidade de trabalhos 
+completos e resumos publicados em anais de eventos pelos concluintes que 
+ingressaram em 2021 e 2022, respectivamente. Embora a CAPES não considere essas 
+produções como indicadores quantitativos de produção intelectual, 
+elas desempenham um papel fundamental na formação de pesquisadores e 
+no desenvolvimento de artigos científicos. A participação em eventos 
+científicos e profissionais permite aos discentes divulgar suas 
+pesquisas, receber feedback da comunidade acadêmica e profissional, 
+e aprimorar seus trabalhos antes de submetê-los a periódicos científicos. 
+Além disso, essas atividades contribuem para a construção de redes 
+de colaboração e para a disseminação do conhecimento gerado no programa.
+
+
+```{r}
+#| label: fig-prod.4
+#| fig-cap: "Trabalhos completos e resumos publicados em anais de eventos pelos ingerssantes em 2021."
+#| fig-width: 8
+#| fig-height: 5
+
+# Filtrar trabalhos e resumos publicados em anais de congressos para a turma de 2021
+trabalhos_anais_2021 <- dados_producao %>%
+  filter(subtipo_area %in% c("Resumos Publicados em Anais de Congressos", 
+                             "Trabalhos Completos Publicados em Anais de Congressos"),
+         turma == 2021) %>%
+  count(subtipo_area) %>%
+  mutate(
+    perc = n / sum(n),
+    subtipo_area = factor(subtipo_area, 
+                        levels = c("Resumos Publicados em Anais de Congressos",
+                                  "Trabalhos Completos Publicados em Anais de Congressos"))
+  )
+
+# Definir cores para os segmentos
+cores <- c("#1E6F5C", "#1E6F5C")
+
+# Criar gráfico lollipop para a turma de 2021
+ggplot(trabalhos_anais_2021, aes(x = n, y = subtipo_area)) +
+  geom_segment(aes(
+    x = 0,
+    xend = n,
+    y = subtipo_area,
+    yend = subtipo_area,
+    color = subtipo_area
+  ), linewidth = 2) +
+  geom_point(aes(color = subtipo_area), size = 5) +
+  geom_text(
+    aes(label = n),
+    vjust = -1,
+    hjust = -0.2,
+    size = 5,
+    fontface = "bold"
+  ) +
+  scale_color_manual(values = cores) +
+  scale_x_continuous(
+    expand = expansion(mult = c(0, 0.1)),
+    limits = c(0, max(trabalhos_anais_2021$n) * 1.2),
+    breaks = seq(0, ceiling(max(trabalhos_anais_2021$n)), by = 1)
+  ) +
+  scale_y_discrete(
+    labels = function(x)
+      str_wrap(x, width = 30)
+  ) +
+  labs(
+    title = "Trabalhos Completos e Resumos Publicados em Anais de Eventos \n Ingressantes em 2021",
+    caption = "Fonte: Comissão de Autoavaliação.",
+    x = "Quantidade de publicações",
+    y = NULL
+  ) +
+  theme_classic() +
+  theme(
+    text = element_text(family = "sans"),
+    legend.position = "none",
+    plot.title = element_text(size = 14, face = "bold", hjust = 1),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    axis.line.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.line.x = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.x = element_line(color = "grey80", linewidth = 0.3),
+    axis.title.x = element_text(size = 11, face = "bold"),
+    axis.title.y = element_blank(),
+    plot.caption = element_text(size = 9),
+    plot.margin = margin(
+      t = 10,
+      r = 10,
+      b = 10,
+      l = 10,
+      unit = "pt"
+    )
+  )
+```
+
+
+Durante o quadriênio 2021-2024, os concluintes do Mestrado Profissional 
+em Administração do IFMG - Campus Formiga apresentaram e publicaram 
+trabalhos em eventos de destaque nacional e internacional, 
+demonstrando o engajamento do programa com a comunidade acadêmica 
+e profissional. Entre os eventos mais relevantes, destacam-se:
+
+- *XLVI EnANPAD 2022*: Um dos principais eventos da área de 
+Administração no Brasil, que reúne pesquisadores, profissionais e 
+estudantes para discutir temas relevantes e inovadores.
+  
+- *22º International Conference in Accounting (FEA/USP)*: Evento 
+internacional que aborda temas avançados em contabilidade, proporcionando 
+uma plataforma para a troca de conhecimentos entre pesquisadores de 
+diferentes países.
+
+- *XXV Semead*: Seminários em Administração, um dos eventos mais 
+tradicionais da área, que promove a discussão de pesquisas aplicadas 
+e teóricas.
+
+- *XIV Congresso de Administração, Sociedade e Inovação (CASI)*: Evento 
+focado na relação entre administração, inovação e desenvolvimento social.
+
+- *XIX Congresso Virtual de Administração*: Evento que utiliza 
+plataformas digitais para promover a interação e a divulgação de 
+pesquisas em administração.
+
+- *III Behavioral Science Lab Seminars*: Seminários que exploram temas 
+relacionados às ciências comportamentais e sua aplicação na administração.
+
+- *3º Congresso de Gestão de Riscos Corporativos 2023 (FEA/USP)*: Evento 
+especializado em gestão de riscos, área de grande relevância para o setor 
+financeiro e corporativo.
+
+Essa participação em eventos de alto nível reflete o compromisso do 
+programa com a formação de pesquisadores qualificados e com a disseminação 
+do conhecimento gerado no curso. A apresentação de trabalhos em eventos 
+científicos e profissionais permite aos discentes aprimorar suas 
+habilidades de comunicação, receber críticas construtivas e estabelecer 
+parcerias para futuras pesquisas. Além disso, essas atividades contribuem 
+para a visibilidade do programa e para o reconhecimento da qualidade das 
+pesquisas realizadas.
+
+Embora essas produções não sejam contabilizadas como indicadores 
+quantitativos pela CAPES, elas são essenciais para o processo de formação 
+dos mestrandos e para a evolução dos artigos em desenvolvimento. A 
+continuidade do incentivo à participação em eventos científicos e 
+profissionais será fundamental para garantir que os discentes do 
+programa continuem a se destacar na comunidade acadêmica e no mercado 
+de trabalho.
+
+
+
+```{r}
+#| label: fig-prod.5
+#| fig-cap: "Trabalhos completos publicados em anais de eventos pelos ingressantes em 2022."
+#| fig-width: 8
+#| fig-height: 5
+
+# Filtrar trabalhos e resumos publicados em anais de congressos para a turma de 2022
+trabalhos_anais_2022 <- dados_producao %>%
+  filter(subtipo_area %in% c("Resumos Publicados em Anais de Congressos", 
+                             "Trabalhos Completos Publicados em Anais de Congressos"),
+         turma == 2022) %>%
+  count(subtipo_area) %>%
+  mutate(
+    perc = n / sum(n),
+    subtipo_area = factor(subtipo_area, 
+                        levels = c("Resumos Publicados em Anais de Congressos",
+                                  "Trabalhos Completos Publicados em Anais de Congressos"))
+  )
+
+# Definir cores para os segmentos
+cores <- c("#1E6F5C", "#1E6F5C")
+
+# Criar gráfico lollipop para a turma de 2022
+ggplot(trabalhos_anais_2022, aes(x = n, y = subtipo_area)) +
+  geom_segment(aes(
+    x = 0,
+    xend = n,
+    y = subtipo_area,
+    yend = subtipo_area,
+    color = subtipo_area
+  ), linewidth = 2) +
+  geom_point(aes(color = subtipo_area), size = 5) +
+  geom_text(
+    aes(label = n),
+    vjust = -1,
+    hjust = -0.2,
+    size = 5,
+    fontface = "bold"
+  ) +
+  scale_color_manual(values = cores) +
+  scale_x_continuous(
+    expand = expansion(mult = c(0, 0.1)),
+    limits = c(0, max(trabalhos_anais_2022$n) * 1.2),
+    breaks = seq(0, ceiling(max(trabalhos_anais_2022$n)), by = 1)
+  ) +
+  scale_y_discrete(
+    labels = function(x)
+      str_wrap(x, width = 30)
+  ) +
+  labs(
+    title = "Trabalhos Completos Publicados em Anais de Eventos \n Ingressantes em 2022",
+    caption = "Fonte: Comissão de Autoavaliação.",
+    x = "Quantidade de publicações",
+    y = NULL
+  ) +
+  theme_classic() +
+  theme(
+    text = element_text(family = "sans"),
+    legend.position = "none",
+    plot.title = element_text(size = 14, face = "bold", hjust = 1),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    axis.text.x = element_text(size = 10),
+    axis.line.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.y = element_line(color = "grey80", linewidth = 0.3),
+    axis.line.x = element_line(color = "grey80", linewidth = 0.3),
+    axis.ticks.x = element_line(color = "grey80", linewidth = 0.3),
+    axis.title.x = element_text(size = 11, face = "bold"),
+    axis.title.y = element_blank(),
+    plot.caption = element_text(size = 9),
+    plot.margin = margin(
+      t = 10,
+      r = 10,
+      b = 10,
+      l = 10,
+      unit = "pt"
+    )
+  )
+```
+
+
+Isto posto, a análise da produção intelectual dos concluintes do Mestrado 
+Profissional em Administração do IFMG - Campus Formiga revela um cenário 
+positivo, com destaque para a diversidade e aplicabilidade das produções 
+técnicas e  da relevância de algumas produções bibliográficas. O 
+desenvolvimento de soluções práticas, como o *Sistema de Tributação Inteligente*, 
+e a publicação de artigos em periódicos de alto impacto, como a 
+*Finance Research Letters*, demonstram o alinhamento do programa com 
+os objetivos estabelecidos pela Portaria CAPES nº 60/2019. Essas 
+produções refletem a capacidade do curso de formar profissionais 
+qualificados para práticas avançadas, inovadoras e transformadoras, capazes 
+de atender às demandas sociais, econômicas e organizacionais de diversos 
+setores da economia.
+
+No entanto, os dados também apontam para a necessidade de fortalecer as 
+políticas de incentivo à pesquisa e à publicação, além de ampliar a 
+participação dos discentes em eventos científicos e profissionais. Essas 
+ações contribuirão para a consolidação do programa e para o aumento do 
+impacto das pesquisas realizadas. Considera-se que o programa, iniciado 
+em 2021 em um cenário desafiador, está no caminho certo para a evolução, 
+e a continuidade desse processo de aprimoramento será fundamental para 
+garantir sua relevância e excelência, em conformidade com os objetivos 
+dos mestrados profissionais estabelecidos pela CAPES e considerando ainda
+o cenário complexo da pós-graduação no país.
+
 
 
 ## Corpo Discente {#sec-discentes}
@@ -10177,54 +10789,64 @@ avaliativa focada na melhoria contínua do programa, fundamentada em
 evidências e desenvolvida de forma coletiva.
 
 Criado em um período desafiador, marcado pela pandemia da COVID-19, o 
-programa buscou consolidar suas bases acadêmicas e administrativas, 
-superando adversidades e garantindo a continuidade das atividades 
-acadêmicas do curso. O perfil dos discentes mostra que a maioria está em 
-uma fase profissional madura, com idade mediana de 35,5 anos, e 92% exercem 
-atividades remuneradas. Isso reforça o caráter profissional do mestrado e 
-a necessidade de alinhar o programa às demandas do mercado e da sociedade. 
-As principais ocupações dos participantes incluem admnistradores, 
-contardores, servidoe públicos e professores, evidenciando a diversidade 
-de atuações profissionais e a aplicabilidade dos conhecimentos e
-m diferentes setores.
+programa buscou consolidar suas bases acadêmicas e administrativas, superando 
+adversidades e garantindo a continuidade das atividades acadêmicas do curso. 
+O perfil dos discentes mostra que a maioria está em uma fase profissional 
+madura, com idade mediana de 35,5 anos, e 92% exercem atividades remuneradas.
+Isso reforça o caráter profissional do mestrado e a necessidade de alinhar o 
+programa às demandas do mercado e da sociedade. As principais ocupações dos 
+participantes incluem administradores, contadores, servidores públicos e 
+professores, evidenciando a diversidade de atuações profissionais e a 
+aplicabilidade dos conhecimentos em diferentes setores.
 
 Além do perfil dos discentes, a análise do número de ingressantes e das 
 taxas de conclusão ao longo do quadriênio 2021-2024 revelou uma queda no 
-número de ingressantes, de 11 em 2021 para 7 em 2022 (lembrando que o 
-número máximo de vagas ofertadas é 16), e uma redução na taxa de conclusão, 
-de 82% em 2021 para 57% em 2022. Esses números refletem a tendência nacional 
-de diminuição do interesse por programas de pós-graduação, conforme apontado 
-por @castro2024 e @crise2024.
+número de ingressantes, de 11 em 2021 para 7 em 2022 (lembrando que o número 
+máximo de vagas ofertadas é 16), e uma redução na taxa de conclusão, de 
+82% em 2021 para 57% em 2022. Esses números refletem a tendência nacional d
+e diminuição do interesse por programas de pós-graduação, conforme 
+apontado por @castro2024 e @crise2024.
+
+A análise da produção intelectual dos concluintes, realizada em conformidade 
+com a Política de Autoavaliação do curso, destacou a relevância das pesquisas 
+desenvolvidas, com destaque para a criação de soluções técnicas inovadoras, 
+como o *Sistema de Tributação Inteligente*, e a publicação de artigos em 
+periódicos de alto impacto, como a *Finance Research Letters*. Esses 
+resultados demonstram o alinhamento do programa com os objetivos de 
+formação de profissionais qualificados para práticas avançadas e 
+inovadoras, capazes de atender às demandas sociais, econômicas e 
+organizacionais.
 
 Além do cenário desafiador da pós-graduação *stricto sensu* no país, outro 
 fator relevante a ser considerado no planejamento da consolidação e evolução 
-do curso são as mudanças disruptivas no mundo do trabalho, impulsionadas por 
-avanços tecnológicos como a Inteligência Artificial. Esse cenário exige que 
-o programa se adapte rapidamente para manter sua relevância e atratividade. 
-Diante desses desafios, a autoavaliação contínua se torna fundamental 
-para a sustentabilidade do curso, permitindo que o programa identifique 
-oportunidades de melhoria e se adapte às demandas do mercado e às 
-expectativas dos discentes.
+do curso são as mudanças disruptivas no mundo do trabalho, impulsionadas 
+por avanços tecnológicos como a Inteligência Artificial. Esse cenário exige 
+que o programa se adapte rapidamente para manter sua relevância e 
+atratividade. Diante desses desafios, a autoavaliação contínua se torna 
+fundamental para a sustentabilidade do curso, permitindo que o programa 
+identifique oportunidades de melhoria e se adapte às demandas do mercado 
+e às expectativas dos discentes.
 
 Por meio de um processo avaliativo estruturado e alinhado à Política de 
 Autoavaliação formalizada pela Portaria Nº 1706/IFMG/2024, o relatório 
-apresenta um panorama abrangente das dimensões bem avaliadas, 
-desafios enfrentados e direções estratégicas para o aprimoramento 
-do curso. Desde sua criação em 2021, o programa destacou-se pelo alto 
-nível de qualificação do corpo docente, pela adequação da matriz 
-curricular, da infraestrutura e da gestão acadêmica, conforme 
-evidenciado nos resultados apresentados. A estrutura avaliativa 
-utilizada mostrou-se abrangente e eficiente na captação de percepções 
-sobre ensino, pesquisa, infraestrutura e gestão administrativa.
+apresenta um panorama abrangente das dimensões bem avaliadas, desafios 
+enfrentados e direções estratégicas para o aprimoramento do curso. Desde 
+sua criação em 2021, o programa destacou-se pelo alto nível de qualificação 
+do corpo docente, pela adequação da matriz curricular, da infraestrutura e 
+da gestão acadêmica, conforme evidenciado nos resultados apresentados. A 
+estrutura avaliativa utilizada mostrou-se abrangente e eficiente na 
+captação de percepções sobre ensino, pesquisa, infraestrutura e gestão 
+administrativa.
 
 No entanto, o processo de autoavaliação identificou oportunidades de 
 aprimoramento, especialmente na revisão da matriz curricular — um aspecto 
 esperado para um programa recente que passará por sua primeira avaliação 
 quadrienal. Também foram apontadas demandas estratégicas para o 
-aperfeiçoamento da infraestrutura, a ampliação das atividades extracurriculares, 
-o fortalecimento da internacionalização e o aumento da prospecção de 
-oportunidades de pesquisa e interação com o setor produtivo. Além disso, 
-identificaram-se oportunidades para aprimorar a comunicação institucional.
+aperfeiçoamento da infraestrutura, a ampliação das atividades 
+extracurriculares, o fortalecimento da internacionalização e o aumento da 
+prospecção de oportunidades de pesquisa e interação com o setor produtivo. 
+Além disso, identificaram-se oportunidades para aprimorar a comunicação 
+institucional.
 
 Foram identificadas demandas estratégicas (conforme detalhado na @sec-demandadas) 
 para os próximos ciclos avaliativos, com foco na reestruturação curricular, 
@@ -10234,20 +10856,20 @@ implementação dessas ações será monitorada pela Comissão de Autoavaliaçã
 visando contribuir para o fortalecimento do programa e a evolução da 
 formação oferecida.
 
-Este relatório reforça a relevância do processo avaliativo como instrumento de 
-gestão e aprimoramento contínuo, permitindo que o programa se adapte às 
-demandas institucionais e de mercado. A reflexão crítica proporcionada 
-pela autoavaliação pode orientar o planejamento estratégico do curso e 
-fortalecer sua capacidade de formar profissionais qualificados para 
-enfrentar os desafios contemporâneos, ampliando sua contribuição 
-para o desenvolvimento local e regional.
+Este relatório reforça a relevância do processo avaliativo como instrumento 
+de gestão e aprimoramento contínuo, permitindo que o programa se adapte às 
+demandas institucionais e de mercado. A reflexão crítica proporcionada pela 
+autoavaliação pode orientar o planejamento estratégico do curso e fortalecer 
+sua capacidade de formar profissionais qualificados para enfrentar os 
+desafios contemporâneos, ampliando sua contribuição para o desenvolvimento 
+local e regional.
 
 Além das dimensões bem avaliadas e desafios identificados, a Comissão de 
 Autoavaliação realizou uma Meta-Avaliação do processo, revisando 
-criticamente os instrumentos e métodos aplicados. Esse aprendizado resultou 
-em recomendações para tornar os próximos ciclos avaliativos mais eficazes 
-e alinhados às necessidades e ao novo nível de maturidade do programa.
-
+criticamente os instrumentos e métodos aplicados. Esse aprendizado 
+resultou em recomendações para tornar os próximos ciclos avaliativos 
+mais eficazes e alinhados às necessidades e ao novo nível de maturidade 
+do programa.
 
 
 
